@@ -14,7 +14,6 @@ $(document).ready(function () {
                 </ul>";
     menu_html = $.parseHTML(menu);
     $("#nav-info").append(menu_html);
-    $("body").append('<div id="mute"></div>');
     $menuLeft = $('.pushmenu-left');
     $nav_list = $('#nav_list');
     $nav_list.click(function () {

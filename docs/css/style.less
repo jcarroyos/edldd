@@ -3,10 +3,9 @@
  * Juan Carlos Arroyo Sosa jcarroyos@gmail.com
  */
 
-@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;800&display=swap');
 @import url('animate.css');
-@import url('base.css');
+
 
  // paleta de color
  @blanco: #ffffff;
@@ -22,10 +21,11 @@ body {
     margin: 0;
 }
 h1{
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: 5em;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4em;
     color: #321f33;
     margin: 0px;
+    font-weight: 600;
 }
 
 .hide{
@@ -45,7 +45,7 @@ h1{
     background-position: center;
 }
 .ComponentBgContainer{
-    background-color: @morado;
+    background-color: @azulclaro;
 }
 
 div[id*='fullpage-interna-lat_'] .ComponentBg.lazyloaded{
@@ -56,7 +56,7 @@ div[id*='fullpage-interna-lat_'] .ComponentBg.lazyloaded{
 }
 
 .TextComponent--center{
-    font-family: 'Libre Franklin', sans-serif !important;
+    font-family: 'Work Sans', sans-serif !important;
     font-weight: 800 !important;
     font-size: 16px !important;
     &.creditos {
@@ -130,7 +130,7 @@ ul.TextComponent--center {
         z-index: 1;
         position: absolute;
         right: 130px;
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 800;
         text-transform: uppercase;
         font-size: 10px;
@@ -139,7 +139,7 @@ ul.TextComponent--center {
     }
 }
 b.primera {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -205,6 +205,13 @@ b.primera {
         width: auto;  
         
     }
+    .head {
+        margin: 0 auto;
+        z-index: 1;
+        position: relative;
+        top: 20vh;
+        width: 60vw;
+    }
     #video_interno_6 video{
         height: 40vh;
         width: auto;  
@@ -234,7 +241,7 @@ b.primera {
 
         .ButtonComponent--historia {
             z-index: 1;
-            font-family: 'Libre Franklin', sans-serif;
+            font-family: 'Work Sans', sans-serif;
             font-weight: 800;
             text-transform: uppercase;
             font-size: 12px;
@@ -271,11 +278,12 @@ b.primera {
         }   
     }
     .txt {
-        margin-left: 15vw;
+        margin-left: 34vw;
         z-index: 1;
         position: relative;
+        bottom: 29vh;
         p.subtitle {
-            font-family: 'Libre Franklin', sans-serif;
+            font-family: 'Work Sans', sans-serif;
             font-size: 3em;
             color: #321f33;
             margin: 0.2em 0 0 0;
@@ -290,16 +298,20 @@ b.primera {
 .bt-center {
     position: absolute;
     text-align: center;
-    top: 90vh;
+    top: 50vh;
     z-index: 1;
-    width: 100%;
+    width: 60px;
+    background: @azulclaro;
+    border-radius: 30px;
+    height: 60px;
+    left: 50vw;
     svg {
         width: 20px;
         margin-top: 20px;
     }
     a {
         color: #fff;
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 800;
         text-transform: uppercase;
         text-decoration: none;
@@ -323,7 +335,6 @@ b.primera {
 .fp-controlArrow {
     &.fp-prev {
         left: 10%;
-        display: none;
     }
     &.fp-next {
         right: 10%;
@@ -375,7 +386,7 @@ b.primera {
         color: @negro;
     }
     .subtitle {
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 14px;
         color: #000000;
         position: relative;
@@ -429,6 +440,7 @@ left: -340px;
 }
 .pushmenu-left.pushmenu-open {
 left: 0;
+display: none;
 }
 
 .pushmenu-left.pushmenu-close {
@@ -489,7 +501,7 @@ background-position: -33px top;
 }
 
 .titulo-nav{
-font-family: 'Libre Franklin', sans-serif !important;
+font-family: 'Work Sans', sans-serif !important;
 text-align: left;
 margin-left: 55px;
 color:#2c2327;
@@ -524,33 +536,31 @@ div#page_Animation {
     flex-flow: column;
     z-index: 0;
     &.cordoba{
-        background-image: url('../img/01.jpg');
+        background-image: url('../img/capa 1.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         .capa{
             background-position: bottom;
+            background-repeat: no-repeat;
             height: 100vh; 
             width: 100vw;
             position: absolute;
             z-index: 2;
             &._1{
-                background-image: url('../img/01.gif');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
+                background-image: url('../img/capa 1.png');
             }
             &._2{
-                background-image: url('../img/02.gif');
+                background-image: url('../img/capa 2.png');
             }
             &._3{
-                background-image: url('../img/03.gif');
+                background-image: url('../img/capa 3.png');
             }
             &._4{
-                background-image: url('../img/04.gif');
+                background-image: url('../img/capa 4.png');
             }
             &._5{
-                background-image: url('../img/05.gif');
+                background-image: url('../img/capa 5.png');
             }
             &._6{
                 background-image: url('../img/06.gif');
@@ -609,7 +619,7 @@ section{
             z-index: 2;
             h2 {
                 font-size: 13px;
-                font-family: 'Libre Franklin', sans-serif;
+                font-family: 'Work Sans', sans-serif;
                 text-transform: uppercase;
                 font-weight: 700;
                 letter-spacing: 1px;
@@ -706,7 +716,7 @@ section{
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#deecf5",endColorstr="#f9f7f3",GradientType=1);
         }
     h1{
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 3px;
@@ -715,7 +725,7 @@ section{
         color: @azulclaro;
     }
     h3{
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 14px;
@@ -725,7 +735,7 @@ section{
         margin: 20px 0;
     }
     .destacado{
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         text-transform: uppercase;
         font-size: 11px;
         color: @blanco;
@@ -772,7 +782,7 @@ section{
             }
         }*/
         .izq{
-            font-family: 'Libre Franklin', sans-serif;
+            font-family: 'Work Sans', sans-serif;
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1.5px;
@@ -797,7 +807,7 @@ section{
             color: #321f33;
         }
         .upper {
-            font-family: 'Libre Franklin', sans-serif;
+            font-family: 'Work Sans', sans-serif;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 13px;
@@ -849,341 +859,6 @@ section{
     }
 }
 
-.mapa {
-    /*
-    width: 1500px;
-    height: 1643px;
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    .ComponentBg{
-        opacity: 1 !important;
-    }
-    .punto {
-        width: 30px;
-    }
-    .zona{
-        z-index: 1;
-        &.arauca{
-            position: absolute;
-
-            .punto{
-                background-image: url('../img/boton-mapa-cafe.svg');
-                background-size: contain;
-                width: 46px;
-                min-height: 46px;
-                background-repeat: no-repeat;
-                -webkit-transition: background 1s;
-                -moz-transition: background 1s;
-                -o-transition: background 1s;
-                transition: background 1s;
-                .titlezona {                   
-                    width: 147px;
-                    position: relative;
-                    top: -116px;
-                    left: 50px;
-                    font-size: 14px;
-                    opacity: 0;
-                    .nombredepartamento{
-                        font-family: 'Libre Franklin', sans-serif;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                        font-size: 14px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                    .mensaje{
-                        font-family: 'Ibarra Real Nova', serif;
-                        font-weight: 400;
-                        letter-spacing: 1px;
-                        font-size: 22px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                    .visitar{
-                        font-family: 'Libre Franklin', sans-serif;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 1px;
-                        font-size: 12px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                }
-            }
-            &:hover{
-                .punto{
-                   .titlezona {
-                        opacity: 1;
-                   }
-                }
-            }
-        }
-        &.cordoba{
-            position: absolute;
-            .punto{
-                background-image: url('../img/boton-mapa-verde.svg');
-                background-size: contain;
-                width: 46px;
-                min-height: 46px;
-                background-repeat: no-repeat;
-                -webkit-transition: background 1s;
-                -moz-transition: background 1s;
-                -o-transition: background 1s;
-                transition: background 1s;
-                .titlezona {
-                    width: 147px;
-                    position: relative;
-                    top: -116px;
-                    left: 50px;
-                    font-size: 14px;
-                    opacity: 0;
-                    .nombredepartamento{
-                        font-family: 'Libre Franklin', sans-serif;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                        font-size: 14px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                    .mensaje{
-                        font-family: 'Ibarra Real Nova', serif;
-                        font-weight: 400;
-                        letter-spacing: 1px;
-                        font-size: 22px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                    .visitar{
-                        font-family: 'Libre Franklin', sans-serif;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 1px;
-                        font-size: 12px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                }
-            }
-            &:hover{
-                .punto{
-                    .titlezona {
-                        opacity: 1;
-                   }
-                }
-            }
-        }
-        &.caqueta{
-            position: absolute;
-            .punto{
-                background-image: url('../img/boton-mapa-azul.svg');
-                background-size: contain;
-                width: 46px;
-                min-height: 46px;
-                background-repeat: no-repeat;
-                -webkit-transition: background 1s;
-                -moz-transition: background 1s;
-                -o-transition: background 1s;
-                transition: background 1s;
-                .titlezona {
-                    
-                    width: 147px;
-                    position: relative;
-                    top: -116px;
-                    left: 50px;
-                    font-size: 14px;
-                    opacity: 0;
-
-                    .nombredepartamento{
-                        font-family: 'Libre Franklin', sans-serif;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                        font-size: 14px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                    .mensaje{
-                        font-family: 'Ibarra Real Nova', serif;
-                        font-weight: 400;
-                        letter-spacing: 1px;
-                        font-size: 22px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-                    .visitar{
-                        font-family: 'Libre Franklin', sans-serif;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 1px;
-                        font-size: 12px;
-                        line-height: 1.6em;
-                        color: #2c2327;
-                    }
-
-                }
-            }
-            &:hover{
-                .punto{
-                    .titlezona {
-                        opacity: 1;
-                   }
-                }
-            }
-        }
-    }
-    .wrap {
-        min-height: 100%;
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        .bg {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background: url('../img/exposicion-mapa.jpg') no-repeat left top;
-            background-size: cover;
-            transform: scale(1.1);
-            -webkit-transition: background 1s;
-            -moz-transition: background 1s;
-            -o-transition: background 1s;
-            transition: background 1s;
-        }
-    }
-*/
-#punto_cordoba{
-    position: absolute;
-    background: transparent;
-    cursor: pointer;
-    z-index:2;
-  }
-  #image_cordoba{
-      position: absolute;
-      opacity: 0;
-      z-index:1;
-      -webkit-transition: all 0.5s ease-out;  
-      -moz-transition: all 0.5s ease-out;  
-      -o-transition: all 0.5s ease-out;  
-      transition: all 0.5s ease-out;
-    }
-  #punto_arauca{
-    position: absolute;
-    background: transparent;
-    cursor: pointer;
-    z-index:2;
-  }
-  #image_arauca{
-      position: absolute;
-      opacity: 0;
-      z-index:1;
-      -webkit-transition: all 0.5s ease-out;  
-      -moz-transition: all 0.5s ease-out;  
-      -o-transition: all 0.5s ease-out;  
-      transition: all 0.5s ease-out;
-    }
-  
-  #punto_caqueta{
-    position: absolute;
-    background: transparent;
-    cursor: pointer;
-    z-index:2;
-  }
-  #image_caqueta{
-      position: absolute;
-      opacity: 0;
-      z-index:1;
-      -webkit-transition: all 0.5s ease-out;  
-      -moz-transition: all 0.5s ease-out;  
-      -o-transition: all 0.5s ease-out;  
-      transition: all 0.5s ease-out;
-    }
-  
-  #fondomapa {
-    width: 100vw;
-    height: 100vh;
-    background: url('../img/exposicion-mapa_1920x2091.jpg') 50% 50% no-repeat ;
-  }
-  
-  
-}
-
-
-  .map {
-    .cordoba_txt{
-        position: absolute;
-        transition: opacity 1s;
-        z-index: 2;
-        left: 40%;
-        top: 10%;
-        opacity: 0;
-    }
-    #punto_cordoba{
-        position: absolute;
-        background: transparent;
-        cursor: pointer;
-        z-index:2;
-        /* border: 1px dotted red; */
-    }
-    .arauca_txt{
-        position: absolute;
-        transition: opacity 1s;
-        z-index: 2;
-        left: 64%;
-        top: 20%;
-        opacity: 0;
-    }
-    #punto_arauca{
-        position: absolute;
-        background: transparent;
-        cursor: pointer;
-        z-index:2;
-        /* border: 1px dotted red; */
-    }
-    .caqueta_txt{
-        position: absolute;
-        transition: opacity 1s;
-        z-index: 2;
-        left: 50%;
-        top: 53%;
-        opacity: 0;
-    }
-    #punto_caqueta{
-        position: absolute;
-        background: transparent;
-        cursor: pointer;
-        z-index:2;
-        /* border: 1px dotted red; */
-    }
-      width:100vw;
-      height:100vh;   
-      position:absolute;
-      top:0;
-      left:0;
-      overflow:hidden;
-      /* border:3px solid fuchsia; */
-      background: rgb(225,235,245);
-      background: -moz-linear-gradient(141deg, rgba(225,235,245,1) 19%, rgba(249,246,241,1) 76%);
-      background: -webkit-linear-gradient(141deg, rgba(225,235,245,1) 19%, rgba(249,246,241,1) 76%);
-      background: linear-gradient(141deg, rgba(225,235,245,1) 19%, rgba(249,246,241,1) 76%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1ebf5",endColorstr="#f9f6f1",GradientType=1);
-      .fondo{/* border:3px solid blue; */}
-      &:hover #follower { display:block; }
-      #base{
-        /* border:3px solid yellow; */
-        position : absolute;
-        background-image: url('../img/exposicion-mapa_1920x1700.jpg');
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-      }
-  }
-
 #elmuseo section.buttonset {  
    /* z-index: 99;*/
     position: fixed;
@@ -1224,7 +899,7 @@ section{
                 font-size: 2em;
             }
             .mayusculas{
-                font-family: 'Libre Franklin', sans-serif;
+                font-family: 'Work Sans', sans-serif;
                 text-transform: uppercase;
                 font-weight: 900;
                 letter-spacing: 1.5px;
