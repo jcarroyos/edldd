@@ -4,43 +4,70 @@ import ReactDOM from "react-dom";
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-import IntroAnimada from './component/introAnimada';
-
+//import IntroAnimada from './component/introAnimada';
+import data from  './component/data/data.json'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles.css";
 
-class Animada extends React.Component {
-  componentDidMount() {
-    console.log("mounted props", this.props);
-  }
+// class Animada extends React.Component {
+//   render() {
+//     return (
+//       <div className="section">       
+//         <IntroAnimada />
+//       </div>
+//     );
+//   }
+// }
 
-  render() {
-    return (
-      <div className="section">
-        <h3>{this.props.content}</h3>
-        <IntroAnimada />
+function MySection(e){
+
+
+
+
+if (e.e.tipo == 'animada') {
+   return (
+      <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }} >
+       <div class="container">
+          <h3>{e.e.titulo} {e.e.tipo}</h3>  
+        </div> 
       </div>
     );
-  }
-}
-class MySection extends React.Component {
-  componentDidMount() {
-    console.log("mounted props", this.props);
-  }
-
-  render() {
-    return (
+} else if (e.e.tipo == 'slide'){
+  return (
       <div className="section">
-        <h3>{this.props.content}</h3>
+        <div class="container">
+          <h3>{e.e.titulo} {e.e.tipo}</h3>
+          { <img src={`${e.e.fondo?e.e.fondo:null}`}/> }
+        </div>
       </div>
     );
-  }
+}else if (e.e.tipo == 'normal') {
+   return (
+      <div className="section">
+        <h3>{e.e.titulo} {e.e.tipo}</h3>
+        { <img src={`${e.e.fondo?e.e.fondo:null}`}/> }
+        
+      </div>
+    );
 }
+
+}
+
+// class MySection extends React.Component { 
+//   render() {
+//     return (
+//       <div className="section">
+//         <h3>{this.props.content}</h3>
+//       </div>
+//     );
+//   }
+// }
 
 
 const fullpageOptions = {
   licenseKey : '4%2M$#W?x0',
   scrollingSpeed : '2000',
-  sectionsColor: ["#282c34", "#ff5f45", "#0798ec"]
+  sectionsColor: ["#282c34", "#ff5f45", "#0798ec","#282c34", "#ff5f45", "#0798ec","#282c34", "#ff5f45", "#0798ec"]
 };
 
 const FullpageWrapper = () => (
@@ -60,9 +87,12 @@ const FullpageWrapper = () => (
 
       return (
         <div>
-          <Animada fullpageApi={fullpageApi} content={"Sección *animada*"} />
+          {/* <Animada fullpageApi={fullpageApi} content={"Sección *animada*"} />
           <MySection fullpageApi={fullpageApi} content={"Sección *slides*"} />
-          <MySection fullpageApi={fullpageApi} content={"Sección *normal*"} />
+          <MySection fullpageApi={fullpageApi} content={"Sección *normal*"} /> */}
+          {data.map((e)=>(
+            <MySection e={e}/>
+          ))}
         </div>
       );
     }}

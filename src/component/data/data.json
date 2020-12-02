@@ -1,27 +1,60 @@
-[
+[       
     {
-    "capitulo": {
+        "tipo": "animada",
         "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
         "id": "01",
-		"seccion": {
-            "titulo": "S",
-            "fondo":"img/imagen_1.png",
-			"capas": 
-            [
-                {
-                "ID": "SGML",
-                "SortAs": "SGML",
-                "GlossTerm": "Standard Generalized Markup Language",
-                "Acronym": "SGML",
-                "Abbrev": "ISO 8879:1986",
-                "GlossDef": {
-                    "para": "A meta-markup language, used to create markup languages such as DocBook.",
-                    "GlossSeeAlso": ["GML", "XML"]
-                },
-                "GlossSee": "markup"
-                }
-            ]
-        }
+        "fondo": "img/imagen_1.png",
+        "extra": {
+            "imagen":"img/imagen_1.png",
+            "imagen2":"img/imagen_1.png",
+            "imagen3":"img/imagen_1.png"
+        }          
+        
+    },
+
+   {
+        "tipo": "slide",
+        "titulo": "Por qué una Escuela de Liderazgo",
+        "id": "02",
+        "fondo": "img/b1.jpg"
+    },
+
+    {
+        "tipo": "normal",        
+        "titulo": "No olvides que",
+        "id": "03",
+        "fondo": "img/b2.jpg"
+    },
+
+   {
+        "tipo": "animada",
+        "titulo": "Lidérate para liderar animada",
+        "id": "04",
+        "fondo": "img/imagen_1.png",
+        "extra": {
+            "imagen":"img/imagen_1.png",
+            "imagen2":"img/imagen_1.png",
+            "imagen3":"img/imagen_1.png"
+        }          
+        
+    },
+    {
+        "tipo": "normal",        
+        "titulo": "El liderazgo directivo que promueve",
+        "id": "05",
+        "fondo": "img/b1.jpg"
+    },
+   {
+        "tipo": "normal",        
+        "titulo": "Así las cosas, las prácticas de liderazgo son",
+        "id": "06",
+        "fondo": "img/b2.jpg"
+    },
+    {
+        "tipo": "normal",        
+        "titulo": "Así las cosas, las prácticas de liderazgo son",
+        "id": "07",
+        "fondo": "img/b2.jpg"
     }
-}
+
 ]
