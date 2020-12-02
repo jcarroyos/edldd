@@ -6,6 +6,7 @@
 		"seccion": {
             "titulo": "S",
             "fondo":"img/imagen_1.png",
+            "tipo": "animada",
 			"capas": 
             [
                 {
