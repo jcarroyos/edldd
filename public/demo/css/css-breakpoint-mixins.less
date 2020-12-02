@@ -1,0 +1,156 @@
+/* Breakpoints */
+/* Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/ */
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"only screen and (max-width: 767px)";
+@tablet:      ~"only screen and (min-width: 768px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+
+/* Usage */
+section, div, span {
+    @media @mobile {
+        .bt-center {
+            top: 85vh;
+        }
+        .section .playervideo video {
+            height: auto;
+            width: 75vw;
+            margin-left: 25px;
+        }
+        #elmuseo .creditos .logos img {
+            display: block;
+        }
+        #overlay {
+            top: 20vh !important;
+            .minusculas {
+                font-size: 1.5em !important;
+            }
+            .mayusculas {
+                font-size: 2.8em !important;
+            }
+        }
+        .bg {
+            width: 55px !important;
+        }
+        h1{
+            font-size: 3em;
+        }
+        div#section0 .txt p.subtitle {
+            font-size: 1.4em;
+        }
+        .section div.cover {
+            left: -100%;
+        }
+        .TextComponent--left {
+            margin-left: 5vw;
+            padding-right: 15vw;
+            font-size: 19px;
+            line-height: 25px;
+        }
+        .ButtonCta.ButtonComponent--historia {
+            width: auto;
+            position: absolute;
+            bottom: 10vh;
+            right: 11px;
+        }
+        &.story .titulo {
+            left: -210px;
+            h2 {
+                font-size: 17px;
+                text-transform: uppercase;
+            }
+        }
+        .section .btn{
+            background-position: left top;
+            bottom: 40px;
+            &:hover {
+                background-position: 30px top;
+            
+            }
+        }
+        .titulo{
+            top: 35%;
+            h2{
+                font-size: 14px !important;
+                letter-spacing: 1.2px;
+            }
+        }
+        .TextComponent--lateral {
+            font-size: 16px !important;
+            line-height: 32px !important;
+        }
+        .TextComponent--intro {
+            font-size: 16px;
+        }
+        b.primera{
+            font-size: 10px;
+        }
+        .bt-center{
+            left: 0vw;
+        }
+
+        .ComponentBg.lazyloaded {
+            background-position: center;
+        }
+    }
+    @media @tablet {
+        #overlay {
+            top: 12vh !important;
+            .minusculas {
+                font-size: 2.3em !important;
+            }
+            .mayusculas {
+                font-size: 3.8em !important;
+            }
+        }
+    }
+    @media @desktop {
+        #overlay {
+            top: 20vh !important;
+            .minusculas {
+                font-size: 2.3em !important;
+            }
+            .mayusculas {
+                font-size: 3.8em !important;
+            }
+        }
+    }
+    @media @desktop-xl {
+      
+    }
+    @media @desktop, @desktop-xl {
+      
+    }
+}
+
+#elmuseo{
+    @media @mobile {
+       .expo {
+           background-color: @crema;
+           display: inline-block;
+           min-height: 100vh;
+           h1{
+            font-size: 2em !important;
+           }
+           .subtitle{
+            font-size: 1.2em;
+           }
+           p {
+                font-size: 1.4em;
+            }
+           .izq {
+                left: 20px;
+                padding: 0 60px 0 10px;
+                position: relative;
+            }
+           .izq .bloque {
+                font-size: 13px;
+                display: inline-block;
+                margin-bottom: 100px;
+            }
+       }
+    }
+}
