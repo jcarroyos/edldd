@@ -6,7 +6,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 
 //import IntroAnimada from './component/introAnimada';
 import data from  './component/data/data.json'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "./styles.css";
 
 // class Animada extends React.Component {
