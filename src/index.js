@@ -5,16 +5,18 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import data from  './component/data/data.json'
 
 import "./styles.css";
-
+import './animate.min.css'
 
 function Seccion(e){
 
   if (e.e.tipo === 'animada') {
     return (
         <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }} >
-        <div className="container">
-            <h3>{e.e.titulo} {e.e.tipo}</h3>  
-          </div> 
+          <div className="container">
+              <h3 className="animate__animated animate__backInLeft animate__delay-1s">{e.e.titulo}</h3>  
+              <code>{e.e.tipo}</code> <br/>
+              <code>{e.e.capas.uno}</code>  
+            </div> 
         </div>
       );
   } else if (e.e.tipo === 'slide'){
