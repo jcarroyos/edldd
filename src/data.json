@@ -1,13 +1,16 @@
 [   
     {
-        "tipo": "intro",
+        "tipo": "animada",
         "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
         "id": "00",
+        "movimiento": "animate__fadeInDown",
         "fondo": "img/1/capas/1.png",
         "capas": {
             "uno":"img/1/capas/1.png",
-            "dos":"img/imagen_1.png",
-            "tres":"img/imagen_1.png"
+            "dos":"img/1/capas/2.png",
+            "tres":"img/1/capas/3.png",
+            "cuatro":"img/1/capas/4.png",
+            "cinco":"img/1/capas/5.png"
         }
     },    
     {

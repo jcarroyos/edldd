@@ -1,3 +1,9 @@
+/*  Estilos EdLDD v.0.1
+    Juan Carlos Arroyo © 2020
+    jcarroyos@gmail.com */
+
+// colores base
+$blanco: #ffffff;
 // colores primarios
 $azul: #00CCCC;
 $azul_oscuro: #006D72;
@@ -11,16 +17,51 @@ $morado_claro: #E5B3FE;
 // degradados
 $ac_mo: linear-gradient(90deg, rgba(204,255,255,1) 0%, rgba(131,11,196,1) 100%);
 
+$color: #00ff80;
 
 // hacks mini.css
 .container{
-    background: $ac_mo;
+    z-index: 1;
+    position: absolute;
+}
+code{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    padding: 10px;
+    right: 0;
+    bottom: 0;
 }
 
 // hacks fullpage.js
 .section{
     background-size: cover;
     background-position: right;
+    background-color: $azul_oscuro;
 }
 
-h3 {color: $morado_oscuro;}
+h1 {color: $morado_oscuro;
+    padding: 10px;
+    background-color: rgba($blanco, 0.5);}
+
+div.page_Animation {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative; 
+    display: flex;  
+    justify-content: center;
+    flex-flow: column;
+    z-index: 0;
+    div.capa{
+        background-size: cover;
+        background-position: right;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        &_tres{
+            z-index: unset;
+        }
+    }
+}

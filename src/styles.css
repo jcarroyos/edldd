@@ -1,9 +1,46 @@
+@charset "UTF-8";
+/*  Estilos EdLDD v.0.1
+    Juan Carlos Arroyo © 2020
+    jcarroyos@gmail.com */
 .container {
-  background: linear-gradient(90deg, #ccffff 0%, #830bc4 100%); }
+  z-index: 1;
+  position: absolute; }
+
+code {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  padding: 10px;
+  right: 0;
+  bottom: 0; }
 
 .section {
   background-size: cover;
-  background-position: right; }
+  background-position: right;
+  background-color: #006D72; }
 
-h3 {
-  color: #830BC4; }
+h1 {
+  color: #830BC4;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+div.page_Animation {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  z-index: 0; }
+
+div.page_Animation div.capa {
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0; }
+
+div.page_Animation div.capa_tres {
+  z-index: unset; }
