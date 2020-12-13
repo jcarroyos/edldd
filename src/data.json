@@ -1,0 +1,74 @@
+[   
+    {
+        "tipo": "intro",
+        "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
+        "id": "00",
+        "fondo": "img/1/capas/1.png",
+        "capas": {
+            "uno":"img/1/capas/1.png",
+            "dos":"img/imagen_1.png",
+            "tres":"img/imagen_1.png"
+        }
+    },    
+    {
+
+        "tipo": "animada",
+        "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
+        "id": "01",
+        "fondo": "",
+        "capas": {
+            "uno":"img/1/capas/1.png",
+            "dos":"img/imagen_1.png",
+            "tres":"img/imagen_1.png"
+        }
+    },
+
+   {
+        "tipo": "slide",
+        "titulo": "Por qué una Escuela de Liderazgo",
+        "id": "02",
+        "fondo": "img/2/imagen_2.png"
+    },
+
+    {
+        "tipo": "normal",        
+        "titulo": "No olvides que",
+        "id": "03",
+        "fondo": "img/imagen_1.png"
+    },
+
+   {
+        "tipo": "animada",
+        "titulo": "Lidérate para liderar animada",
+        "id": "04",
+        "fondo": "img/3/imagen_3.png",
+        "capas": {
+            "uno":"img/imagen_1.png",
+            "dos":"img/imagen_1.png",
+            "tres":"img/imagen_1.png"
+        }          
+        
+    },
+
+    {
+        "tipo": "normal",        
+        "titulo": "El liderazgo directivo que promueve",
+        "id": "05",
+        "fondo": "img/imagen_4.png"
+    },
+
+   {
+        "tipo": "normal",        
+        "titulo": "Así las cosas, las prácticas de liderazgo son",
+        "id": "06",
+        "fondo": "img/imagen_5.png"
+    },
+
+    {
+        "tipo": "normal",        
+        "titulo": "Así las cosas, las prácticas de liderazgo son",
+        "id": "07",
+        "fondo": "img/imagen_6.png"
+    }
+
+]

@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "fullpage.js/vendors/scrolloverflow";
 import ReactFullpage from "@fullpage/react-fullpage";
-import data from  './component/data/data.json'
+import "mini.css";
+import 'animate.css';
+import data from './data.json'
 
 import "./styles.css";
-import './animate.min.css'
+
 
 function Seccion(e){
 
@@ -23,18 +25,30 @@ function Seccion(e){
     return (
         <div className="section">
           <div className="container">
-            <h3>{e.e.titulo} {e.e.tipo}</h3>
+            <h3>{e.e.titulo}</h3>
+            <code>{e.e.tipo}</code>
             { <img src={`${e.e.fondo?e.e.fondo:null}`} alt={`${e.e.titulo?e.e.titulo:null}`}/> }
           </div>
         </div>
       );
-  }else if (e.e.tipo === 'normal') {
+  } else if (e.e.tipo === 'normal') {
     return (
         <div className="section">
-          <h3>{e.e.titulo} {e.e.tipo}</h3>
+          <h3>{e.e.titulo}</h3>
+          <code>{e.e.tipo}</code>
           { <img src={`${e.e.fondo?e.e.fondo:null}`} alt={`${e.e.titulo?e.e.titulo:null}`}/> }
           
         </div>
+      );
+  } else if (e.e.tipo === 'intro') {
+    return (
+      <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }} >
+        <div className="container">
+            <h3 className="animate__animated animate__backInLeft animate__delay-1s">{e.e.titulo}</h3>  
+            <code>{e.e.tipo}</code> <br/>
+            <code>{e.e.capas.uno}</code>  
+          </div> 
+      </div>
       );
   }
 
@@ -43,7 +57,7 @@ function Seccion(e){
 
 const fullpageOptions = {
   licenseKey : '26AD47C0-F26141E8-921BC9B5-2C769097',
-  scrollingSpeed : '2000',
+  scrollingSpeed : '1000',
   sectionsColor: ["#282c34", "#ff5f45", "#0798ec","#282c34", "#ff5f45", "#0798ec","#282c34", "#ff5f45", "#0798ec"]
 };
 
