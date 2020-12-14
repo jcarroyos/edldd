@@ -60,7 +60,8 @@ function Seccion(e){
       );
   } else if (e.e.tipo === 'slide'){
     return (
-        <div className="section">
+        <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
+          <code>{e.e.id}</code>
           <div className="container">
             <div className="row">
               {e.e.slide.uno !== '' &&

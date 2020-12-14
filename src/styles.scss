@@ -5,20 +5,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // colores base
-$blanco: #ffffff;
+$blanco: rgb(255, 255, 255);
 $amarillo: rgb(230, 218, 53);
 // colores primarios
-$azul: #00CCCC;
-$azul_oscuro: #006D72;
-$azul_brillante: #99FFFF;
-$azul_claro: #CCFFFF;
+$azul: rgb(0, 204, 204);
+$azul_oscuro: rgb(0, 109, 114);
+$azul_brillante: rgb(153, 255, 255);
+$azul_claro: rgb(204, 255, 255);
 // colores secundarios
-$morado: #9A2EDB;
-$morado_oscuro: #830BC4;
-$morado_brillante: #C263F9;
-$morado_claro: #E5B3FE;
+$morado: rgb(154, 46, 219);
+$morado_oscuro: rgb(131, 11, 196);
+$morado_brillante: rgb(194, 99, 249);
+$morado_claro: rgb(229, 179, 254);
 // degradados
-$ac_mo: linear-gradient(90deg, rgba(204,255,255,1) 0%, rgba(131,11,196,1) 100%);
+$ac_mo: linear-gradient(45deg, rgba(204,255,255,0.4) 0%, rgba(131,11,196,0.4) 100%);
+$m_ao: linear-gradient(45deg, rgba($morado,0.4) 0%, rgba($azul_oscuro,0.4) 100%);
 
 
 // hacks mini.css
@@ -43,15 +44,25 @@ code{
 // hacks fullpage.js
 .section{
     background-size: cover;
-    background-position: right;
+    //background-position: right;
     background-color: $azul_oscuro;
 }
 #fp-nav ul li a span {
     background-color: $amarillo;
 }
+
+//slides
+.slide>.fp-tableCell>div{
+    background: $m_ao;
+    border-radius: 10px;
+    padding: 30px 20px;
+    color: $blanco;
+    font-size: large;
+    text-shadow: 1px 1px 2px $azul_oscuro; 
+}
 .fp-slidesNav{display: none;}
-.fp-controlArrow.fp-prev {left: 50px;}
-.fp-controlArrow.fp-next {right: 50px;}
+.fp-controlArrow.fp-prev {left: 40px;}
+.fp-controlArrow.fp-next {right: 40px;}
 video{
     position: absolute;
     right: 0;
