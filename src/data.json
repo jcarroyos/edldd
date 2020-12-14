@@ -1,76 +1,43 @@
 [   
     {
+        "id": "00",
+        "tipo": "solovideo",
+        "video_webm": "video/intro.webm",
+        "mp4webm": "video/intro.mp4"
+
+    },
+    {
+        "id": "01",
         "tipo": "animada",
         "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
-        "id": "00",
-        "movimiento": "animate__fadeInDown",
+        "texto1": "Has llegado a un sueño hecho realidad conjuntamente, una oportunidad para construir y transformar en comunidad a través de tu liderazgo.",
+        "texto2": "¿Por qué una Escuela de Liderazgo para Directivos Docentes en Colombia?",
         "fondo": "img/1/capas/1.png",
         "capas": {
             "uno":"img/1/capas/1.png",
             "dos":"img/1/capas/2.png",
             "tres":"img/1/capas/3.png",
             "cuatro":"img/1/capas/4.png",
-            "cinco":"img/1/capas/5.png"
-        }
-    },    
-    {
-        "tipo": "animada",
-        "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
-        "id": "01",
-        "fondo": "",
-        "capas": {
-            "uno":"img/1/capas/1.png",
-            "dos":"img/imagen_1.png",
-            "tres":"img/imagen_1.png"
+            "cinco":"img/1/capas/5.png",
+            "seis":""
         }
     },
-
-   {
-        "tipo": "slide",
-        "titulo": "Por qué una Escuela de Liderazgo",
+    {
         "id": "02",
-        "fondo": "img/2/imagen_2.png"
-    },
-
-    {
-        "tipo": "normal",        
-        "titulo": "No olvides que",
-        "id": "03",
-        "fondo": "img/imagen_1.png"
-    },
-
-   {
         "tipo": "animada",
-        "titulo": "Lidérate para liderar animada",
-        "id": "04",
-        "fondo": "img/3/imagen_3.png",
+        "titulo": "Lidérate para liderar",
+        "texto1": "¡La Escuela de Liderazgo, una oportunidad!",
+        "texto2": "",
+        "video": "",
+        "fondo": "img/2/capas/1.png",
         "capas": {
-            "uno":"img/imagen_1.png",
-            "dos":"img/imagen_1.png",
-            "tres":"img/imagen_1.png"
-        }          
-        
-    },
-
-    {
-        "tipo": "normal",        
-        "titulo": "El liderazgo directivo que promueve",
-        "id": "05",
-        "fondo": "img/imagen_4.png"
-    },
-
-   {
-        "tipo": "normal",        
-        "titulo": "Así las cosas, las prácticas de liderazgo son",
-        "id": "06",
-        "fondo": "img/imagen_5.png"
-    },
-
-    {
-        "tipo": "normal",        
-        "titulo": "Así las cosas, las prácticas de liderazgo son",
-        "id": "07",
-        "fondo": "img/imagen_6.png"
+            "uno":"img/2/capas/1.png",
+            "dos":"img/2/capas/2.png",
+            "tres":"img/2/capas/3.png",
+            "cuatro":"img/2/capas/4.png",
+            "cinco":"img/2/capas/5.png",
+            "seis":""
+        }
     }
 
 ]

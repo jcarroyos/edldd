@@ -4,6 +4,7 @@
 
 // colores base
 $blanco: #ffffff;
+$amarillo: rgb(230, 218, 53);
 // colores primarios
 $azul: #00CCCC;
 $azul_oscuro: #006D72;
@@ -17,7 +18,6 @@ $morado_claro: #E5B3FE;
 // degradados
 $ac_mo: linear-gradient(90deg, rgba(204,255,255,1) 0%, rgba(131,11,196,1) 100%);
 
-$color: #00ff80;
 
 // hacks mini.css
 .container{
@@ -39,6 +39,25 @@ code{
     background-position: right;
     background-color: $azul_oscuro;
 }
+#fp-nav ul li a span {
+    background-color: $amarillo;
+}
+video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:3;
+}
+
+// generales
 
 h1 {color: $morado_oscuro;
     padding: 10px;
@@ -59,9 +78,29 @@ div.page_Animation {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        top: 0;
+        /*
         &_tres{
             z-index: unset;
-        }
+        }*/
     }
 }
+
+
+// Responsive mixins 
+// Bootstrap breakpoints
+
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+   
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }

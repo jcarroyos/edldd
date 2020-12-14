@@ -19,6 +19,25 @@ code {
   background-position: right;
   background-color: #006D72; }
 
+#fp-nav ul li a span {
+  background-color: #e6da35; }
+
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3; }
+
 h1 {
   color: #830BC4;
   padding: 10px;
@@ -40,7 +59,7 @@ div.page_Animation div.capa {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0; }
-
-div.page_Animation div.capa_tres {
-  z-index: unset; }
+  /*
+        &_tres{
+            z-index: unset;
+        }*/ }
