@@ -1,42 +1,61 @@
 [   
     {
-        "id": "00",
+        "id": "0",
         "tipo": "solovideo",
         "video_webm": "video/intro.webm",
         "mp4webm": "video/intro.mp4"
 
     },
     {
-        "id": "01",
+        "id": "1",
         "tipo": "animada",
         "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
         "texto1": "Has llegado a un sueño hecho realidad conjuntamente, una oportunidad para construir y transformar en comunidad a través de tu liderazgo.",
         "texto2": "¿Por qué una Escuela de Liderazgo para Directivos Docentes en Colombia?",
-        "fondo": "img/1/capas/1.png",
         "capas": {
             "uno":"img/1/capas/1.png",
             "dos":"img/1/capas/2.png",
             "tres":"img/1/capas/3.png",
             "cuatro":"img/1/capas/4.png",
-            "cinco":"img/1/capas/5.png",
-            "seis":""
+            "cinco":"img/1/capas/5.png"
         }
     },
     {
-        "id": "02",
+        "id": "1.1",
+        "tipo": "slide",
+        "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
+        "texto1": "Has llegado a un sueño hecho realidad conjuntamente, una oportunidad para construir y transformar en comunidad a través de tu liderazgo.",
+        "slide": {
+            "uno":"El liderazgo directivo que promueve la EdLDD está enfocado al mejoramiento de aquellas condiciones que posibilitan un desarrollo integral de los estudiantes. Ten presente que todas las decisiones y acciones del equipo líder de un establecimiento educativo repercuten en el proyecto de vida de los estudiantes, y que dichas acciones y decisiones se consolidan en prácticas de liderazgo directivo, es decir, que se despliegan en el “hacer” cotidiano.",
+            "dos":"Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."
+        }
+    },
+    {
+        "id": "2",
         "tipo": "animada",
         "titulo": "Lidérate para liderar",
         "texto1": "¡La Escuela de Liderazgo, una oportunidad!",
         "texto2": "",
-        "video": "",
-        "fondo": "img/2/capas/1.png",
         "capas": {
             "uno":"img/2/capas/1.png",
             "dos":"img/2/capas/2.png",
             "tres":"img/2/capas/3.png",
             "cuatro":"img/2/capas/4.png",
-            "cinco":"img/2/capas/5.png",
-            "seis":""
+            "cinco":"img/2/capas/5.png"
+        }
+    },
+    {
+        "id": "3",
+        "tipo": "animada",
+        "titulo": "Componentes de la EdLDD",
+        "texto1": "a Escuela de Liderazgo para Directivos Docentes está conformada por 5 componentes que se articulan y relacionan entre sí aportando todos al fortalecimiento de las prácticas de liderazgo de los Directivos Docentes. Te invitamos a explorar lo que cada componente contribuirá en tu formación y desarrollo personal.",
+        "texto2": "",
+        "capas": {
+            "uno":"img/3/capas/1.png",
+            "dos":"img/3/capas/2.png",
+            "tres":"img/3/capas/3.png",
+            "cuatro":"img/3/capas/4.png",
+            "cinco":"img/3/capas/5.png"
         }
     }
 

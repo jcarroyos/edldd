@@ -14,18 +14,15 @@ function Seccion(e){
           <code>{e.e.id}</code>
           <div className="container">  
             <div className="row">
-                <div className="title col-sm-8 animate__animated animate__zoomIn animate__delay-1s">
+                <div className="textos">
                   {e.e.titulo !== '' &&
-                    <h1>{e.e.titulo}</h1>
+                    <h2 className="titulo hidden">{e.e.titulo}</h2>
                   }
-                  <div className="card animate__animated animate__fadeInUp animate__delay-2s">{e.e.texto1}</div>
+                  {e.e.texto1 !== '' &&
+                    <div className="card hidden">{e.e.texto1}</div>
+                  }
                   {e.e.texto2 !== '' &&
-                    <div className="card animate__animated animate__fadeInUp animate__delay-2s">{e.e.texto2}</div>
-                  }
-                  {e.e.video !== '' &&
-                    <div className="media">
-                      <iframe title="video" width="560" height="315" src={e.e.video} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
+                    <div className="card hidden">{e.e.texto2}</div>
                   }
                 </div>
             </div>
@@ -54,7 +51,7 @@ function Seccion(e){
         <div className="section">
           <code>{e.e.id}</code>
           {e.e.video !== '' &&
-          <video muted data-autoplay>
+          <video id={e.e.id} muted data-autoplay>
             <source data-src={e.e.video_webm} type="video/webm"/>
             <source data-src={e.e.video_mp4} type="video/mp4"/>
           </video>
@@ -65,9 +62,18 @@ function Seccion(e){
     return (
         <div className="section">
           <div className="container">
-            <h3>{e.e.titulo}</h3>
-            <code>{e.e.tipo}</code>
-            { <img src={`${e.e.fondo?e.e.fondo:null}`} alt={`${e.e.titulo?e.e.titulo:null}`}/> }
+            <div className="row">
+              {e.e.slide.uno !== '' &&
+                <div className="slide">
+                  <div className="col-sm-8 col-sm-offset-2">{e.e.slide.uno}</div>
+                </div>
+              }
+              {e.e.slide.dos !== '' &&
+                <div className="slide">
+                  <div className="col-sm-8 col-sm-offset-2">{e.e.slide.dos}</div>
+                </div>
+              }
+            </div>
           </div>
         </div>
       );
@@ -102,13 +108,20 @@ const fullpageOptions = {
   loopBottom: true,
   slidesNavigation: true,
   navigationPosition: 'right',
-  verticalCentered: true
+  verticalCentered: true,
+
+  //Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true
 };
 
 class FullpageWrapper extends React.Component {
 
   onLeave(origin, destination, direction) {
     //console.log("Leaving section " + origin.index);
+
+    // capas seccion animada
     [...document.querySelectorAll('.capa_uno')].map(x => 
         x.classList.add('hidden') +
         x.classList.remove('animate__animated', 'animate__fadeIn')
@@ -128,12 +141,27 @@ class FullpageWrapper extends React.Component {
     [...document.querySelectorAll('.capa_cinco')].map(x => 
       x.classList.add('hidden') +
       x.classList.remove('animate__animated', 'animate__slideInRight', 'animate__delay-4s')
+    );
+    // textos
+    [...document.querySelectorAll('.textos')].map(x => 
+      x.classList.remove('animate__animated', 'animate__fadeIn')
+    );
+    [...document.querySelectorAll('.titulo')].map(x =>
+      x.classList.add('hidden') + 
+      x.classList.remove('animate__animated', 'animate__fadeInDown')
+    );
+    [...document.querySelectorAll('.card')].map(x =>
+      x.classList.add('hidden') + 
+      x.classList.remove('animate__animated', 'animate__fadeInUp', 'animate__delay-4s')
     )
+
   }
   afterLoad(origin, destination, direction) {
     //console.log("After load: " + destination.index);
+
+    // capas seccion animada
     [...document.querySelectorAll('.capa_uno')].map(x => 
-      x.classList.remove('hidden') + 
+      x.classList.remove('hidden') +
       x.classList.add('animate__animated', 'animate__fadeIn')
     );
     [...document.querySelectorAll('.capa_dos')].map(x => 
@@ -151,7 +179,20 @@ class FullpageWrapper extends React.Component {
     [...document.querySelectorAll('.capa_cinco')].map(x => 
       x.classList.remove('hidden') +
       x.classList.add('animate__animated', 'animate__slideInRight', 'animate__delay-4s')
+    );
+    // textos
+    [...document.querySelectorAll('.textos')].map(x => 
+      x.classList.add('animate__animated', 'animate__fadeIn')
+    );
+    [...document.querySelectorAll('.titulo')].map(x =>
+      x.classList.remove('hidden') + 
+      x.classList.add('animate__animated', 'animate__fadeInDown')
+    );
+    [...document.querySelectorAll('.card')].map(x =>
+      x.classList.remove('hidden') + 
+      x.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-4s')
     )
+
   }
   render() {
     return (

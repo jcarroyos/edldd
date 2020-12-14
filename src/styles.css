@@ -2,6 +2,7 @@
 /*  Estilos EdLDD v.0.1
     Juan Carlos Arroyo © 2020
     jcarroyos@gmail.com */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .container {
   z-index: 1;
   position: absolute; }
@@ -14,6 +15,11 @@ code {
   right: 0;
   bottom: 0; }
 
+.card {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 0 10px 0px 10px; }
+
 .section {
   background-size: cover;
   background-position: right;
@@ -21,6 +27,15 @@ code {
 
 #fp-nav ul li a span {
   background-color: #e6da35; }
+
+.fp-slidesNav {
+  display: none; }
+
+.fp-controlArrow.fp-prev {
+  left: 50px; }
+
+.fp-controlArrow.fp-next {
+  right: 50px; }
 
 video {
   position: absolute;
@@ -38,10 +53,16 @@ video {
   /*cover video background */
   z-index: 3; }
 
-h1 {
-  color: #830BC4;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5); }
+html, * {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; }
+
+h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #006D72;
+  font-size: xxx-large;
+  padding: 10px; }
 
 div.page_Animation {
   width: 100vw;
@@ -52,13 +73,30 @@ div.page_Animation {
   justify-content: center;
   flex-flow: column;
   z-index: 0; }
-  div.page_Animation div.capa {
-    background-size: cover;
-    background-position: right;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    /*
+
+div.page_Animation div.capa {
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /*
         &_tres{
             z-index: unset;
         }*/ }
+
+.profile-pic {
+  float: left;
+  width: 250px; }
+
+@media only screen and (max-width: 320px) {
+  .profile-pic {
+    width: 100%; } }
+
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  .profile-pic {
+    width: 125px; } }
+
+@media only screen and (min-width: 1024px) {
+  .profile-pic {
+    float: none; } }
