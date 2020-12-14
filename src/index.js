@@ -63,17 +63,23 @@ function Seccion(e){
         <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
           <code>{e.e.id}</code>
           <div className="container">
-            <div className="row">
-              {e.e.slide.uno !== '' &&
-                <div className="slide">
-                  <div className="col-sm-8 col-sm-offset-2">{e.e.slide.uno}</div>
+            <div className="row"> 
+              {e.e.slide.map((item) =>(
+                  <div className="slide">
+                  <div className="col-sm-8 col-sm-offset-2"> {item.descripcion}
+                      <ul>
+                        {Boolean(item.lista)?
+                          item.lista.map((enlace)=>(   
+                            <li><a href={enlace.url}>{enlace.titulo}</a></li>                  
+                          
+                          ))
+                        :null}
+                    </ul>
+                  </div>
                 </div>
+              ))
               }
-              {e.e.slide.dos !== '' &&
-                <div className="slide">
-                  <div className="col-sm-8 col-sm-offset-2">{e.e.slide.dos}</div>
-                </div>
-              }
+             
             </div>
           </div>
         </div>

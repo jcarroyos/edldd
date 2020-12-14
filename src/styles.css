@@ -80,14 +80,13 @@ div.page_Animation {
   justify-content: center;
   flex-flow: column;
   z-index: 0; }
-
-div.page_Animation div.capa {
-  background-size: cover;
-  background-position: right;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  /*
+  div.page_Animation div.capa {
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /*
         &_tres{
             z-index: unset;
         }*/ }
@@ -95,15 +94,12 @@ div.page_Animation div.capa {
 .profile-pic {
   float: left;
   width: 250px; }
-
-@media only screen and (max-width: 320px) {
-  .profile-pic {
-    width: 100%; } }
-
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  .profile-pic {
-    width: 125px; } }
-
-@media only screen and (min-width: 1024px) {
-  .profile-pic {
-    float: none; } }
+  @media only screen and (max-width: 320px) {
+    .profile-pic {
+      width: 100%; } }
+  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    .profile-pic {
+      width: 125px; } }
+  @media only screen and (min-width: 1024px) {
+    .profile-pic {
+      float: none; } }

@@ -26,10 +26,11 @@
         "fondo": "img/elementos/abeja_nubes.jpg",
         "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
         "texto1": "Has llegado a un sueño hecho realidad conjuntamente, una oportunidad para construir y transformar en comunidad a través de tu liderazgo.",
-        "slide": {
-            "uno":"El liderazgo directivo que promueve la EdLDD está enfocado al mejoramiento de aquellas condiciones que posibilitan un desarrollo integral de los estudiantes. Ten presente que todas las decisiones y acciones del equipo líder de un establecimiento educativo repercuten en el proyecto de vida de los estudiantes, y que dichas acciones y decisiones se consolidan en prácticas de liderazgo directivo, es decir, que se despliegan en el “hacer” cotidiano.",
-            "dos":"Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."
-        }
+        "slide": [{
+            "descripcion":"El liderazgo directivo que promueve la EdLDD está enfocado al mejoramiento de aquellas condiciones que posibilitan un desarrollo integral de los estudiantes. Ten presente que todas las decisiones y acciones del equipo líder de un establecimiento educativo repercuten en el proyecto de vida de los estudiantes, y que dichas acciones y decisiones se consolidan en prácticas de liderazgo directivo, es decir, que se despliegan en el “hacer” cotidiano."},
+            {       
+            "descripcion":"Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."
+        }]
     },
     {
         "id": "2",
@@ -79,10 +80,34 @@
         "fondo": "img/elementos/escuela_paramo.jpg",
         "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
         "texto1": "Has llegado a un sueño hecho realidad conjuntamente, una oportunidad para construir y transformar en comunidad a través de tu liderazgo.",
-        "slide": {
-            "uno":"La autoformación se convierte en una potente herramienta que te permitirá dar respuesta a las exigencias de un mundo marcado por un constante y acelerado cambio en sus sistemas, paradigmas y procesos. Como Directivo Docente esta estrategia de formación te conducirá a un proceso autorreflexivo en lo cognitivo, socioemocional y valorativo.  En esta ruta eres responsable y protagonista de tu propia formación continua. Ten en cuenta que la estrategia de autoformación en la EdLDD se desarrolla a partir de cuatro elementos:",
-            "dos":"La mentoría te propone un desarrollo profesional a partir del relacionamiento con un colega, que ya tiene el conocimiento del quehacer del directivo producto de su experiencia y reflexión. La mentoría tiene un impacto relevante en tu formación como Directivo Docente pues su naturaleza dialógica y reflexiva aporta al mejoramiento de las prácticas tanto del mentor como del directivo en formación. Una propuesta de mentoría efectiva te permitirá espacios de aprendizaje constructivos y significativos.  Debes saber que la mentoría cuenta con escenarios y procesos de formación y autoformación permanente que permiten:"
-        }
+        "slide":  [
+                {
+                    "descripcion":"La autoformación se convierte en una potente herramienta que te permitirá dar respuesta a las exigencias de un mundo marcado por un constante y acelerado cambio en sus sistemas, paradigmas y procesos. Como Directivo Docente esta estrategia de formación te conducirá a un proceso autorreflexivo en lo cognitivo, socioemocional y valorativo.  En esta ruta eres responsable y protagonista de tu propia formación continua. Ten en cuenta que la estrategia de autoformación en la EdLDD se desarrolla a partir de cuatro elementos:",
+                    "lista":[
+                        {
+                            "url":"/",
+                            "titulo":"Autoconciencia"
+                        },
+                        {
+                            "url":"/",
+                            "titulo":"Manejo de emociones"
+                        }
+                    ]
+                },
+                {
+                    "descripcion":"La mentoría te propone un desarrollo profesional a partir del relacionamiento con un colega, que ya tiene el conocimiento del quehacer del directivo producto de su experiencia y reflexión. La mentoría tiene un impacto relevante en tu formación como Directivo Docente pues su naturaleza dialógica y reflexiva aporta al mejoramiento de las prácticas tanto del mentor como del directivo en formación. Una propuesta de mentoría efectiva te permitirá espacios de aprendizaje constructivos y significativos.  Debes saber que la mentoría cuenta con escenarios y procesos de formación y autoformación permanente que permiten:",
+                    "lista":[
+                        {
+                            "url":"/",
+                            "titulo":"Autoconciencia"
+                        },
+                        {
+                            "url":"/",
+                            "titulo":"Manejo de emociones"
+                        }
+                    ]
+                }
+        ]        
     }
 
 ]
