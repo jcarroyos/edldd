@@ -52,14 +52,13 @@ div.page_Animation {
   justify-content: center;
   flex-flow: column;
   z-index: 0; }
-
-div.page_Animation div.capa {
-  background-size: cover;
-  background-position: right;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  /*
+  div.page_Animation div.capa {
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /*
         &_tres{
             z-index: unset;
         }*/ }
