@@ -309,9 +309,6 @@
     },
     {"tipo": "animada",
         "titulo": "¿Quiénes pueden ser parte?",
-        "textos":[
-            {"parrafo": "Directivos Docentes rectores, coordinadores, directores rurales, supervisores y directores de núcleo"}
-        ],
         "capas": {
            "uno":"img/5/capas/1.png",
             "dos":"img/5/capas/2.png",
@@ -320,11 +317,99 @@
             "cinco":"img/5/capas/5.png"
         }
     },
+    {"tipo": "slide",
+        "titulo":"",
+        "fondo": "img/fondos/2.png",
+        "slide": [
+            {
+                "titulo": "Directivos Docentes rectores, coordinadores, directores rurales, supervisores y directores de núcleo",
+                "descripcion":"Son los protagonistas de la Escuela de Liderazgo. Constituyen la población beneficiaria, en tanto son los sujetos vinculados a las diferentes iniciativas que promueve la EdLDD a través de sus componentes y de la participación de los aliados, de cara al desarrollo de las prácticas de liderazgo que impacten finalmente en los aprendizajes de los estudiantes."
+            },
+            {
+                "titulo": "Ministerio de Educación Nacional",
+                "descripcion":"Desde el nivel nacional y en el marco del Plan de Desarrollo, lidera la estructuración de la Escuela de Liderazgo, acompaña su puesta en marcha para la apropiación en el ámbito local y realiza seguimiento y evaluación, en el marco de la política de calidad educativa. Así mismo, pone a disposición de los territorios las ofertas de los diferentes componentes de la Escuela para que estos se sumen a la iniciativa, proporcionándoles los énfasis que apliquen acorde con los distintos contextos.   "
+            },
+            {
+                "titulo": "Secretarías de Educación",
+                "descripcion":"Las instituciones de Educación Superior y otras Organizaciones de la Sociedad Civil que tengan interés y propuestas sinérgicas con la EdLDD:  Constituyen el eje articulador y actor central para viabilizar la EdLDD en territorio, a través de sus planes de formación y bienestar para Directivos Docentes. En esta vía, desde las secretarías:",
+                "lista":[
+                    {"texto":"Se identifican las necesidades de formación y desarrollo personal y profesional de los Directivos Docentes."},
+                    {"texto":"Se conocen y caracterizan las ofertas de las universidades y aliados territoriales y, "},
+                    {"texto":"Se generan sinergias, alianzas y convenios para su puesta en marcha.  "}
+                ]
+            },
+            {
+                "titulo": "Secretarías de Educación",
+                "descripcion":"Debes tener en cuenta que las Secretarias de Educación logran articular las áreas de bienestar y calidad educativa, a fin de lograr el equilibrio que se espera en la Escuela de Liderazgo entre formación profesional y desarrollo personal de los Directivos Docentes. "
+            },
+            {
+                "titulo": "Oferentes de formación",
+                "descripcion":"Forman parte de los oferentes las universidades, programas específicos del MEN como PTA, el BID, la empresa privada, las organizaciones no gubernamentales, entre otros, quienes conforman la oferta formativa a través de procesos formales y no formales de educación inicial, continua o avanzada. Es importante señalar que la EdLDD como instancia articuladora, logra que dichas ofertas de formación pasen por el tamiz de la impronta de la Escuela, orientada a transformar las prácticas de liderazgo de los Directivos Docentes. "
+            },
+            {
+                "titulo": "Cajas de compensación",
+                "descripcion":"Son un aliado muy importante para la Escuela, por cuanto ofrecen y desarrollan procesos orientados a la formación y especialmente al bienestar de los Directivos Docentes que pueden aportar a los planes de bienestar trazados por las secretarías. Es necesario que desde las Secretarías de Educación se identifiquen los aspectos fundamentales en los que se alinean estos planes de bienestar y desarrollo personal con las apuestas de la EdLDD para articularos en sintonía. "
+            },
+            {
+                "titulo": "Otros aliados regionales",
+                "descripcion":"Es tarea de las secretarías, con el acompañamiento del MEN, identificar otros posibles aliados regionales del sector público o privado que cuenten con procesos afines a la EdLDD, de manera que se constituyan las alianzas y sinergias necesarias para articular esfuerzos en pro de la formación, bienestar y trabajo en redes de los líderes de nuestros establecimientos educativos.  "
+            }
+        ]
+    },
     {"tipo": "normal",
         "textos":[
-            {"parrafo": "Son los protagonistas de la Escuela de Liderazgo. Constituyen la población beneficiaria, en tanto son los sujetos vinculados a las diferentes iniciativas que promueve la EdLDD a través de sus componentes y de la participación de los aliados, de cara al desarrollo de las prácticas de liderazgo que impacten finalmente en los aprendizajes de los estudiantes."}
+            {"parrafo": "Con el propósito de lograr verdaderas sinergias y “hacer Escuela”, sumando desde diferentes potencialidades y experiencias, resulta necesario que los diferentes aliados, tamicen y reorienten su experiencia y saber acumulado en clave de los tipos de liderazgo y de las prácticas de liderazgo que se promueven y fortalecen en la Escuela."}
             ],
         "fondo": "img/5/capas/1.png"
+    },
+    {"tipo": "animada",
+        "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
+        "textos":[
+            {"parrafo": "Si tienes una historia que contar, únete con tu voz. *** Zona en construcción ***"}
+        ],
+        "capas": {
+           "uno":"img/1/capas/1.png"
+        }
+    },
+    {"tipo": "animada",
+        "titulo": "Paisaje sonoro: Escuela de Liderazgo, semillero de testimonio significativos",
+        "textos":[
+            {"parrafo": "La Escuela de Liderazgo tiene dentro de sus intencionalidades el escuchar tu voz y de potenciar todo el trabajo que tanto tú como otros Directivos Docentes están haciendo en las regiones. "}
+        ],
+        "capas": {
+            "uno":"img/7/capas/1.png",
+             "dos":"img/7/capas/2.png",
+             "tres":"img/7/capas/3.png",
+             "cuatro":"img/7/capas/4.png",
+             "cinco":"img/7/capas/5.png"
+         }
+    }
+    ,
+    {"tipo": "animada",
+        "titulo": "Todos Somos Escuela",
+        "textos":[
+            {"parrafo": "Activando la conversación a través de la experiencia de Directivos Docentes "}
+        ],
+        "capas": {
+            "uno":"img/8/capas/1.png",
+             "dos":"img/8/capas/2.png",
+             "tres":"img/8/capas/3.png",
+             "cuatro":"img/8/capas/4.png",
+             "cinco":"img/8/capas/5.png"
+         }
+    }
+    ,
+    {"tipo": "animada",
+        "textos":[
+            {"parrafo": "Antes de que te vayas, haz clic aquí y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "}
+        ],
+        "capas": {
+            "uno":"img/9/capas/1.png",
+             "dos":"img/9/capas/2.png",
+             "tres":"img/9/capas/3.png",
+             "cuatro":"img/9/capas/4.png",
+             "cinco":"img/9/capas/5.png"
+         }
     }
 
 ]
