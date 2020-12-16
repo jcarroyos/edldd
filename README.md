@@ -1,2 +1,2 @@
 # edldd
-Escuela de Liderazgo para Directivos Docentes EdLD
+Escuela de Liderazgo para Directivos Docentes EdLD.
