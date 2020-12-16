@@ -110,16 +110,6 @@ function Seccion(e){
           
         </div>
       );
-  } else if (e.e.tipo === 'intro') {
-    return (
-      <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }} >
-        <div className="container">
-            <h3 className="animate__animated animate__backInLeft animate__delay-1s">{e.e.titulo}</h3>  
-            <code>{e.e.tipo}</code> <br/>
-            <code>{e.e.capas.uno}</code>  
-          </div> 
-      </div>
-      );
   }
 }
 
