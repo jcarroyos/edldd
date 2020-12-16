@@ -7,23 +7,26 @@ import 'animate.css';
 import data from './data.json'
 import "./styles.css";
 
+
+
 function Seccion(e){
   if (e.e.tipo === 'animada') {
     return (
-        <div className="section">
-          <code>{e.e.id}</code>
+        <div className="section animada">
           <div className="container">  
             <div className="row">
-                <div className="textos">
+                <div className="textos col-sm-10">
                   {e.e.titulo !== '' &&
                     <h2 className="titulo hidden">{e.e.titulo}</h2>
                   }
-                  {e.e.texto1 !== '' &&
-                    <div className="card hidden">{e.e.texto1}</div>
+                  {e.e.subtitulo !== '' &&
+                    <h3 className="subtitulo hidden">{e.e.subtitulo}</h3>
                   }
-                  {e.e.texto2 !== '' &&
-                    <div className="card hidden">{e.e.texto2}</div>
-                  }
+                  {Boolean(e.e.textos)?
+                    e.e.textos.map((t)=>(   
+                      <div className="txt" key={t.parrafo}>{t.parrafo}</div>
+                    ))
+                  :null}
                 </div>
             </div>
           </div>
@@ -49,11 +52,10 @@ function Seccion(e){
   } else if (e.e.tipo === 'solovideo'){
     return (
         <div className="section">
-          <code>{e.e.id}</code>
           {e.e.video !== '' &&
-          <video id={e.e.id} muted data-autoplay>
-            <source data-src={e.e.video_webm} type="video/webm"/>
+          <video id={e.e.index} data-autoplay>
             <source data-src={e.e.video_mp4} type="video/mp4"/>
+            <source data-src={e.e.video_webm} type="video/webm"/>
           </video>
           }
         </div>
@@ -61,35 +63,40 @@ function Seccion(e){
   } else if (e.e.tipo === 'slide'){
     return (
         <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
-          <code>{e.e.id}</code>
           <div className="container">
             <div className="row"> 
-              {e.e.slide.map((item) =>(
-                  <div className="slide">
-                  <div className="col-sm-8 col-sm-offset-2"> {item.descripcion}
-                      <ul>
-                        {Boolean(item.lista)?
-                          item.lista.map((enlace)=>(   
-                            <li><a href={enlace.url}>{enlace.titulo}</a></li>                  
-                          
-                          ))
-                        :null}
+              {e.e.slide.map((item, index) =>(
+                  <div key={index} className="slide">
+                  <div className="col-sm-8 col-sm-offset-2">
+                    <p>{item.descripcion}</p>
+                    <ul>
+                      {Boolean(item.lista)?
+                        item.lista.map((li)=>(   
+                          <li key={li.texto}>{li.texto}</li>
+                        )):null}
                     </ul>
                   </div>
                 </div>
               ))
               }
-             
             </div>
           </div>
         </div>
       );
   } else if (e.e.tipo === 'normal') {
     return (
-        <div className="section">
-          <h3>{e.e.titulo}</h3>
-          <code>{e.e.tipo}</code>
-          { <img src={`${e.e.fondo?e.e.fondo:null}`} alt={`${e.e.titulo?e.e.titulo:null}`}/> }
+        <div className="section normal" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
+            <div className="container">
+            <div className="row"> 
+              <div className="textos col-sm-10">
+                {Boolean(e.e.textos)?
+                  e.e.textos.map((t)=>(   
+                    <div className="parrafo" key={t.parrafo}>{t.parrafo}</div>
+                  ))
+                :null}
+              </div>
+            </div>
+          </div>
           
         </div>
       );
@@ -116,11 +123,8 @@ const fullpageOptions = {
   slidesNavigation: true,
   navigationPosition: 'right',
   verticalCentered: true,
-
   //Accessibility
-	keyboardScrolling: true,
-	animateAnchor: true,
-	recordHistory: true
+	keyboardScrolling: true
 };
 
 class FullpageWrapper extends React.Component {
@@ -157,9 +161,17 @@ class FullpageWrapper extends React.Component {
       x.classList.add('hidden') + 
       x.classList.remove('animate__animated', 'animate__fadeInDown')
     );
-    [...document.querySelectorAll('.card')].map(x =>
+    [...document.querySelectorAll('.subtitulo')].map(x =>
+      x.classList.add('hidden') + 
+      x.classList.remove('animate__animated', 'animate__fadeInDown')
+    );
+    [...document.querySelectorAll('.textos > .txt')].map(x =>
       x.classList.add('hidden') + 
       x.classList.remove('animate__animated', 'animate__fadeInUp', 'animate__delay-4s')
+    );
+    [...document.querySelectorAll('section.normal .textos > .txt')].map(x =>
+      x.classList.add('hidden') + 
+      x.classList.remove('animate__animated', 'animate__fadeInUp', 'animate__delay-1s')
     )
 
   }
@@ -195,9 +207,17 @@ class FullpageWrapper extends React.Component {
       x.classList.remove('hidden') + 
       x.classList.add('animate__animated', 'animate__fadeInDown')
     );
-    [...document.querySelectorAll('.card')].map(x =>
+    [...document.querySelectorAll('.subtitulo')].map(x =>
+      x.classList.remove('hidden') + 
+      x.classList.add('animate__animated', 'animate__fadeInDown')
+    );
+    [...document.querySelectorAll('.textos > .txt')].map(x =>
       x.classList.remove('hidden') + 
       x.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-4s')
+    );
+    [...document.querySelectorAll('section.normal .textos > .txt')].map(x =>
+      x.classList.remove('hidden') + 
+      x.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s')
     )
 
   }
@@ -210,8 +230,8 @@ class FullpageWrapper extends React.Component {
         render={({ state, fullpageApi }) => {
           return (
             <div>
-            {data.map((e)=>(
-              <Seccion e={e} key={e.id}/>
+            {data.map((e, index)=>(
+              <Seccion e={e} key={index}/>
             ))}
           </div>
           );

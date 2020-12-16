@@ -18,22 +18,56 @@ code {
 .card {
   padding: 10px;
   margin: 20px;
-  border-radius: 0 10px 0px 10px; }
+  border-radius: 0 10px 0px 10px;
+  font-size: x-large;
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .section {
   background-size: cover;
   background-color: #006d72; }
+
+.section.normal .fp-tableCell {
+  vertical-align: unset; }
+
+.section.normal .textos {
+  position: relative;
+  top: 20vh;
+  left: 10vw;
+  width: 80vw; }
+
+.section.normal .textos .parrafo {
+  font-size: x-large;
+  padding: 20px;
+  margin: 20px 10px;
+  font-weight: 300;
+  line-height: 2em; }
+
+.section.animada .textos {
+  position: relative;
+  left: 30vw;
+  width: 70vw; }
+
+.section.animada .textos .txt {
+  font-size: large;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin: 20px 10px;
+  font-weight: 300;
+  line-height: 2em;
+  border-radius: 0 20px 0 20px; }
 
 #fp-nav ul li a span {
   background-color: #e6da35; }
 
 .slide > .fp-tableCell > div {
   background: linear-gradient(45deg, rgba(154, 46, 219, 0.4) 0%, rgba(0, 109, 114, 0.4) 100%);
-  border-radius: 10px;
-  padding: 30px 20px;
+  border-radius: 0 20px 0 20px;
+  padding: 40px;
   color: white;
   font-size: large;
-  text-shadow: 1px 1px 2px #006d72; }
+  text-shadow: 1px 1px 2px #006d72;
+  font-weight: 300; }
 
 .fp-slidesNav {
   display: none; }
@@ -80,26 +114,14 @@ div.page_Animation {
   justify-content: center;
   flex-flow: column;
   z-index: 0; }
-  div.page_Animation div.capa {
-    background-size: cover;
-    background-position: right;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    /*
+
+div.page_Animation div.capa {
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /*
         &_tres{
             z-index: unset;
         }*/ }
-
-.profile-pic {
-  float: left;
-  width: 250px; }
-  @media only screen and (max-width: 320px) {
-    .profile-pic {
-      width: 100%; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
-    .profile-pic {
-      width: 125px; } }
-  @media only screen and (min-width: 1024px) {
-    .profile-pic {
-      float: none; } }

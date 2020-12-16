@@ -39,6 +39,9 @@ code{
     padding: 10px;
     margin: 20px;
     border-radius: 0 10px 0px 10px;
+    font-size: x-large;
+    font-weight: 200;
+    background-color: rgba($blanco, 0.7);
 }
 
 // hacks fullpage.js
@@ -46,6 +49,40 @@ code{
     background-size: cover;
     //background-position: right;
     background-color: $azul_oscuro;
+    &.normal{
+        .fp-tableCell{
+            vertical-align: unset;
+        }
+        .textos {
+            position: relative;
+            top: 20vh;
+            left: 10vw;
+            width: 80vw;
+            .parrafo {
+                font-size: x-large;
+                padding: 20px;
+                margin: 20px 10px;
+                font-weight: 300;
+                line-height: 2em;
+            }
+        }
+    }
+    &.animada{
+        .textos{
+            position: relative;
+            left: 30vw;
+            width: 70vw;
+            .txt {
+                font-size: large;
+                background: rgba($blanco, 0.5);
+                padding: 20px;
+                margin: 20px 10px;
+                font-weight: 300;
+                line-height: 2em;
+                border-radius: 0 20px 0 20px;
+            }
+        }
+    }
 }
 #fp-nav ul li a span {
     background-color: $amarillo;
@@ -54,11 +91,12 @@ code{
 //slides
 .slide>.fp-tableCell>div{
     background: $m_ao;
-    border-radius: 10px;
-    padding: 30px 20px;
-    color: $blanco;
+    border-radius: 0 20px 0 20px;
+    padding: 40px;
+    color: white;
     font-size: large;
-    text-shadow: 1px 1px 2px $azul_oscuro; 
+    text-shadow: 1px 1px 2px #006d72;
+    font-weight: 300;
 }
 .fp-slidesNav{display: none;}
 .fp-controlArrow.fp-prev {left: 40px;}
@@ -92,6 +130,8 @@ h2 {color: $blanco;
     font-size: xxx-large;
     padding: 10px;}
 
+
+
 div.page_Animation {
     width: 100vw;
     height: 100vh;
@@ -112,29 +152,4 @@ div.page_Animation {
             z-index: unset;
         }*/
     }
-}
-
-
-// Responsive mixins 
-$break-small: 320px;
-$break-large: 1024px;
-
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) { @content; }
-  }
-}
-
-.profile-pic {
-  float: left;
-  width: 250px;
-  @include respond-to(handhelds) { width: 100% ;}
-  @include respond-to(medium-screens) { width: 125px; }
-  @include respond-to(wide-screens) { float: none; }
 }
