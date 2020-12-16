@@ -62,12 +62,14 @@ function Seccion(e){
       );
   } else if (e.e.tipo === 'slide'){
     return (
-        <div className="section" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
+        <div className="section carousel" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
           <div className="container">
             <div className="row"> 
+            {e.e.titulo !== '' && <h3 className="titulo">{e.e.titulo}</h3>}
               {e.e.slide.map((item, index) =>(
                   <div key={index} className="slide">
                   <div className="col-xs-12 col-sm-8 col-md-offset-2">
+                    <h4>{item.titulo}</h4>
                     <p>{item.descripcion}</p>
                     <ul>
                       {Boolean(item.lista)?

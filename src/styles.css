@@ -27,6 +27,16 @@ code {
   background-size: cover;
   background-color: #006d72; }
 
+.section h2 {
+  color: white;
+  text-shadow: 1px 1px 2px #006d72;
+  font-size: xxx-large;
+  padding: 10px; }
+
+@media (max-width: 767px) {
+  .section h2 {
+    font-size: large; } }
+
 .section.normal .fp-tableCell {
   vertical-align: unset; }
 
@@ -42,7 +52,7 @@ code {
   margin: 20px 10px;
   font-weight: 300;
   line-height: 2em;
-  text-shadow: 3px 1px 5px white; }
+  text-shadow: 1px 1px 2px white; }
 
 @media (max-width: 767px) {
   .section.normal .textos .parrafo {
@@ -77,23 +87,68 @@ code {
     line-height: 1.5em;
     font-weight: 400; } }
 
-#fp-nav ul li a span {
+.section.animada .page_Animation {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  z-index: 0; }
+
+.section.animada .page_Animation div.capa {
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /*
+                &_tres{
+                    z-index: unset;
+                }*/ }
+
+.section.carousel h2 {
+  color: white;
+  text-shadow: 1px 1px 2px #006d72;
+  font-size: xxx-large;
+  padding: 10px; }
+
+@media (max-width: 767px) {
+  .section.carousel h2 {
+    font-size: medium; } }
+
+.section.carousel h3 {
+  position: relative;
+  width: fit-content;
+  margin: 20px auto;
+  display: block;
+  top: 10vh;
+  color: white;
+  font-size: xx-large;
+  font-weight: 200; }
+
+@media (max-width: 767px) {
+  .section.carousel h3 {
+    font-size: large; } }
+
+.section.carousel #fp-nav ul li a span {
   background-color: #e6da35; }
 
-.slide p {
+.section.carousel .slide p {
   font-size: large;
   font-weight: 200;
   margin-bottom: 40px;
   line-height: 2em; }
 
 @media (max-width: 767px) {
-  .slide p {
+  .section.carousel .slide p {
     font-size: small;
     font-weight: 200;
     margin-bottom: 0px;
     line-height: 1.5em; } }
 
-.slide > .fp-tableCell > div {
+.section.carousel .slide > .fp-tableCell > div {
   background: linear-gradient(45deg, rgba(154, 46, 219, 0.4) 0%, rgba(0, 109, 114, 0.4) 100%);
   border-radius: 0 20px 0 20px;
   padding: 40px;
@@ -102,25 +157,25 @@ code {
   text-shadow: 1px 1px 2px #00cccc;
   font-weight: 300; }
 
-.fp-slidesNav {
+.section.carousel .fp-slidesNav {
   width: fit-content; }
 
-.fp-controlArrow.fp-prev {
+.section.carousel .fp-controlArrow.fp-prev {
   left: 40px; }
 
 @media (max-width: 767px) {
-  .fp-controlArrow.fp-prev {
+  .section.carousel .fp-controlArrow.fp-prev {
     display: none; } }
 
-.fp-controlArrow.fp-next {
+.section.carousel .fp-controlArrow.fp-next {
   right: 40px; }
 
 @media (max-width: 767px) {
-  .fp-controlArrow.fp-next {
+  .section.carousel .fp-controlArrow.fp-next {
     display: none; } }
 
 @media (max-width: 767px) {
-  #fp-nav.fp-right {
+  .section.carousel #fp-nav.fp-right {
     right: 5px; } }
 
 video {
@@ -148,34 +203,3 @@ html, * {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%; }
-
-h2 {
-  color: white;
-  text-shadow: 1px 1px 2px #006d72;
-  font-size: xxx-large;
-  padding: 10px; }
-
-@media (max-width: 767px) {
-  h2 {
-    font-size: large; } }
-
-div.page_Animation {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  z-index: 0; }
-
-div.page_Animation div.capa {
-  background-size: cover;
-  background-position: right;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  /*
-        &_tres{
-            z-index: unset;
-        }*/ }

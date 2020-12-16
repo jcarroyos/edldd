@@ -67,10 +67,20 @@ code{
 }
 
 // hacks fullpage.js
-.section{
+.section {
     background-size: cover;
     //background-position: right;
     background-color: $azul_oscuro;
+    h2 {
+    color: $blanco;
+    //background-color: rgba($blanco, 0.5);
+    text-shadow: 1px 1px 2px $azul_oscuro; 
+    font-size: xxx-large;
+    padding: 10px;
+    @include breakpoint(xs) {
+        font-size: large;
+        }
+    }
     &.normal{
         .fp-tableCell{
             vertical-align: unset;
@@ -86,7 +96,7 @@ code{
                 margin: 20px 10px;
                 font-weight: 300;
                 line-height: 2em;
-                text-shadow: 3px 1px 5px $blanco;
+                text-shadow: 1px 1px 2px $blanco;
                 @include breakpoint(xs) {
                     font-size: medium;
                     line-height: 1em;
@@ -122,54 +132,103 @@ code{
             }
         }
     }
-}
-#fp-nav ul li a span {
-    background-color: $amarillo;
-}
-
-//slides
-.slide{
-    p {
-        font-size: large;
-        font-weight: 200;
-        margin-bottom: 40px;
-        line-height: 2em;
-        @include breakpoint(xs) {
-            font-size: small;
+    &.animada{
+        .page_Animation {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            position: relative; 
+            display: flex;  
+            justify-content: center;
+            flex-flow: column;
+            z-index: 0;
+            div.capa{
+                background-size: cover;
+                background-position: right;
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                /*
+                &_tres{
+                    z-index: unset;
+                }*/
+            }
+        }
+    }
+    &.carousel {
+        h2 {
+            color: $blanco;
+            //background-color: rgba($blanco, 0.5);
+            text-shadow: 1px 1px 2px $azul_oscuro; 
+            font-size: xxx-large;
+            padding: 10px;
+            @include breakpoint(xs) {
+                font-size: medium;
+            }
+        }
+        h3 {
+            position: relative;
+            width: fit-content;
+            margin: 20px auto;
+            display: block;
+            top: 10vh;
+            color: $blanco;
+            font-size: xx-large;
             font-weight: 200;
-            margin-bottom: 0px;
-            line-height: 1.5em;
-          }
-    }
-    &>.fp-tableCell>div{
-        background: $m_ao;
-        border-radius: 0 20px 0 20px;
-        padding: 40px;
-        color: white;
-        font-size: large;
-        text-shadow: 1px 1px 2px $azul;
-        font-weight: 300;
+            @include breakpoint(xs) {
+                font-size: large;
+            }
+        }
+        #fp-nav ul li a span {
+            background-color: $amarillo;
+        }
+        .slide{
+            p {
+                font-size: large;
+                font-weight: 200;
+                margin-bottom: 40px;
+                line-height: 2em;
+                @include breakpoint(xs) {
+                    font-size: small;
+                    font-weight: 200;
+                    margin-bottom: 0px;
+                    line-height: 1.5em;
+                  }
+            }
+            &>.fp-tableCell>div{
+                background: $m_ao;
+                border-radius: 0 20px 0 20px;
+                padding: 40px;
+                color: white;
+                font-size: large;
+                text-shadow: 1px 1px 2px $azul;
+                font-weight: 300;
+            }
+        }
+        
+        .fp-slidesNav {
+            width: fit-content;
+        }
+        .fp-controlArrow.fp-prev {left: 40px;
+            @include breakpoint(xs) {
+                display: none;
+            }
+        }
+        .fp-controlArrow.fp-next {right: 40px;
+            @include breakpoint(xs) {
+                display: none;
+            }
+        }
+        #fp-nav.fp-right {
+            @include breakpoint(xs) {
+                right: 5px;
+            }
+        }
+
     }
 }
 
-.fp-slidesNav {
-    width: fit-content;
-}
-.fp-controlArrow.fp-prev {left: 40px;
-    @include breakpoint(xs) {
-        display: none;
-    }
-}
-.fp-controlArrow.fp-next {right: 40px;
-    @include breakpoint(xs) {
-        display: none;
-    }
-}
-#fp-nav.fp-right {
-    @include breakpoint(xs) {
-        right: 5px;
-    }
-}
+
 video{
     position: absolute;
     right: 0;
@@ -195,39 +254,5 @@ html, * {
     font-family: 'Work Sans', sans-serif;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
-}
-
-h2 {color: $blanco;
-    //background-color: rgba($blanco, 0.5);
-    text-shadow: 1px 1px 2px $azul_oscuro; 
-    font-size: xxx-large;
-    padding: 10px;
-    @include breakpoint(xs) {
-        font-size: large;
-      }
-    }
-
-
-
-div.page_Animation {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: relative; 
-    display: flex;  
-    justify-content: center;
-    flex-flow: column;
-    z-index: 0;
-    div.capa{
-        background-size: cover;
-        background-position: right;
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        /*
-        &_tres{
-            z-index: unset;
-        }*/
-    }
 }
 
