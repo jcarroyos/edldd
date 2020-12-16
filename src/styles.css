@@ -26,36 +26,31 @@ code {
 .section {
   background-size: cover;
   background-color: #006d72; }
-
-.section.normal .fp-tableCell {
-  vertical-align: unset; }
-
-.section.normal .textos {
-  position: relative;
-  top: 20vh;
-  left: 10vw;
-  width: 80vw; }
-
-.section.normal .textos .parrafo {
-  font-size: x-large;
-  padding: 20px;
-  margin: 20px 10px;
-  font-weight: 300;
-  line-height: 2em; }
-
-.section.animada .textos {
-  position: relative;
-  left: 30vw;
-  width: 70vw; }
-
-.section.animada .textos .txt {
-  font-size: large;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  margin: 20px 10px;
-  font-weight: 300;
-  line-height: 2em;
-  border-radius: 0 20px 0 20px; }
+  .section.normal .fp-tableCell {
+    vertical-align: unset; }
+  .section.normal .textos {
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+    width: 80vw; }
+    .section.normal .textos .parrafo {
+      font-size: x-large;
+      padding: 20px;
+      margin: 20px 10px;
+      font-weight: 300;
+      line-height: 2em; }
+  .section.animada .textos {
+    position: relative;
+    left: 30vw;
+    width: 70vw; }
+    .section.animada .textos .txt {
+      font-size: large;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      margin: 20px 10px;
+      font-weight: 300;
+      line-height: 2em;
+      border-radius: 0 20px 0 20px; }
 
 #fp-nav ul li a span {
   background-color: #e6da35; }
@@ -114,14 +109,13 @@ div.page_Animation {
   justify-content: center;
   flex-flow: column;
   z-index: 0; }
-
-div.page_Animation div.capa {
-  background-size: cover;
-  background-position: right;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  /*
+  div.page_Animation div.capa {
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /*
         &_tres{
             z-index: unset;
         }*/ }
