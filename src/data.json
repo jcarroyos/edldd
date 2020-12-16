@@ -105,7 +105,7 @@
         "fondo": "img/fondos/8.png"
     },
     {"tipo": "slide",
-        "fondo": "img/fondos/2.png",
+        "fondo": "img/fondos/4.png",
         "titulo": "Derroteros de actuación",
         "slide": [
             {
@@ -134,7 +134,7 @@
         "fondo": "img/fondos/6.png"
     },
     {"tipo": "slide",
-        "fondo": "img/fondos/2.png",
+        "fondo": "img/fondos/5.png",
         "slide": [
             {
                 "descripcion":"Los conocimientos y saberes que debes retroalimentar constantemente se agrupan en tres:",
@@ -174,7 +174,7 @@
     },
     {"tipo": "slide",
         "titulo":"1. Bienestar y gestión personal",
-        "fondo": "img/fondos/4.png",
+        "fondo": "img/fondos/6.png",
         "slide": [
             {
                 "descripcion":"Este componente tiene presente que el liderazgo depende sustancialmente de una serie de habilidades personales que llevan a considerar el bienestar (emocional y físico) como una pieza clave para su fortalecimiento. Esto más allá de simples alusiones a mantener siempre una actitud positiva, se relaciona con la autoconsciencia frente a la complejidad de situaciones que se presentan en la cotidianidad de la escuela."
@@ -189,7 +189,7 @@
     },
     {"tipo": "slide",
         "titulo":"2. Formación",
-        "fondo": "img/fondos/3.png",
+        "fondo": "img/fondos/7.png",
         "slide": [
             {
                 "descripcion":"Este proceso para la Escuela de Liderazgo implica, por un lado, estar cerca a los directivos, escucharlos, cuestionarlos para motivar un actuar distinto. Y por otro lado, poner en marcha acciones específicas, sistemáticas, diversas y articuladas que estén previamente diseñadas y concertadas entre el acompañado y el acompañante. "
@@ -208,7 +208,7 @@
     },
     {"tipo": "slide",
         "titulo":"3. Redes y comunidades de aprendizaje",
-        "fondo": "img/fondos/7.png",
+        "fondo": "img/fondos/10.png",
         "slide": [
             {
                 "descripcion":"Las redes surgen, como una respuesta autónoma y deliberada ante las necesidades de intercambio de experiencias, comunicación y formación entre los directivos docentes. En efecto, el aislamiento propio de la función directiva que ocupas, sumado a otras demandas y exigencias de tu rol (administración de recursos, manejo de planta docente, garantía de derechos, etc.) configuran diversos tipos de redes para dar orientación y asesoría a diferentes desafíos que enfrentas a diario, en lógica de solidaridad y apoyo mutuo entre pares. "
@@ -220,7 +220,7 @@
     },
     {"tipo": "slide",
         "titulo":"4. investigación",
-        "fondo": "img/fondos/7.png",
+        "fondo": "img/fondos/1.png",
         "slide": [
             {
                 "descripcion":"Desde este componente se llevan a cabo procesos de investigación que construyen conocimiento con el fin de fortalecer diferentes componentes de la EdLDD y sus estrategias. La investigación se convierte entonces en uno de los procesos clave para validar experiencias y consolidar conocimiento. En este sentido, las acciones de la EdLDD estarán orientadas a:  ",
@@ -252,7 +252,7 @@
     },
     {"tipo": "slide",
         "titulo":"",
-        "fondo": "img/fondos/9.png",
+        "fondo": "img/fondos/2.png",
         "slide": [
             {
                 "titulo": "1. Autoformación",
@@ -292,8 +292,39 @@
                     {"texto":"Intercambien sus saberes pedagógicos y sus experiencias de liderazgo"},
                     {"texto":"Discutan sus concepciones y construyan de manera colaborativa nuevos conocimientos y formas de ejercer sus prácticas de liderazgo."}
                 ]
+            },
+            {
+                "titulo": "3. Aprendizaje entre pares",
+                "descripcion":"En esta vía, cada sujeto intercambia, comunica, analiza y potencia sus habilidades, actitudes y conocimientos, gracias a la interacción generada con los otros y sus experiencias. En efecto, tener la oportunidad de interactuar con tus pares para mejorar tus prácticas de liderazgo es una orientación valiosa que apoya la credibilidad en los procesos de formación en servicio y que potencia el que puedas construir colectivamente tus prácticas de liderazgo."
+            },
+            {
+                "titulo": "4. Acompañamiento situado",
+                "descripcion":"El acompañamiento situado debe ser entendido como una estrategia formativa que se despliega en campo, es decir, que se realiza en el establecimiento educativo y cuyo propósito es el fortalecimiento de tus prácticas de liderazgo a partir de un proceso sistemático y permanente de trabajo colaborativo en el que participan pares, agentes externos y la comunidad educativa."
+            },
+            {
+                "titulo": "4. Acompañamiento situado",
+                "descripcion":"El acompañamiento situado se enfoca en el análisis de tus prácticas de liderazgo mediante procesos de: observación, reflexión pedagógica, diseño y puesta en marcha de estrategias de mejoramiento y evaluación de las mismas, todo ello orientado tanto al mejoramiento de la gestión de tu establecimiento educativo, como al desarrollo integral y al aprendizaje de los niños, niñas y adolescentes. "
             }
         ]
+    },
+    {"tipo": "animada",
+        "titulo": "¿Quiénes pueden ser parte?",
+        "textos":[
+            {"parrafo": "Directivos Docentes rectores, coordinadores, directores rurales, supervisores y directores de núcleo"}
+        ],
+        "capas": {
+           "uno":"img/5/capas/1.png",
+            "dos":"img/5/capas/2.png",
+            "tres":"img/5/capas/3.png",
+            "cuatro":"img/5/capas/4.png",
+            "cinco":"img/5/capas/5.png"
+        }
+    },
+    {"tipo": "normal",
+        "textos":[
+            {"parrafo": "Son los protagonistas de la Escuela de Liderazgo. Constituyen la población beneficiaria, en tanto son los sujetos vinculados a las diferentes iniciativas que promueve la EdLDD a través de sus componentes y de la participación de los aliados, de cara al desarrollo de las prácticas de liderazgo que impacten finalmente en los aprendizajes de los estudiantes."}
+            ],
+        "fondo": "img/5/capas/1.png"
     }
 
 ]

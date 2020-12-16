@@ -28,6 +28,7 @@
   
 // colores base
 $blanco: rgb(255, 255, 255);
+$negro: rgb(0, 0, 0);
 $amarillo: rgb(230, 218, 53);
 // colores primarios
 $azul: rgb(0, 204, 204);
@@ -107,10 +108,11 @@ code{
                 margin: 20px 10px;
                 font-weight: 300;
                 line-height: 2em;
-                text-shadow: 1px 1px 2px $blanco;
+                text-shadow: 1px 1px 2px $negro;
+                color: $blanco;
                 @include breakpoint(xs) {
                     font-size: unset;
-                    line-height: 1em;
+                    line-height: 1.3em;
                     padding: 5px;
                     margin: 0px;
                   }
@@ -234,15 +236,20 @@ code{
                 display: none;
             }
         }
-        #fp-nav.fp-right {
-            @include breakpoint(xs) {
-                right: 5px;
-            }
-        }
-
     }
 }
-
+#fp-nav.fp-right {
+    right: 0px;
+}
+.fp-slidesNav ul li a span, #fp-nav ul li a span {
+    background: yellow !important;
+}
+.veladura {
+    background-color: rgba($negro,0.4);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
 
 video{
     position: absolute;

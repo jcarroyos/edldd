@@ -34,6 +34,7 @@ function Seccion(e){
             {e.e.capas.uno !== '' &&
               <div className="capa capa_uno" style={{ backgroundImage:`url(${e.e.capas.uno?e.e.capas.uno:null})` }}></div>
             }
+            <div className="veladura"></div>
             {e.e.capas.dos !== '' &&
               <div className="capa capa_dos" style={{ backgroundImage:`url(${e.e.capas.dos?e.e.capas.dos:null})` }}></div>
             }
@@ -63,6 +64,7 @@ function Seccion(e){
   } else if (e.e.tipo === 'slide'){
     return (
         <div className="section carousel" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
+          <div className="veladura"></div>
           <div className="container">
             <div className="row"> 
             {e.e.titulo !== '' && <h3 className="titulo">{e.e.titulo}</h3>}
@@ -90,6 +92,7 @@ function Seccion(e){
   } else if (e.e.tipo === 'normal') {
     return (
         <div className="section normal" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
+          <div className="veladura"></div>
             <div className="container">
             <div className="row col-xs-12 col-sm-8 col-md-offset-2"> 
             {e.e.titulo !== '' &&

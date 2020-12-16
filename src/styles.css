@@ -63,12 +63,13 @@ code {
   margin: 20px 10px;
   font-weight: 300;
   line-height: 2em;
-  text-shadow: 1px 1px 2px white; }
+  text-shadow: 1px 1px 2px black;
+  color: white; }
 
 @media (max-width: 767px) {
   .section.normal .textos .parrafo {
     font-size: unset;
-    line-height: 1em;
+    line-height: 1.3em;
     padding: 5px;
     margin: 0px; } }
 
@@ -192,9 +193,17 @@ code {
   .section.carousel .fp-controlArrow.fp-next {
     display: none; } }
 
-@media (max-width: 767px) {
-  .section.carousel #fp-nav.fp-right {
-    right: 5px; } }
+#fp-nav.fp-right {
+  right: 0px; }
+
+.fp-slidesNav ul li a span, #fp-nav ul li a span {
+  background: yellow !important; }
+
+.veladura {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: absolute; }
 
 video {
   position: absolute;
