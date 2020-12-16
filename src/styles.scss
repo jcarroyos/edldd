@@ -85,6 +85,17 @@ code{
         .fp-tableCell{
             vertical-align: unset;
         }
+        h2 {
+            color: $blanco;
+            //background-color: rgba($blanco, 0.5);
+            text-shadow: 1px 1px 2px $azul_oscuro; 
+            font-size: xx-large;
+            padding: 10px;
+            @include breakpoint(xs) {
+                font-size: large;
+                margin-bottom: -100px;
+                }
+            }
         .textos {
             position: relative;
             top: 20vh;
@@ -98,7 +109,7 @@ code{
                 line-height: 2em;
                 text-shadow: 1px 1px 2px $blanco;
                 @include breakpoint(xs) {
-                    font-size: medium;
+                    font-size: unset;
                     line-height: 1em;
                     padding: 5px;
                     margin: 0px;
@@ -124,15 +135,13 @@ code{
                 line-height: 2em;
                 border-radius: 0 20px 0 20px;
                 @include breakpoint(xs) {
-                    font-size: small;
+                    font-size: unset;
                     padding: 5px;
                     line-height: 1.5em;
                     font-weight: 400;
                 }
             }
         }
-    }
-    &.animada{
         .page_Animation {
             width: 100vw;
             height: 100vh;
@@ -193,6 +202,12 @@ code{
                     font-weight: 200;
                     margin-bottom: 0px;
                     line-height: 1.5em;
+                  }
+            }
+            li {
+                font-size: medium;
+                @include breakpoint(xs) {
+                    font-size: small;
                   }
             }
             &>.fp-tableCell>div{

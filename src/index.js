@@ -74,7 +74,9 @@ function Seccion(e){
                     <ul>
                       {Boolean(item.lista)?
                         item.lista.map((li)=>(   
-                          <li key={li.texto}>{li.texto}</li>
+                          <li key={li.texto}>
+                            {li.texto}
+                          </li>
                         )):null}
                     </ul>
                   </div>
@@ -89,8 +91,11 @@ function Seccion(e){
     return (
         <div className="section normal" style={{ backgroundImage:`url(${e.e.fondo?e.e.fondo:null})` }}>
             <div className="container">
-            <div className="row"> 
-              <div className="textos col-sm-10">
+            <div className="row col-xs-12 col-sm-8 col-md-offset-2"> 
+            {e.e.titulo !== '' &&
+              <h2>{e.e.titulo}</h2>
+            }
+              <div className="textos">
                 {Boolean(e.e.textos)?
                   e.e.textos.map((t)=>(   
                     <div className="parrafo hidden" key={t.parrafo}>{t.parrafo}</div>
@@ -119,9 +124,9 @@ const fullpageOptions = {
   licenseKey : '26AD47C0-F26141E8-921BC9B5-2C769097',
   scrollingSpeed : '1000',
   scrollOverflow:false,
-  navigation:false,
+  navigation:true,
   sectionsColor:["#006D72"],
-  loopBottom: true,
+  loopBottom: false,
   navigationPosition: 'right',
   verticalCentered: true,
   slidesNavigation: true,
