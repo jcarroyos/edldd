@@ -4,6 +4,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) { @content; }
+    }
+   
+    @else if $class == sm {
+      @media (min-width: 768px) { @content; }
+    }
+   
+    @else if $class == md {
+      @media (min-width: 992px) { @content; }
+    }
+   
+    @else if $class == lg {
+      @media (min-width: 1200px) { @content; }
+    }
+   
+    @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+  }
+  
 // colores base
 $blanco: rgb(255, 255, 255);
 $amarillo: rgb(230, 218, 53);
@@ -64,6 +86,13 @@ code{
                 margin: 20px 10px;
                 font-weight: 300;
                 line-height: 2em;
+                text-shadow: 3px 1px 5px $blanco;
+                @include breakpoint(xs) {
+                    font-size: medium;
+                    line-height: 1em;
+                    padding: 5px;
+                    margin: 0px;
+                  }
             }
         }
     }
@@ -72,6 +101,10 @@ code{
             position: relative;
             left: 30vw;
             width: 70vw;
+            @include breakpoint(xs) {
+                left: 5vw;
+                width: 95vw;
+              }
             .txt {
                 font-size: large;
                 background: rgba($blanco, 0.5);
@@ -80,6 +113,12 @@ code{
                 font-weight: 300;
                 line-height: 2em;
                 border-radius: 0 20px 0 20px;
+                @include breakpoint(xs) {
+                    font-size: small;
+                    padding: 5px;
+                    line-height: 1.5em;
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -89,18 +128,48 @@ code{
 }
 
 //slides
-.slide>.fp-tableCell>div{
-    background: $m_ao;
-    border-radius: 0 20px 0 20px;
-    padding: 40px;
-    color: white;
-    font-size: large;
-    text-shadow: 1px 1px 2px #006d72;
-    font-weight: 300;
+.slide{
+    p {
+        font-size: large;
+        font-weight: 200;
+        margin-bottom: 40px;
+        line-height: 2em;
+        @include breakpoint(xs) {
+            font-size: small;
+            font-weight: 200;
+            margin-bottom: 0px;
+            line-height: 1.5em;
+          }
+    }
+    &>.fp-tableCell>div{
+        background: $m_ao;
+        border-radius: 0 20px 0 20px;
+        padding: 40px;
+        color: white;
+        font-size: large;
+        text-shadow: 1px 1px 2px $azul;
+        font-weight: 300;
+    }
 }
-.fp-slidesNav{display: none;}
-.fp-controlArrow.fp-prev {left: 40px;}
-.fp-controlArrow.fp-next {right: 40px;}
+
+.fp-slidesNav {
+    width: fit-content;
+}
+.fp-controlArrow.fp-prev {left: 40px;
+    @include breakpoint(xs) {
+        display: none;
+    }
+}
+.fp-controlArrow.fp-next {right: 40px;
+    @include breakpoint(xs) {
+        display: none;
+    }
+}
+#fp-nav.fp-right {
+    @include breakpoint(xs) {
+        right: 5px;
+    }
+}
 video{
     position: absolute;
     right: 0;
@@ -114,6 +183,10 @@ video{
     background-size: contain;
     object-fit: cover; /*cover video background */
     z-index:3;
+    @include breakpoint(xs) {
+        width: 100%;
+        height: auto;
+    }
 }
 
 // generales
@@ -128,7 +201,11 @@ h2 {color: $blanco;
     //background-color: rgba($blanco, 0.5);
     text-shadow: 1px 1px 2px $azul_oscuro; 
     font-size: xxx-large;
-    padding: 10px;}
+    padding: 10px;
+    @include breakpoint(xs) {
+        font-size: large;
+      }
+    }
 
 
 
@@ -153,3 +230,4 @@ div.page_Animation {
         }*/
     }
 }
+

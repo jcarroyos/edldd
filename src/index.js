@@ -67,7 +67,7 @@ function Seccion(e){
             <div className="row"> 
               {e.e.slide.map((item, index) =>(
                   <div key={index} className="slide">
-                  <div className="col-sm-8 col-sm-offset-2">
+                  <div className="col-xs-12 col-sm-8 col-md-offset-2">
                     <p>{item.descripcion}</p>
                     <ul>
                       {Boolean(item.lista)?
@@ -91,7 +91,7 @@ function Seccion(e){
               <div className="textos col-sm-10">
                 {Boolean(e.e.textos)?
                   e.e.textos.map((t)=>(   
-                    <div className="parrafo" key={t.parrafo}>{t.parrafo}</div>
+                    <div className="parrafo hidden" key={t.parrafo}>{t.parrafo}</div>
                   ))
                 :null}
               </div>
@@ -117,12 +117,13 @@ const fullpageOptions = {
   licenseKey : '26AD47C0-F26141E8-921BC9B5-2C769097',
   scrollingSpeed : '1000',
   scrollOverflow:false,
-  navigation:true,
+  navigation:false,
   sectionsColor:["#006D72"],
   loopBottom: true,
-  slidesNavigation: true,
   navigationPosition: 'right',
   verticalCentered: true,
+  slidesNavigation: true,
+	slidesNavPosition: 'bottom',
   //Accessibility
 	keyboardScrolling: true
 };
@@ -165,13 +166,13 @@ class FullpageWrapper extends React.Component {
       x.classList.add('hidden') + 
       x.classList.remove('animate__animated', 'animate__fadeInDown')
     );
-    [...document.querySelectorAll('.textos > .txt')].map(x =>
+    [...document.querySelectorAll('.section.animada .textos > .txt')].map(x =>
       x.classList.add('hidden') + 
       x.classList.remove('animate__animated', 'animate__fadeInUp', 'animate__delay-4s')
     );
-    [...document.querySelectorAll('section.normal .textos > .txt')].map(x =>
+    [...document.querySelectorAll('.section.normal .parrafo')].map(x =>
       x.classList.add('hidden') + 
-      x.classList.remove('animate__animated', 'animate__fadeInUp', 'animate__delay-1s')
+      x.classList.remove('animate__animated', 'animate__fadeIn', 'animate__delay-1s')
     )
 
   }
@@ -211,13 +212,13 @@ class FullpageWrapper extends React.Component {
       x.classList.remove('hidden') + 
       x.classList.add('animate__animated', 'animate__fadeInDown')
     );
-    [...document.querySelectorAll('.textos > .txt')].map(x =>
+    [...document.querySelectorAll('.section.animada .textos > .txt')].map(x =>
       x.classList.remove('hidden') + 
       x.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-4s')
     );
-    [...document.querySelectorAll('section.normal .textos > .txt')].map(x =>
+    [...document.querySelectorAll('.section.normal .parrafo')].map(x =>
       x.classList.remove('hidden') + 
-      x.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s')
+      x.classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s')
     )
 
   }
@@ -242,3 +243,17 @@ class FullpageWrapper extends React.Component {
 }
 
 ReactDOM.render(<FullpageWrapper />, document.getElementById("react-root"));
+
+var previousOrientation = window.orientation;
+var checkOrientation = function(){
+    if(window.orientation !== previousOrientation){
+        previousOrientation = window.orientation;
+        alert('Recomendamos usar esta app desde su celular en orientación vertical');
+    }
+};
+
+window.addEventListener("resize", checkOrientation, false);
+window.addEventListener("orientationchange", checkOrientation, false);
+
+// (optional) Android doesn't always fire orientationChange on 180 degree turns
+setInterval(checkOrientation, 2000);

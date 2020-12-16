@@ -23,8 +23,7 @@
     {
         "tipo": "slide",
         "fondo": "img/fondos/1.png",
-        "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
-        "texto1": "",
+        "titulo": "",
         "slide":  [
                 {
                     "descripcion":"Por dos razones, la primera, para atender las necesidades manifestadas por los propios directivos docentes, y la segunda, para incentivar el desarrollo del liderazgo directivo como un factor fundamental pues diversos estudios han revelado que es el segundo factor que más incide en los resultados de aprendizaje de los estudiantes."
@@ -34,19 +33,22 @@
                 },
                 {
                     "descripcion":"Los directivos docentes del país son generadores de transformación educativa en sus diferentes contextos de actuación, por lo tanto, la Escuela de Liderazgo le apuesta a reconocerlos como líderes de cambio y a promover su desarrollo personal y profesional, propiciando su bienestar y fortaleciendo sus prácticas pedagógicas y didácticas, así como su proceso de formación."
-                },
-                {
-                    "descripcion":"No olvides que un fuerte liderazgo te ayudará a generar coherencia y visión compartida en el establecimiento educativo, lo que a su vez influirá y movilizará el actuar de sus miembros, con el objetivo de cumplir de la mejor manera posible la función social que le ha sido encomendada."
                 }
         ]        
+    },
+    {
+        "tipo": "normal",
+        "textos":[
+            {"parrafo": "No olvides que un fuerte liderazgo te ayudará a generar coherencia y visión compartida en el establecimiento educativo, lo que a su vez influirá y movilizará el actuar de sus miembros, con el objetivo de cumplir de la mejor manera posible la función social que le ha sido encomendada."}
+            ],
+        "fondo": "img/1/capas/1.png"
     },
     {
         "tipo": "animada",
         "titulo": "Lidérate para liderar",
         "subtitulo": "¡La Escuela de Liderazgo, una oportunidad!",
         "textos":[
-            {"parrafo": "El liderazgo directivo que promueve la EdLDD está enfocado al mejoramiento de aquellas condiciones que posibilitan un desarrollo integral de los estudiantes. Ten presente que todas las decisiones y acciones del equipo líder de un establecimiento educativo repercuten en el proyecto de vida de los estudiantes, y que dichas acciones y decisiones se consolidan en prácticas de liderazgo directivo, es decir, que se despliegan en el “hacer” cotidiano."},
-            {"parrafo": "Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."}
+            {"parrafo": "El liderazgo directivo que promueve la EdLDD está enfocado al mejoramiento de aquellas condiciones que posibilitan un desarrollo integral de los estudiantes. Ten presente que todas las decisiones y acciones del equipo líder de un establecimiento educativo repercuten en el proyecto de vida de los estudiantes, y que dichas acciones y decisiones se consolidan en prácticas de liderazgo directivo, es decir, que se despliegan en el “hacer” cotidiano."}
         ],
         "capas": {
            "uno":"img/2/capas/1.png",
@@ -55,6 +57,14 @@
             "cuatro":"img/2/capas/4.png",
             "cinco":"img/2/capas/5.png"
         }
+    }
+    ,
+    {
+        "tipo": "normal",
+        "textos":[
+            {"parrafo": "Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."}
+            ],
+        "fondo": "img/2/capas/1.png"
     },
     {
         "tipo": "normal",
@@ -66,12 +76,14 @@
     {
         "tipo": "slide",
         "fondo": "img/fondos/1.png",
-        "titulo": "Escuela de Liderazgo para Directivos Docentes EdLDD",
-        "texto1": "Has llegado a un sueño hecho realidad conjuntamente, una oportunidad para construir y transformar en comunidad a través de tu liderazgo.",
+        "titulo": "Prácticas de liderazgo personal",
         "slide": [{
-            "descripcion":"El liderazgo directivo que promueve la EdLDD está enfocado al mejoramiento de aquellas condiciones que posibilitan un desarrollo integral de los estudiantes. Ten presente que todas las decisiones y acciones del equipo líder de un establecimiento educativo repercuten en el proyecto de vida de los estudiantes, y que dichas acciones y decisiones se consolidan en prácticas de liderazgo directivo, es decir, que se despliegan en el “hacer” cotidiano.",
+            "descripcion":"Como directivo necesitas fortalecerte personalmente pues tu bienestar y desarrollo son aspectos que suman de manera significativa al reto de convertirte en un líder transformador de tu establecimiento educativo. Desde la EdLDD buscamos que te reconozcas como un ser humano con potencialidades y necesidades cognitivas, comunicativas y emocionales, y que ese reconocimiento te permita reconocer a otros. Las cuatro prácticas que potenciarán tu liderazgo personal son:",
             "lista":[
-                {"texto":"aja"}
+                {"texto":"Autoconciencia"},
+                {"texto":"Manejo de emociones"},
+                {"texto":"Comunicación asertiva"},
+                {"texto":"Trabajo colaborativo"}
             ]
         },
             {       
