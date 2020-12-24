@@ -43,30 +43,63 @@ $morado_claro: rgb(229, 179, 254);
 // degradados
 $ac_mo: linear-gradient(
   45deg,
-  rgba(204, 255, 255, 0.4) 0%,
-  rgba(131, 11, 196, 0.4) 100%
+  rgba($azul_brillante, 0.4) 0%,
+  rgba($morado_oscuro, 0.4) 100%
 );
-$m_ao: linear-gradient(45deg, rgba($morado, 0.4) 0%, rgba($azul_oscuro, 1) 90%);
+$m_ao: linear-gradient(
+  45deg,
+  rgba($morado, 0.4) 0%,
+  rgba($azul_oscuro, 0.4) 100%
+);
+
+// Fonts
+$baseSmallScreen: calc(2vmin + 1vmax);
+$baseMediumScreen: calc(1vmin + 1vmax);
+$baseBigScreen: calc(1vmin + 1vmax);
+// Size - ratio 1.2 (Minor Third)
+$ms0: 1em;
+// Bigger
+// ms = modular scale
+$ms1: 1.2em;
+$ms2: 1.44em;
+$ms3: 1.728em;
+$ms4: 2.074em;
+$ms5: 2.488em;
+$ms6: 2.986em;
+$ms7: 3.583em;
+$ms8: 4.3em;
+$ms9: 5.16em;
+// Smaller
+$ms-1: 0.833em;
+$ms-2: 0.694em;
 
 // hacks mini.css
 .container {
   z-index: 1;
   position: absolute;
-  margin: 0 2em;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
 }
 code {
   position: absolute;
   display: block;
   z-index: 1;
-  padding: 10px;
+  padding: $ms0;
   right: 0;
   bottom: 0;
 }
 .card {
-  padding: 10px;
-  margin: 20px;
+  padding: $ms0;
+  margin: $ms1;
   border-radius: 0 10px 0px 10px;
-  font-size: x-large;
+  font-size: $ms2;
   font-weight: 200;
   background-color: rgba($blanco, 0.7);
 }
@@ -81,74 +114,93 @@ code {
     color: $blanco;
     //background-color: rgba($blanco, 0.5);
     text-shadow: 1px 1px 2px $azul_oscuro;
-    font-size: xxx-large;
-    padding: 10px;
-    @include breakpoint(xs) {
-      font-size: large;
+    font-size: $ms2;
+    padding: $ms0;
+    @include breakpoint(md) {
+      font-size: $ms3;
+    }
+    @include breakpoint(lg) {
+      font-size: $ms4;
     }
   }
   &.normal {
+    .container {
+      justify-content: center;
+    }
     .fp-tableCell {
       vertical-align: unset;
     }
     h2 {
       color: $blanco;
-      //background-color: rgba($blanco, 0.5);
       text-shadow: 1px 1px 2px $azul_oscuro;
-      text-shadow: 1px 1px 2px $azul_oscuro;
-      text-shadow: 1px 1px 2px $azul_oscuro;
-      font-size: xx-large;
-      padding: 10px;
-      @include breakpoint(xs) {
-        font-size: large;
-        margin-bottom: -100px;
+      font-size: $ms2;
+      padding: $ms-2;
+      width: 70vw;
+      margin-bottom: -100px;
+      @include breakpoint(md) {
+        margin-bottom: initial;
+        font-size: $ms2;
+      }
+      @include breakpoint(lg) {
+        font-size: $ms3;
       }
     }
     .textos {
-      position: relative;
-      top: 20vh;
-      left: 10vw;
-      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       .parrafo {
-        font-size: xx-large;
-        padding: 20px;
-        margin: 20px 10px;
+        width: 80vw;
+        font-size: $ms1;
         font-weight: 300;
-        line-height: 2em;
+        line-height: $ms2;
         text-shadow: 1px 1px 2px $negro;
         color: $blanco;
-        @include breakpoint(xs) {
-          font-size: unset;
-          line-height: 1.3em;
-          padding: 5px;
-          margin: 0px;
+        margin: 0;
+        @include breakpoint(md) {
+          font-size: $ms2;
+          line-height: $ms3;
         }
       }
     }
   }
   &.animada {
+    .container {
+      justify-content: center;
+      @include breakpoint(lg) {
+        justify-content: start;
+      }
+    }
     .textos {
-      position: relative;
-      left: 30vw;
-      width: 70vw;
-      @include breakpoint(xs) {
-        left: 5vw;
-        width: 95vw;
+      width: 90vw;
+      @include breakpoint(md) {
+        width: 70vw;
+      }
+      @include breakpoint(lg) {
+        width: 60vw;
+        transform: translateX(15vw);
+      }
+      .titulo {
+        font-size: $ms2;
+        @include breakpoint(lg) {
+          font-size: $ms3;
+        }
+      }
+      .subtitulo {
+        font-size: $ms1;
+        @include breakpoint(lg) {
+          font-size: $ms2;
+        }
       }
       .txt {
-        font-size: x-large;
+        font-size: $ms0;
         background: rgba($blanco, 0.8);
-        padding: 20px;
+        padding: $ms2;
         margin: 20px 10px;
-        font-weight: 800;
-        line-height: 1.5em;
+        font-weight: 400;
+        line-height: $ms2;
         border-radius: 0 20px 0 20px;
-        @include breakpoint(xs) {
-          font-size: unset;
-          padding: 5px;
-          line-height: 1.5em;
-          font-weight: 400;
-        }
       }
     }
     .page_Animation {
@@ -166,48 +218,48 @@ code {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        /*
-                &_tres{
-                    z-index: unset;
-                }*/
       }
     }
   }
   &.carousel {
     h2 {
       color: $blanco;
-      //background-color: rgba($blanco, 0.5);
       text-shadow: 1px 1px 2px $azul_oscuro;
-      text-shadow: 1px 1px 2px $azul_oscuro;
-      text-shadow: 1px 1px 2px $azul_oscuro;
-      font-size: xxx-large;
-      padding: 10px;
-      @include breakpoint(xs) {
-        font-size: medium;
+      font-size: $ms2;
+      padding: $ms1;
+      @include breakpoint(lg) {
+        font-size: $ms3;
       }
     }
     h3 {
-      position: relative;
+      position: absolute;
+      text-shadow: 1px 1px 2px $azul_oscuro;
       width: fit-content;
-      margin: 20px auto;
+      margin: 0 auto;
       display: block;
-      top: 10vh;
+      top: 3vh;
       color: $blanco;
-      font-size: xx-large;
+      font-size: $ms2;
       font-weight: 200;
-      @include breakpoint(xs) {
-        font-size: large;
+
+      @include breakpoint(md) {
+        top: 10vh;
+        font-size: $ms3;
+      }
+      @include breakpoint(lg) {
+        font-size: $ms4;
       }
     }
     #fp-nav ul li a span {
       background-color: $amarillo;
     }
     .slide {
+      text-align: center;
       p {
-        font-size: x-large;
+        font-size: $ms0;
         font-weight: 200;
         margin-bottom: 40px;
-        line-height: 2em;
+        line-height: $ms1;
         @include breakpoint(xs) {
           font-size: small;
           font-weight: 200;
@@ -216,19 +268,34 @@ code {
         }
       }
       li {
-        font-size: medium;
+        font-size: $ms0;
         @include breakpoint(xs) {
           font-size: small;
         }
       }
-      & > .fp-tableCell > div {
+      &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60vw;
         background: $m_ao;
         border-radius: 0 20px 0 20px;
-        padding: 40px;
+        padding: $ms2;
         color: white;
-        font-size: large;
         text-shadow: 1px 1px 2px $azul;
-        font-weight: 300;
+        @include breakpoint(md) {
+          width: 80vw;
+        }
+
+        h4 {
+          font-size: $ms1;
+        }
+        p {
+          font-size: $ms0;
+          text-align: justify;
+        }
       }
     }
 
@@ -236,16 +303,12 @@ code {
       width: fit-content;
     }
     .fp-controlArrow.fp-prev {
-      left: 40px;
-      @include breakpoint(xs) {
-        display: none;
-      }
+      position: absolute;
+      left: $ms0;
     }
     .fp-controlArrow.fp-next {
-      right: 40px;
-      @include breakpoint(xs) {
-        display: none;
-      }
+      position: absolute;
+      right: $ms0;
     }
   }
   .icon-scroll {
@@ -253,12 +316,12 @@ code {
     cursor: pointer;
     position: fixed;
     display: block;
-    width: 40px;
-    height: 70px;
+    width: 30px;
+    height: 60px;
     margin-left: -20px;
-    top: 94vh;
+    top: 95vh;
     margin-top: -35px;
-    box-shadow: inset 0 0 0 5px $amarillo;
+    box-shadow: inset 0 0 0 3px $amarillo;
     border-radius: 25px;
     position: absolute;
     left: 50%;
@@ -324,7 +387,14 @@ video {
     outline: none;
   }
 }
-
+.titulo,
+.subtitulo {
+  text-align: center;
+}
+.subtitulo {
+  font-size: xx-large;
+  font-weight: bold;
+}
 // generales
 
 html,
@@ -332,4 +402,11 @@ html,
   font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+  font-size: $baseSmallScreen;
+  @include breakpoint(md) {
+    font-size: $baseMediumScreen;
+  }
+  @include breakpoint(lg) {
+    font-size: $baseBigScreen;
+  }
 }
