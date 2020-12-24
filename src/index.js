@@ -25,14 +25,17 @@ class FullpageWrapper extends React.Component {
         {...fullpageOptions}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
-        render={({ state, moveSectionUp, moveSectionDown }) => {
-          console.log(state);
+        render={({ state, fullpageApi }) => {
           return (
             <Fragment>
-              {/* {index !== 0 ? <button className="u-button u-button-up" onClick={moveSectionUp}>Hola</button> : null} */}
               <div>
                 {data.map((e, i) => (
-                  <Seccion e={e} key={i} />
+                  <Seccion
+                    e={e}
+                    key={i}
+                    fullpageApi={fullpageApi}
+                    last={i === data.length - 1}
+                  />
                 ))}
               </div>
             </Fragment>

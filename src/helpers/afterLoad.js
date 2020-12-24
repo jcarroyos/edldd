@@ -75,4 +75,14 @@ export default function afterLoad(origin, destination, direction) {
         'animate__delay-1s'
       )
   );
+  // Scroll Effect
+  [...document.querySelectorAll('.icon-scroll')].map(
+    (x) =>
+      x.classList.remove('hidden') +
+      x.classList.add(
+        'animate__animated',
+        'animate__fadeIn',
+        'animate__delay-3s'
+      )
+  );
 }

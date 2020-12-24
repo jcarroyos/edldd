@@ -5,27 +5,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @mixin breakpoint($class) {
-    @if $class == xs {
-      @media (max-width: 767px) { @content; }
+  @if $class == xs {
+    @media (max-width: 767px) {
+      @content;
     }
-   
-    @else if $class == sm {
-      @media (min-width: 768px) { @content; }
+  } @else if $class == sm {
+    @media (min-width: 768px) {
+      @content;
     }
-   
-    @else if $class == md {
-      @media (min-width: 992px) { @content; }
+  } @else if $class == md {
+    @media (min-width: 992px) {
+      @content;
     }
-   
-    @else if $class == lg {
-      @media (min-width: 1200px) { @content; }
+  } @else if $class == lg {
+    @media (min-width: 1200px) {
+      @content;
     }
-   
-    @else {
-      @warn "Breakpoint mixin supports: xs, sm, md, lg";
-    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
-  
+}
+
 // colores base
 $blanco: rgb(255, 255, 255);
 $negro: rgb(0, 0, 0);
@@ -41,240 +41,295 @@ $morado_oscuro: rgb(131, 11, 196);
 $morado_brillante: rgb(194, 99, 249);
 $morado_claro: rgb(229, 179, 254);
 // degradados
-$ac_mo: linear-gradient(45deg, rgba(204,255,255,0.4) 0%, rgba(131,11,196,0.4) 100%);
-$m_ao: linear-gradient(45deg, rgba($morado,0.4) 0%, rgba($azul_oscuro,0.4) 100%);
-
+$ac_mo: linear-gradient(
+  45deg,
+  rgba(204, 255, 255, 0.4) 0%,
+  rgba(131, 11, 196, 0.4) 100%
+);
+$m_ao: linear-gradient(45deg, rgba($morado, 0.4) 0%, rgba($azul_oscuro, 1) 90%);
 
 // hacks mini.css
-.container{
-    z-index: 1;
-    position: absolute;
+.container {
+  z-index: 1;
+  position: absolute;
+  margin: 0 2em;
 }
-code{
-    position: absolute;
-    display: block;
-    z-index: 1;
-    padding: 10px;
-    right: 0;
-    bottom: 0;
+code {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  padding: 10px;
+  right: 0;
+  bottom: 0;
 }
-.card{
-    padding: 10px;
-    margin: 20px;
-    border-radius: 0 10px 0px 10px;
-    font-size: x-large;
-    font-weight: 200;
-    background-color: rgba($blanco, 0.7);
+.card {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 0 10px 0px 10px;
+  font-size: x-large;
+  font-weight: 200;
+  background-color: rgba($blanco, 0.7);
 }
 
 // hacks fullpage.js
 .section {
-    background-size: cover;
-    //background-position: right;
-    background-color: $azul_oscuro;
-    h2 {
+  background-size: cover;
+  //background-position: right;
+  background-color: $azul_oscuro;
+  text-align: center;
+  h2 {
     color: $blanco;
     //background-color: rgba($blanco, 0.5);
-    text-shadow: 1px 1px 2px $azul_oscuro; 
+    text-shadow: 1px 1px 2px $azul_oscuro;
     font-size: xxx-large;
     padding: 10px;
     @include breakpoint(xs) {
+      font-size: large;
+    }
+  }
+  &.normal {
+    .fp-tableCell {
+      vertical-align: unset;
+    }
+    h2 {
+      color: $blanco;
+      //background-color: rgba($blanco, 0.5);
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      font-size: xx-large;
+      padding: 10px;
+      @include breakpoint(xs) {
         font-size: large;
-        }
+        margin-bottom: -100px;
+      }
     }
-    &.normal{
-        .fp-tableCell{
-            vertical-align: unset;
+    .textos {
+      position: relative;
+      top: 20vh;
+      left: 10vw;
+      width: 80vw;
+      .parrafo {
+        font-size: xx-large;
+        padding: 20px;
+        margin: 20px 10px;
+        font-weight: 300;
+        line-height: 2em;
+        text-shadow: 1px 1px 2px $negro;
+        color: $blanco;
+        @include breakpoint(xs) {
+          font-size: unset;
+          line-height: 1.3em;
+          padding: 5px;
+          margin: 0px;
         }
-        h2 {
-            color: $blanco;
-            //background-color: rgba($blanco, 0.5);
-            text-shadow: 1px 1px 2px $azul_oscuro; 
-            font-size: xx-large;
-            padding: 10px;
-            @include breakpoint(xs) {
-                font-size: large;
-                margin-bottom: -100px;
-                }
-            }
-        .textos {
-            position: relative;
-            top: 20vh;
-            left: 10vw;
-            width: 80vw;
-            .parrafo {
-                font-size: x-large;
-                padding: 20px;
-                margin: 20px 10px;
-                font-weight: 300;
-                line-height: 2em;
-                text-shadow: 1px 1px 2px $negro;
-                color: $blanco;
-                @include breakpoint(xs) {
-                    font-size: unset;
-                    line-height: 1.3em;
-                    padding: 5px;
-                    margin: 0px;
-                  }
-            }
-        }
+      }
     }
-    &.animada{
-        .textos{
-            position: relative;
-            left: 30vw;
-            width: 70vw;
-            @include breakpoint(xs) {
-                left: 5vw;
-                width: 95vw;
-              }
-            .txt {
-                font-size: large;
-                background: rgba($blanco, 0.8);
-                padding: 20px;
-                margin: 20px 10px;
-                font-weight: 300;
-                line-height: 2em;
-                border-radius: 0 20px 0 20px;
-                @include breakpoint(xs) {
-                    font-size: unset;
-                    padding: 5px;
-                    line-height: 1.5em;
-                    font-weight: 400;
-                }
-            }
+  }
+  &.animada {
+    .textos {
+      position: relative;
+      left: 30vw;
+      width: 70vw;
+      @include breakpoint(xs) {
+        left: 5vw;
+        width: 95vw;
+      }
+      .txt {
+        font-size: x-large;
+        background: rgba($blanco, 0.8);
+        padding: 20px;
+        margin: 20px 10px;
+        font-weight: 800;
+        line-height: 1.5em;
+        border-radius: 0 20px 0 20px;
+        @include breakpoint(xs) {
+          font-size: unset;
+          padding: 5px;
+          line-height: 1.5em;
+          font-weight: 400;
         }
-        .page_Animation {
-            width: 100vw;
-            height: 100vh;
-            display: block;
-            position: relative; 
-            display: flex;  
-            justify-content: center;
-            flex-flow: column;
-            z-index: 0;
-            div.capa{
-                background-size: cover;
-                background-position: right;
-                position: absolute;
-                width: 100vw;
-                height: 100vh;
-                /*
+      }
+    }
+    .page_Animation {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      z-index: 0;
+      div.capa {
+        background-size: cover;
+        background-position: right;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        /*
                 &_tres{
                     z-index: unset;
                 }*/
-            }
-        }
+      }
     }
-    &.carousel {
-        h2 {
-            color: $blanco;
-            //background-color: rgba($blanco, 0.5);
-            text-shadow: 1px 1px 2px $azul_oscuro; 
-            font-size: xxx-large;
-            padding: 10px;
-            @include breakpoint(xs) {
-                font-size: medium;
-            }
-        }
-        h3 {
-            position: relative;
-            width: fit-content;
-            margin: 20px auto;
-            display: block;
-            top: 10vh;
-            color: $blanco;
-            font-size: xx-large;
-            font-weight: 200;
-            @include breakpoint(xs) {
-                font-size: large;
-            }
-        }
-        #fp-nav ul li a span {
-            background-color: $amarillo;
-        }
-        .slide{
-            p {
-                font-size: large;
-                font-weight: 200;
-                margin-bottom: 40px;
-                line-height: 2em;
-                @include breakpoint(xs) {
-                    font-size: small;
-                    font-weight: 200;
-                    margin-bottom: 0px;
-                    line-height: 1.5em;
-                  }
-            }
-            li {
-                font-size: medium;
-                @include breakpoint(xs) {
-                    font-size: small;
-                  }
-            }
-            &>.fp-tableCell>div{
-                background: $m_ao;
-                border-radius: 0 20px 0 20px;
-                padding: 40px;
-                color: white;
-                font-size: large;
-                text-shadow: 1px 1px 2px $azul;
-                font-weight: 300;
-            }
-        }
-        
-        .fp-slidesNav {
-            width: fit-content;
-        }
-        .fp-controlArrow.fp-prev {left: 40px;
-            @include breakpoint(xs) {
-                display: none;
-            }
-        }
-        .fp-controlArrow.fp-next {right: 40px;
-            @include breakpoint(xs) {
-                display: none;
-            }
-        }
+  }
+  &.carousel {
+    h2 {
+      color: $blanco;
+      //background-color: rgba($blanco, 0.5);
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      font-size: xxx-large;
+      padding: 10px;
+      @include breakpoint(xs) {
+        font-size: medium;
+      }
     }
+    h3 {
+      position: relative;
+      width: fit-content;
+      margin: 20px auto;
+      display: block;
+      top: 10vh;
+      color: $blanco;
+      font-size: xx-large;
+      font-weight: 200;
+      @include breakpoint(xs) {
+        font-size: large;
+      }
+    }
+    #fp-nav ul li a span {
+      background-color: $amarillo;
+    }
+    .slide {
+      p {
+        font-size: x-large;
+        font-weight: 200;
+        margin-bottom: 40px;
+        line-height: 2em;
+        @include breakpoint(xs) {
+          font-size: small;
+          font-weight: 200;
+          margin-bottom: 0px;
+          line-height: 1.5em;
+        }
+      }
+      li {
+        font-size: medium;
+        @include breakpoint(xs) {
+          font-size: small;
+        }
+      }
+      & > .fp-tableCell > div {
+        background: $m_ao;
+        border-radius: 0 20px 0 20px;
+        padding: 40px;
+        color: white;
+        font-size: large;
+        text-shadow: 1px 1px 2px $azul;
+        font-weight: 300;
+      }
+    }
+
+    .fp-slidesNav {
+      width: fit-content;
+    }
+    .fp-controlArrow.fp-prev {
+      left: 40px;
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+    .fp-controlArrow.fp-next {
+      right: 40px;
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+  }
+  .icon-scroll {
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 94vh;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 5px $amarillo;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: $amarillo;
+      margin-left: -4px;
+      top: 8px;
+      border-radius: 4px;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: scroll;
+      left: 50%;
+      position: absolute;
+    }
+  }
+  .u-scroll {
+    left: 70%;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(46px);
+    }
+  }
 }
 #fp-nav.fp-right {
-    right: 0px;
+  right: 0px;
 }
-.fp-slidesNav ul li a span, #fp-nav ul li a span {
-    background: yellow !important;
+.fp-slidesNav ul li a span,
+#fp-nav ul li a span {
+  background: yellow !important;
 }
 .veladura {
-    background-color: rgba($negro,0.4);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+  background-color: rgba($negro, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
 
-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top:0;
+video {
+  width: 80%;
+  height: 80%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index: 3;
+  outline: none;
+  @include breakpoint(xs) {
     width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover; /*cover video background */
-    z-index:3;
-    @include breakpoint(xs) {
-        width: 100%;
-        height: auto;
-    }
+    height: auto;
+  }
+  &::focus {
+    outline: none;
+  }
 }
 
 // generales
 
-html, * {
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
+html,
+* {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
 }
-

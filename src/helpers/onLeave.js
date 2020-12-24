@@ -75,4 +75,13 @@ export default function onLeave(origin, destination, direction) {
         'animate__delay-1s'
       )
   );
+  [...document.querySelectorAll('.icon-scroll')].map(
+    (x) =>
+      x.classList.add('hidden') +
+      x.classList.remove(
+        'animate__animated',
+        'animate__fadeIn',
+        'animate__delay-3s'
+      )
+  );
 }

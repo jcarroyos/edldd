@@ -5,7 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .container {
   z-index: 1;
-  position: absolute; }
+  position: absolute;
+  margin: 0 2em; }
 
 code {
   position: absolute;
@@ -25,7 +26,8 @@ code {
 
 .section {
   background-size: cover;
-  background-color: #006d72; }
+  background-color: #006d72;
+  text-align: center; }
 
 .section h2 {
   color: white;
@@ -43,6 +45,8 @@ code {
 .section.normal h2 {
   color: white;
   text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px #006d72;
   font-size: xx-large;
   padding: 10px; }
 
@@ -58,7 +62,7 @@ code {
   width: 80vw; }
 
 .section.normal .textos .parrafo {
-  font-size: x-large;
+  font-size: xx-large;
   padding: 20px;
   margin: 20px 10px;
   font-weight: 300;
@@ -84,12 +88,12 @@ code {
     width: 95vw; } }
 
 .section.animada .textos .txt {
-  font-size: large;
+  font-size: x-large;
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   margin: 20px 10px;
-  font-weight: 300;
-  line-height: 2em;
+  font-weight: 800;
+  line-height: 1.5em;
   border-radius: 0 20px 0 20px; }
 
 @media (max-width: 767px) {
@@ -123,6 +127,8 @@ code {
 .section.carousel h2 {
   color: white;
   text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px #006d72;
   font-size: xxx-large;
   padding: 10px; }
 
@@ -148,7 +154,7 @@ code {
   background-color: #e6da35; }
 
 .section.carousel .slide p {
-  font-size: large;
+  font-size: x-large;
   font-weight: 200;
   margin-bottom: 40px;
   line-height: 2em; }
@@ -168,7 +174,7 @@ code {
     font-size: small; } }
 
 .section.carousel .slide > .fp-tableCell > div {
-  background: linear-gradient(45deg, rgba(154, 46, 219, 0.4) 0%, rgba(0, 109, 114, 0.4) 100%);
+  background: linear-gradient(45deg, rgba(154, 46, 219, 0.4) 0%, #006d72 90%);
   border-radius: 0 20px 0 20px;
   padding: 40px;
   color: white;
@@ -193,10 +199,50 @@ code {
   .section.carousel .fp-controlArrow.fp-next {
     display: none; } }
 
+.section .icon-scroll {
+  z-index: 999;
+  cursor: pointer;
+  position: fixed;
+  display: block;
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 94vh;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 5px #e6da35;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%; }
+
+.section .icon-scroll::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #e6da35;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  left: 50%;
+  position: absolute; }
+
+.section .u-scroll {
+  left: 70%; }
+
+@keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(46px); } }
+
 #fp-nav.fp-right {
   right: 0px; }
 
-.fp-slidesNav ul li a span, #fp-nav ul li a span {
+.fp-slidesNav ul li a span,
+#fp-nav ul li a span {
   background: yellow !important; }
 
 .veladura {
@@ -206,12 +252,8 @@ code {
   position: absolute; }
 
 video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   background-size: 100% 100%;
   background-color: black;
   /* in case the video doesn't fit the whole page*/
@@ -219,14 +261,19 @@ video {
   background-size: contain;
   object-fit: cover;
   /*cover video background */
-  z-index: 3; }
+  z-index: 3;
+  outline: none; }
 
 @media (max-width: 767px) {
   video {
     width: 100%;
     height: auto; } }
 
-html, * {
+video::focus {
+  outline: none; }
+
+html,
+* {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%; }
