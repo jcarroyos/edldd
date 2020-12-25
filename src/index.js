@@ -47,19 +47,3 @@ class FullpageWrapper extends React.Component {
 }
 
 ReactDOM.render(<FullpageWrapper />, document.getElementById('react-root'));
-
-var previousOrientation = window.orientation;
-var checkOrientation = function () {
-  if (window.orientation !== previousOrientation) {
-    previousOrientation = window.orientation;
-    alert(
-      'Recomendamos usar esta app desde su celular en orientación vertical'
-    );
-  }
-};
-
-window.addEventListener('resize', checkOrientation, false);
-window.addEventListener('orientationchange', checkOrientation, false);
-
-// (optional) Android doesn't always fire orientationChange on 180 degree turns
-setInterval(checkOrientation, 2000);

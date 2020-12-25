@@ -11,7 +11,7 @@ export default function Slide({ e, moveSectionDown }) {
         {e.e.titulo !== '' && <h3 className="titulo">{e.e.titulo}</h3>}
         {e.e.slide.map((item, index) => (
           <div key={index} className="slide">
-            <div className="col-xs-12 col-sm-8 col-md-offset-2">
+            <div className="slide-container">
               <h4>{item.titulo}</h4>
               <p>{item.descripcion}</p>
               <ul>
