@@ -43,14 +43,10 @@ $morado_claro: rgb(229, 179, 254);
 // degradados
 $ac_mo: linear-gradient(
   45deg,
-  rgba($azul_brillante, 0.4) 0%,
+  rgba($azul_brillante, 1) 0%,
   rgba($morado_oscuro, 0.4) 100%
 );
-$m_ao: linear-gradient(
-  45deg,
-  rgba($morado, 0.4) 0%,
-  rgba($azul_oscuro, 0.4) 100%
-);
+$m_ao: linear-gradient(45deg, rgba($morado, 0.9) 0%, rgba($azul, 0.1) 100%);
 
 // Fonts
 $baseSmallScreen: calc(2vmin + 1vmax);
@@ -75,6 +71,7 @@ $ms-2: 0.694em;
 
 // hacks mini.css
 .container {
+  overflow: hidden;
   z-index: 1;
   position: absolute;
   margin: 0;
@@ -123,6 +120,7 @@ code {
       font-size: $ms4;
     }
   }
+
   &.normal {
     .container {
       justify-content: center;
@@ -203,21 +201,42 @@ code {
         border-radius: 0 20px 0 20px;
       }
     }
-    .page_Animation {
+  }
+  .page_Animation {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 0;
+    .capa {
+      background-size: cover;
+      background-position: right;
+      position: absolute;
       width: 100vw;
       height: 100vh;
-      display: block;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      flex-flow: column;
-      z-index: 0;
-      div.capa {
-        background-size: cover;
-        background-position: right;
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
+      &.superiorDerecha {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: top right;
+      }
+      &.superiorIzquierda {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: top left;
+      }
+      &.inferiorDerecha {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
+      &.inferiorIzquierda {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: bottom left;
       }
     }
   }
@@ -243,7 +262,7 @@ code {
       font-weight: 200;
 
       @include breakpoint(md) {
-        top: 10vh;
+        top: 5vh;
         font-size: $ms3;
       }
       @include breakpoint(lg) {
@@ -254,25 +273,6 @@ code {
       background-color: $amarillo;
     }
     .slide {
-      text-align: center;
-      p {
-        font-size: $ms0;
-        font-weight: 200;
-        margin-bottom: 40px;
-        line-height: $ms1;
-        @include breakpoint(xs) {
-          font-size: small;
-          font-weight: 200;
-          margin-bottom: 0px;
-          line-height: 1.5em;
-        }
-      }
-      li {
-        font-size: $ms0;
-        @include breakpoint(xs) {
-          font-size: small;
-        }
-      }
       &-container {
         display: flex;
         flex-direction: column;
@@ -285,7 +285,7 @@ code {
         padding: $ms2;
         color: white;
         text-shadow: 1px 1px 2px $azul;
-        @include breakpoint(md) {
+        @include breakpoint(sm) {
           width: 80vw;
         }
 
@@ -294,7 +294,17 @@ code {
         }
         p {
           font-size: $ms0;
+          font-weight: 300;
+          margin-bottom: $ms1;
+          line-height: $ms0;
           text-align: justify;
+          @include breakpoint(md) {
+            line-height: $ms1;
+          }
+        }
+        li {
+          font-size: $ms0;
+          line-height: $ms0;
         }
       }
     }
@@ -363,10 +373,15 @@ code {
   background: yellow !important;
 }
 .veladura {
-  background-color: rgba($negro, 0.4);
+  background-color: rgba($negro, 0.3);
   width: 100vw;
   height: 100vh;
   position: absolute;
+}
+
+.link,
+.link:visited {
+  color: $amarillo;
 }
 
 video {
@@ -396,7 +411,6 @@ video {
   font-weight: bold;
 }
 // generales
-
 html,
 * {
   font-family: 'Work Sans', sans-serif;

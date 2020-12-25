@@ -4,6 +4,7 @@
     jcarroyos@gmail.com */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .container {
+  overflow: hidden;
   z-index: 1;
   position: absolute;
   margin: 0;
@@ -136,7 +137,8 @@ code {
   line-height: 1.44em;
   border-radius: 0 20px 0 20px; }
 
-.section.animada .page_Animation {
+.section .page_Animation {
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   display: block;
@@ -146,16 +148,32 @@ code {
   flex-flow: column;
   z-index: 0; }
 
-.section.animada .page_Animation div.capa {
+.section .page_Animation .capa {
   background-size: cover;
   background-position: right;
   position: absolute;
   width: 100vw;
-  height: 100vh;
-  /*
-                &_tres{
-                    z-index: unset;
-                }*/ }
+  height: 100vh; }
+
+.section .page_Animation .capa.superiorDerecha {
+  background-size: 70vmin;
+  background-repeat: no-repeat;
+  background-position: top right; }
+
+.section .page_Animation .capa.superiorIzquierda {
+  background-size: 70vmin;
+  background-repeat: no-repeat;
+  background-position: top left; }
+
+.section .page_Animation .capa.inferiorDerecha {
+  background-size: 70vmin;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+
+.section .page_Animation .capa.inferiorIzquierda {
+  background-size: 70vmin;
+  background-repeat: no-repeat;
+  background-position: bottom left; }
 
 .section.carousel h2 {
   color: white;
@@ -180,7 +198,7 @@ code {
 
 @media (min-width: 992px) {
   .section.carousel h3 {
-    top: 10vh;
+    top: 5vh;
     font-size: 1.728em; } }
 
 @media (min-width: 1200px) {
@@ -190,29 +208,6 @@ code {
 .section.carousel #fp-nav ul li a span {
   background-color: #e6da35; }
 
-.section.carousel .slide {
-  text-align: center; }
-
-.section.carousel .slide p {
-  font-size: 1em;
-  font-weight: 200;
-  margin-bottom: 40px;
-  line-height: 1.2em; }
-
-@media (max-width: 767px) {
-  .section.carousel .slide p {
-    font-size: small;
-    font-weight: 200;
-    margin-bottom: 0px;
-    line-height: 1.5em; } }
-
-.section.carousel .slide li {
-  font-size: 1em; }
-
-@media (max-width: 767px) {
-  .section.carousel .slide li {
-    font-size: small; } }
-
 .section.carousel .slide-container {
   display: flex;
   flex-direction: column;
@@ -220,13 +215,13 @@ code {
   justify-content: center;
   margin: 0 auto;
   width: 60vw;
-  background: linear-gradient(45deg, rgba(154, 46, 219, 0.4) 0%, rgba(0, 109, 114, 0.4) 100%);
+  background: linear-gradient(45deg, rgba(154, 46, 219, 0.9) 0%, rgba(0, 204, 204, 0.1) 100%);
   border-radius: 0 20px 0 20px;
   padding: 1.44em;
   color: white;
   text-shadow: 1px 1px 2px #00cccc; }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .section.carousel .slide-container {
     width: 80vw; } }
 
@@ -235,7 +230,18 @@ code {
 
 .section.carousel .slide-container p {
   font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 1.2em;
+  line-height: 1em;
   text-align: justify; }
+
+@media (min-width: 992px) {
+  .section.carousel .slide-container p {
+    line-height: 1.2em; } }
+
+.section.carousel .slide-container li {
+  font-size: 1em;
+  line-height: 1em; }
 
 .section.carousel .fp-slidesNav {
   width: fit-content; }
@@ -295,10 +301,14 @@ code {
   background: yellow !important; }
 
 .veladura {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100vw;
   height: 100vh;
   position: absolute; }
+
+.link,
+.link:visited {
+  color: #e6da35; }
 
 video {
   width: 80%;

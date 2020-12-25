@@ -47,7 +47,10 @@
         "parrafo": "No olvides que un fuerte liderazgo te ayudará a generar coherencia y visión compartida en el establecimiento educativo, lo que a su vez influirá y movilizará el actuar de sus miembros, con el objetivo de cumplir de la mejor manera posible la función social que le ha sido encomendada."
       }
     ],
-    "fondo": "img/1/capas/1.png"
+    "fondo": "img/1/capas/1.png",
+    "capas": {
+      "inferiorIzquierda": "img/elementos/abeja.png"
+    }
   },
   {
     "tipo": "animada",
@@ -73,24 +76,31 @@
         "parrafo": "Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."
       }
     ],
-    "fondo": "img/2/capas/1.png"
+    "fondo": "img/2/capas/1.png",
+    "capas": {
+      "inferiorDerecha": "img/elementos/colibri.png"
+    }
   },
   {
     "tipo": "normal",
     "textos": [
       {
-        "parrafo": "La Escuela de Liderazgo prioriza ocho prácticas de liderazgo directivo que son de especial interés porque existe evidencia de su efectividad en el contexto colombiano. Estas prácticas de liderazgo priorizadas deben entenderse como una propuesta susceptible de complementarse y fortalecerse y no son una condición mínima ni tampoco un fin último. Son más bien un referente encaminado a sentar las bases para tu desarrollo profesional. Las prácticas a las que hacemos referencia se agrupan en tres: personales, pedagógicas y, administrativas y comunitarias."
+        "parrafo": "La Escuela de Liderazgo prioriza ocho PRÁCTICAS DE LIDERAZGO directivo que son de especial interés porque existe evidencia de su efectividad en el contexto colombiano. Estas prácticas de liderazgo priorizadas deben entenderse como una propuesta susceptible de complementarse y fortalecerse y no son una condición mínima ni tampoco un fin último. Son más bien un referente encaminado a sentar las bases para tu desarrollo profesional. Las prácticas a las que hacemos referencia se agrupan en tres: personales, pedagógicas y, administrativas y comunitarias."
       }
     ],
-    "fondo": "img/2/capas/2.png"
+    "fondo": "img/2/capas/2.png",
+    "capas": {
+      "inferiorIzquierda": "img/elementos/abeja.png"
+    }
   },
   {
     "tipo": "slide",
     "fondo": "img/fondos/2.png",
-    "titulo": "Prácticas de liderazgo personal",
+    "titulo": "Prácticas de liderazgo",
     "slide": [
       {
-        "descripcion": "Como directivo necesitas fortalecerte personalmente pues tu bienestar y desarrollo son aspectos que suman de manera significativa al reto de convertirte en un líder transformador de tu establecimiento educativo. Desde la EdLDD buscamos que te reconozcas como un ser humano con potencialidades y necesidades cognitivas, comunicativas y emocionales, y que ese reconocimiento te permita reconocer a otros. Las cuatro prácticas que potenciarán tu liderazgo personal son:",
+        "titulo": "Personal",
+        "descripcion": "Como directivo necesitas fortalecerte personalmente porque tu bienestar y desarrollo son aspectos que suman de manera significativa al reto de convertirte en un líder transformador de tu establecimiento educativo. Desde la EdLDD buscamos que te reconozcas como un ser humano con potencialidades y necesidades cognitivas, comunicativas y emocionales, y que ese reconocimiento te permita reconocer a otros. Las cuatro prácticas que potenciarán tu liderazgo personal son:",
         "lista": [
           { "texto": "Autoconciencia" },
           { "texto": "Manejo de emociones" },
@@ -99,6 +109,7 @@
         ]
       },
       {
+        "titulo": "Pedagógico",
         "descripcion": "Estas prácticas buscan generar condiciones que favorezcan la creación de experiencias de enseñanza y aprendizaje, así como de convivencia. Estas prácticas de liderazgo directivo te hablarán de acciones intencionadas que se orientan a la valoración y al mejoramiento permanente de los procesos de enseñanza y aprendizaje. Desde aquí, es posible que comprendas la relación existente entre tú liderazgo pedagógico y la materialización de los objetivos del Proyecto Educativo. Las dos prácticas priorizadas aquí son:",
         "lista": [
           { "texto": "Dirección del PEI y orientación pedagógica" },
@@ -106,9 +117,11 @@
         ]
       },
       {
+        "titulo": "Administrativo y Comunitario",
         "descripcion": "Todas tus decisiones como Directivo Docente, así estas se entiendan como meramente administrativas, tienen efectos pedagógicos en el establecimiento educativo. En esta perspectiva como Directivo establecerás acciones para construir con tu equipo de trabajo una visión clara de lo que quieres de él. El ideal es que desarrolles una comprensión compartida y una misión común de la organización que esté pensada en el progreso formativo de todos los estudiantes."
       },
       {
+        "titulo": "Administrativo y Comunitario",
         "descripcion": "Sin duda, lo anterior te ayudará a establecer alianzas y lazos de cooperación que potencien el sentido de “pensar global y actuar local” (con otros establecimientos, con la comunidad, con organizaciones gubernamentales y no gubernamentales) y, por supuesto, aumentará tu conocimiento de temáticas, teorías y experiencias que amplíen tu visión como profesional de la educación. Para esto las dos prácticas priorizadas son:",
         "lista": [
           { "texto": "Construcción de redes y comunidades de aprendizaje" },
@@ -127,11 +140,14 @@
         "parrafo": "Un derrotero debe ser entendido como un criterio de actuación fundamental que orienta e inspira el actuar del líder educativo en la toma de decisiones que inciden en la vida de la comunidad educativa. Lee atentamente 4 derroteros que son transversales a  las prácticas de liderazgo: "
       }
     ],
-    "fondo": "img/fondos/8.png"
+    "fondo": "img/fondos/10.png",
+    "capas": {
+      "inferiorDerecha": "img/elementos/colibri.png"
+    }
   },
   {
     "tipo": "slide",
-    "fondo": "img/fondos/4.png",
+    "fondo": "img/fondos/5.png",
     "titulo": "Derroteros de actuación",
     "slide": [
       {
@@ -140,7 +156,7 @@
       },
       {
         "titulo": "EDUCACIÓN PARA TODOS",
-        "descripcion": "Cuando se habla de una educación con sentido relacionado con la configuración de una determinada disposición vital a nuestra existencia para soñar y sentir un proyecto por el que vale la pena luchar, se pone énfasis en el qué y el para qué de un establecimiento educativo en una sociedad como la nuestra, de igual forma, se indaga el para quién y el cómo, planteamiento que, sin duda, constituyen aspectos centrales de la calidad educativa y de su potencial transformador de los individuos y su entorno."
+        "descripcion": "Cuando se habla de una educación con sentido relacionado con la configuración de una determinada disposición vital a nuestra existencia para soñar y sentir un proyecto por el que vale la pena luchar, se pone énfasis en el qué y el para qué de un establecimiento educativo en una sociedad como la nuestra, de igual forma, se indaga el para quién y el cómo, planteamientos que, sin duda, constituyen aspectos centrales de la calidad educativa y de su potencial transformador de los individuos y su entorno."
       },
       {
         "titulo": "ÉTICO",
@@ -156,13 +172,16 @@
     "tipo": "normal",
     "textos": [
       {
-        "parrafo": "Las prácticas de liderazgo implican “Conocimientos profesionales” de un Directivo Docente"
+        "parrafo": "Las prácticas de liderazgo implican “CONOCIMIENTOS PROFESIONALES” de un Directivo Docente:"
       },
       {
         "parrafo": "Los conocimientos y saberes profesionales que tienes, o debes tener como Directivo Docente son adquiridos gracias a los diferentes subsistemas de formación a los que como educador has estado expuesto (inicial, avanzada o en servicio) y, sin duda, a tu experiencia profesional. "
       }
     ],
-    "fondo": "img/fondos/6.png"
+    "fondo": "img/fondos/6.png",
+    "capas": {
+      "inferiorDerecha": "img/elementos/colibri.png"
+    }
   },
   {
     "tipo": "slide",
@@ -182,10 +201,13 @@
     "tipo": "normal",
     "textos": [
       {
-        "parrafo": "Recuerda que en tu paso por la Escuela de Liderazgo los puedes potenciar y/o fortalecer ya que  están en permanente construcción y validación. "
+        "parrafo": "Recuerda que en tu paso por la ESCUELA DE LIDERAZGO los puedes potenciar y/o fortalecer ya que  están en permanente construcción y validación. "
       }
     ],
-    "fondo": "img/elementos/lupa.png"
+    "fondo": "img/fondos/6.png",
+    "capas": {
+      "inferiorIzquierda": "img/elementos/abeja.png"
+    }
   },
   {
     "tipo": "normal",
@@ -195,14 +217,17 @@
         "parrafo": " Son determinantes las habilidades y actitudes constitutivas de las prácticas de liderazgo que se asocian a las capacidades conductuales y técnicas que te permitirán diseñar, implementar y valorar procesos/acciones con el objetivo de superar o abordar cualquier situación del establecimiento educativo que diriges. Ten presente que dichas habilidades y actitudes se organizan en al menos tres grupos: aquellas orientadas abordar la contingencia y el cambio, aquellas asociadas con el diálogo y aquellas encaminadas a la construcción de confianza."
       }
     ],
-    "fondo": "img/elementos/pupitres.png"
+    "fondo": "img/elementos/pupitres.png",
+    "capas": {
+      "inferiorIzquierda": "img/elementos/abeja.png"
+    }
   },
   {
     "tipo": "animada",
     "titulo": "Componentes de la EdLDD ",
     "textos": [
       {
-        "parrafo": "La Escuela de Liderazgo para Directivos Docentes está conformada por 5 componentes que se articulan y relacionan entre sí aportando todos al fortalecimiento de las prácticas de liderazgo de los Directivos Docentes. Te invitamos a explorar lo que cada componente contribuirá en tu formación y desarrollo personal."
+        "parrafo": "La ESCUELA DE LIDERAZGO para Directivos Docentes está conformada por 5 COMPONENTES que se articulan y relacionan entre sí aportando todos al fortalecimiento de las prácticas de liderazgo de los Directivos Docentes. Te invitamos a explorar lo que cada componente contribuirá en tu formación y desarrollo personal."
       }
     ],
     "capas": {
@@ -244,8 +269,7 @@
         "descripcion": "Ten presente que este componente incluye la oferta de formación continua y avanzada en la que, como Directivo Docente, puedes continuar tu proceso formatico y de actualización profesional.",
         "lista": [
           {
-            "texto": "Si quieres conocer la oferta te invitamos a navegar Contacto Maestro para Directivos Docentes.",
-            "link": "https://contactomaestro.colombiaaprende.edu.co/transformar/formacion/directivo"
+            "texto": "Si quieres conocer la oferta te invitamos a navegar <a class='link' href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'> Contacto Maestro</a> para Directivos Docentes."
           }
         ]
       }
@@ -266,7 +290,7 @@
   },
   {
     "tipo": "slide",
-    "titulo": "4. investigación",
+    "titulo": "4. Investigación",
     "fondo": "img/fondos/1.png",
     "slide": [
       {
@@ -303,10 +327,13 @@
     "tipo": "normal",
     "textos": [
       {
-        "parrafo": "A continuación, te compartiremos cuatro estrategias que consideramos serán muy pertinentes en tu proceso de formación y desarrollo personal como Directivo Docente. "
+        "parrafo": "A continuación, te compartiremos CUATRO ESTRATEGIAS que consideramos serán muy pertinentes en tu proceso de formación y desarrollo personal como DIRECTIVO DOCENTE."
       }
     ],
-    "fondo": "img/4/capas/1.png"
+    "fondo": "img/4/capas/1.png",
+    "capas": {
+      "inferiorDerecha": "img/elementos/colibri.png"
+    }
   },
   {
     "tipo": "slide",
@@ -382,6 +409,12 @@
   {
     "tipo": "animada",
     "titulo": "¿Quiénes pueden ser parte?",
+    "subtitulo": "Directivos Docentes rectores, coordinadores, directores rurales, supervisores y directores de núcleo",
+    "textos": [
+      {
+        "parrafo": "Son los protagonistas de la Escuela de Liderazgo. Constituyen la población beneficiaria, en tanto son los sujetos vinculados a las diferentes iniciativas que promueve la EdLDD a través de sus componentes y de la participación de los aliados, de cara al desarrollo de las prácticas de liderazgo que impacten finalmente en los aprendizajes de los estudiantes."
+      }
+    ],
     "capas": {
       "uno": "img/5/capas/1.png",
       "dos": "img/5/capas/2.png",
@@ -392,13 +425,9 @@
   },
   {
     "tipo": "slide",
-    "titulo": "",
+    "titulo": "¿Quiénes pueden ser parte?",
     "fondo": "img/fondos/2.png",
     "slide": [
-      {
-        "titulo": "Directivos Docentes rectores, coordinadores, directores rurales, supervisores y directores de núcleo",
-        "descripcion": "Son los protagonistas de la Escuela de Liderazgo. Constituyen la población beneficiaria, en tanto son los sujetos vinculados a las diferentes iniciativas que promueve la EdLDD a través de sus componentes y de la participación de los aliados, de cara al desarrollo de las prácticas de liderazgo que impacten finalmente en los aprendizajes de los estudiantes."
-      },
       {
         "titulo": "Ministerio de Educación Nacional",
         "descripcion": "Desde el nivel nacional y en el marco del Plan de Desarrollo, lidera la estructuración de la Escuela de Liderazgo, acompaña su puesta en marcha para la apropiación en el ámbito local y realiza seguimiento y evaluación, en el marco de la política de calidad educativa. Así mismo, pone a disposición de los territorios las ofertas de los diferentes componentes de la Escuela para que estos se sumen a la iniciativa, proporcionándoles los énfasis que apliquen acorde con los distintos contextos.   "
@@ -443,7 +472,10 @@
         "parrafo": "Con el propósito de lograr verdaderas sinergias y “hacer Escuela”, sumando desde diferentes potencialidades y experiencias, resulta necesario que los diferentes aliados, tamicen y reorienten su experiencia y saber acumulado en clave de los tipos de liderazgo y de las prácticas de liderazgo que se promueven y fortalecen en la Escuela."
       }
     ],
-    "fondo": "img/5/capas/1.png"
+    "fondo": "img/5/capas/1.png",
+    "capas": {
+      "inferiorIzquierda": "img/elementos/abeja.png"
+    }
   },
   {
     "tipo": "animada",
@@ -459,10 +491,13 @@
   },
   {
     "tipo": "animada",
-    "titulo": "Paisaje sonoro: Escuela de Liderazgo, semillero de testimonio significativos",
+    "titulo": "Paisaje sonoro: ESCUELA DE LIDERAZGO, semillero de testimonios significativos",
     "textos": [
       {
-        "parrafo": "La Escuela de Liderazgo tiene dentro de sus intencionalidades el escuchar tu voz y de potenciar todo el trabajo que tanto tú como otros Directivos Docentes están haciendo en las regiones. "
+        "parrafo": "La Escuela de Liderazgo tiene dentro de sus intencionales, escuchar tu voz y potenciar todo el trabajo que tanto tú como otros Directivos Docentes están haciendo en las regiones."
+      },
+      {
+        "parrafo": "Te invitamos a escuchar las experiencias de algunos de tus pares."
       }
     ],
     "capas": {
