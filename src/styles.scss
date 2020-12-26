@@ -74,6 +74,7 @@ $ms-2: 0.694em;
   overflow: hidden;
   z-index: 1;
   position: absolute;
+  top: 0;
   margin: 0;
   padding: 0;
   text-align: justify;
@@ -364,6 +365,18 @@ code {
       transform: translateY(46px);
     }
   }
+  &.mapa {
+    .container {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      grid-template-rows: 1fr;
+      align-content: center;
+      justify-items: center;
+    }
+    .textos {
+      width: 50%;
+    }
+  }
 }
 #fp-nav.fp-right {
   right: 0px;
@@ -409,6 +422,10 @@ video {
 .subtitulo {
   font-size: xx-large;
   font-weight: bold;
+}
+.mapContainer {
+  width: 100%;
+  height: 100%;
 }
 // generales
 html,

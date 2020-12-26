@@ -3,6 +3,7 @@ import Animada from './Animada';
 import Normal from './Normal';
 import Slide from './Slide';
 import Video from './Video';
+import Mapa from './Mapa';
 
 export default function Seccion(e) {
   function moveSectionDown() {
@@ -19,6 +20,14 @@ export default function Seccion(e) {
       return <Video e={e} moveSectionDown={moveSectionDown} />;
     case 'slide':
       return <Slide e={e} moveSectionDown={moveSectionDown} />;
+    case 'mapa':
+      return (
+        <Mapa
+          e={e}
+          moveSectionDown={moveSectionDown}
+          fullpageApi={e.fullpageApi ? e.fullpageApi : null}
+        />
+      );
     default:
       return <Normal e={e} moveSectionDown={moveSectionDown} />;
   }

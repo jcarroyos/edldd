@@ -477,18 +477,7 @@
       "inferiorIzquierda": "img/elementos/abeja.png"
     }
   },
-  {
-    "tipo": "animada",
-    "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
-    "textos": [
-      {
-        "parrafo": "Si tienes una historia que contar, únete con tu voz. *** Zona en construcción ***"
-      }
-    ],
-    "capas": {
-      "uno": "img/1/capas/1.png"
-    }
-  },
+
   {
     "tipo": "animada",
     "titulo": "Paisaje sonoro: ESCUELA DE LIDERAZGO, semillero de testimonios significativos",
@@ -506,6 +495,18 @@
       "tres": "img/7/capas/3.png",
       "cuatro": "img/7/capas/4.png",
       "cinco": "img/7/capas/5.png"
+    }
+  },
+  {
+    "tipo": "mapa",
+    "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
+    "textos": [
+      {
+        "parrafo": "Si tienes una historia que contar, únete con tu voz. *** Zona en construcción ***"
+      }
+    ],
+    "capas": {
+      "uno": "img/1/capas/1.png"
     }
   },
   {
