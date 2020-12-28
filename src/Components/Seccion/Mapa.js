@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+import React, { useEffect } from 'react';
+import ReactMapboxGl from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import Slide from './Slide';
 
 const Map = ReactMapboxGl({
   accessToken:
@@ -8,11 +9,16 @@ const Map = ReactMapboxGl({
 });
 
 export default function Mapa({ e, moveSectionDown, fullpageApi }) {
+  useEffect(() => {
+    fullpageApi ? fullpageApi.setKeyboardScrolling(!e.active, 'all') : null;
+    console.log(fullpageApi ? fullpageApi.getActiveSlide() : null);
+    return () => {};
+  }, [e.active]);
   return (
     <div className="section mapa">
       <div className="container">
-        <div className="Textos">
-          <p>Sección en construcción</p>
+        <div className="textos">
+          <Slide e={{ ...e, last: true }} mapa={true} />
         </div>
         <Map
           style="mapbox://styles/jcarroyos/ckg1dqdsl16ba19o7sj5kxvvr"
@@ -23,7 +29,7 @@ export default function Mapa({ e, moveSectionDown, fullpageApi }) {
         />
       </div>
       {!e.last && (
-        <aside className="icon-scroll hidden" onClick={moveSectionDown} />
+        <aside className="icon-scroll u-scroll" onClick={moveSectionDown} />
       )}
     </div>
   );

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
 
-export default function Slide({ e, moveSectionDown }) {
+export default function Slide({ e, moveSectionDown, mapa }) {
   return (
     <div
-      className="section carousel"
+      className={mapa ? 'mapaSlide' : 'section carousel'}
       style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
