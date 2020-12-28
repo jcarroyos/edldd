@@ -1,5 +1,5 @@
 export default function onLeave(origin, destination, direction) {
-  console.log(origin, destination, direction);
+  // console.log(origin, destination, direction);
 
   // capas seccion animada
   [...document.querySelectorAll('.capa_uno')].map(

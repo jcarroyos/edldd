@@ -21,13 +21,7 @@ export default function Seccion(e) {
     case 'slide':
       return <Slide e={e} moveSectionDown={moveSectionDown} />;
     case 'mapa':
-      return (
-        <Mapa
-          e={e}
-          moveSectionDown={moveSectionDown}
-          fullpageApi={e.fullpageApi ? e.fullpageApi : null}
-        />
-      );
+      return <Mapa e={e} moveSectionDown={moveSectionDown} />;
     default:
       return <Normal e={e} moveSectionDown={moveSectionDown} />;
   }

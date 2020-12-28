@@ -42,8 +42,8 @@ $morado_brillante: rgb(194, 99, 249);
 $morado_claro: rgb(229, 179, 254);
 // degradados
 $ac_mo: linear-gradient(
-  45deg,
-  rgba($azul_brillante, 1) 0%,
+  135deg,
+  rgba($azul_brillante, 0.6) 0%,
   rgba($morado_oscuro, 0.4) 100%
 );
 $m_ao: linear-gradient(45deg, rgba($morado, 0.9) 0%, rgba($azul, 0.1) 100%);
@@ -327,17 +327,37 @@ code {
       display: block;
       top: 3vh;
       color: $blanco;
-      font-size: $ms2;
+      font-size: $ms1;
       font-weight: 200;
 
       @include breakpoint(md) {
+        top: 5vh;
         font-size: $ms3;
       }
     }
     .slide {
       &-container {
+        background: $ac_mo;
         max-height: 95%;
+        width: 85%;
         overflow-y: auto;
+      }
+      h4 {
+        font-size: $ms0;
+        margin: $ms-1;
+        @include breakpoint(md) {
+          font-size: $ms1;
+          margin: $ms0;
+        }
+      }
+      p {
+        width: 95%;
+        text-align: justify;
+        margin: $ms-2;
+        font-size: $ms-1;
+        @include breakpoint(md) {
+          font-size: $ms0;
+        }
       }
     }
   }

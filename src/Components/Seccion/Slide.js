@@ -15,7 +15,7 @@ export default function Slide({ e, moveSectionDown, mapa }) {
           <div key={index} className="slide">
             <div className="slide-container">
               <h4>{ReactHtmlParser(item.titulo)}</h4>
-              <p>{ReactHtmlParser(item.descripcion)}</p>
+              {item.descripcion && <p>{ReactHtmlParser(item.descripcion)}</p>}
               <ul>
                 {Boolean(item.lista)
                   ? item.lista.map((li) => (

@@ -500,17 +500,56 @@
   {
     "tipo": "mapa",
     "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
+    "fondo": "img/fondos/1.png",
     "slide": [
       {
         "titulo": "Atlántico",
-        "lista": [{ "texto": "ETC Barranquilla: 23 rectores" }]
+        "descripcion": "Programa Todos a Aprender (PTA). Año 2020<br/>Directivos Docentes participantes en formación y acompañamiento:",
+        "lista": [{ "texto": "ETC Barranquilla: 23 rectores" }],
+        "mapa": {
+          "center": [-74.983808, 10.679425],
+          "zoom": 8
+        }
       },
       {
         "titulo": "Bolívar",
-        "descripcion": "<b>Estrategia de Mentoría</br> Directivos ",
+        "descripcion": "Estrategia de Mentoría Directivos:",
         "lista": [
-          { "texto": "<b>Rectora:</b> María Auxiliadora Banda de Del Valle" }
-        ]
+          {
+            "texto": "<b>Rectora:</b> María Auxiliadora Banda de Del Valle - ETC Cartagena"
+          },
+          {
+            "texto": "<b>Rectora:</b> Elizabeth Cañate Araujo - ETC Cartagena"
+          },
+          {
+            "texto": "<b>Coordinadora:</b> Luz Marina Castilla Pájaro - ETC Cartagena"
+          }
+        ],
+        "mapa": {
+          "center": [-74.967931, 8.901253],
+          "zoom": 7
+        }
+      },
+      {
+        "titulo": "Bolívar",
+        "lista": [
+          {
+            "texto": "<b>Rector:</b> Ezequiel Antonio Fernández Castilla - ETC Cartagena"
+          },
+          {
+            "texto": "<b>Rectora:</b> Leddy del Rosario Zapadiel Herrera - ETC Cartagena"
+          },
+          {
+            "texto": "<b>Rectora:</b> Ruth Graciela Cerro Tapia - ETC Cartagena"
+          },
+          {
+            "texto": "<b>Rector:</b> Alfredo Luis Cabarcas Agamez - ETC Turbaco"
+          }
+        ],
+        "mapa": {
+          "center": [-74.967931, 8.901253],
+          "zoom": 7
+        }
       }
     ]
   },
