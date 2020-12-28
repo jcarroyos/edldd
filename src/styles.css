@@ -263,16 +263,38 @@ code {
   display: block;
   top: 3vh;
   color: white;
-  font-size: 1.44em;
+  font-size: 1.2em;
   font-weight: 200; }
 
 @media (min-width: 992px) {
   .section.mapa .titulo {
+    top: 5vh;
     font-size: 1.728em; } }
 
 .section.mapa .slide-container {
+  background: linear-gradient(135deg, rgba(153, 255, 255, 0.6) 0%, rgba(131, 11, 196, 0.4) 100%);
   max-height: 95%;
+  width: 85%;
   overflow-y: auto; }
+
+.section.mapa .slide h4 {
+  font-size: 1em;
+  margin: 0.833em; }
+
+@media (min-width: 992px) {
+  .section.mapa .slide h4 {
+    font-size: 1.2em;
+    margin: 1em; } }
+
+.section.mapa .slide p {
+  width: 95%;
+  text-align: justify;
+  margin: 0.694em;
+  font-size: 0.833em; }
+
+@media (min-width: 992px) {
+  .section.mapa .slide p {
+    font-size: 1em; } }
 
 #fp-nav ul li a span {
   background-color: #e6da35; }

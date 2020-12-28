@@ -13,11 +13,20 @@ import afterLoad from './helpers/afterLoad';
 import fullpageOptions from './helpers/fullpageOptions';
 
 class FullpageWrapper extends React.Component {
-  onLeave = (origin, destination, direction) =>
+  state = {
+    slideIndex: 0,
+    sectionIndex: 0,
+  };
+  onLeave = (origin, destination, direction) => {
+    this.setState({ sectionIndex: destination.index });
     onLeave(origin, destination, direction);
+  };
 
   afterLoad = (origin, destination, direction) =>
     afterLoad(origin, destination, direction);
+
+  onSlideLeave = (section, origin, destination, direction) =>
+    this.setState({ slideIndex: destination.index });
 
   render() {
     return (
@@ -25,20 +34,19 @@ class FullpageWrapper extends React.Component {
         {...fullpageOptions}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
+        onSlideLeave={this.onSlideLeave.bind(this)}
         render={({ state, fullpageApi }) => {
           return (
             <Fragment>
               <div>
                 {data.map((e, i) => (
                   <Seccion
-                    index={state.destination ? state.destination.index : 0}
                     e={{ ...e, mainState: state }}
                     key={i}
                     fullpageApi={fullpageApi}
                     last={i === data.length - 1}
-                    active={
-                      state.destination ? state.destination.index === i : false
-                    }
+                    active={this.state.sectionIndex === i}
+                    slideIndex={this.state.slideIndex}
                   />
                 ))}
               </div>
