@@ -1,39 +1,44 @@
 {
-    "homepage": "https://brevetdev.github.io/edldd",
-    "name": "edldd",
-    "version": "1.0.0",
-    "description": "Multimedia Escuela de Liderazgo para directivos y docentes",
-    "keywords": [
-        "react-fullpage",
-        "component",
-        "fullpage.js"
-    ],
-    "main": "src/index.js",
-    "dependencies": {
-        "animate.css": "^4.1.1",
-        "mini.css": "^3.0.1",
-        "react": "16.3.2",
-        "react-dom": "16.3.2",
-        "react-html-parser": "^2.0.2",
-        "react-scripts": "1.1.4"
-    },
-    "devDependencies": {
-        "@fullpage/react-fullpage": "^0.1.18",
-        "customize-cra": "^1.0.0",
-        "gh-pages": "^3.1.0",
-        "node-sass": "^5.0.0",
-        "npm-run-all": "^4.1.5",
-        "react-app-rewired": "^2.1.8"
-    },
-    "scripts": {
-        "build-css": "node-sass --include-path ./src --include-path   ./node_modules src/ -o src/",
-        "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-        "start": "npm-run-all -p watch-css start-js",
-        "build": "npm run build-css && react-scripts build",
-        "start-js": "react-scripts start",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build && rm -r ./docs/ && cp -r ./build ./docs"
-    }
+  "homepage": "https://brevetdev.github.io/edldd",
+  "name": "edldd",
+  "version": "1.0.0",
+  "description": "Multimedia Escuela de Liderazgo para directivos y docentes",
+  "keywords": [
+    "react-fullpage",
+    "component",
+    "fullpage.js"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "mapbox-gl": "^2.0.1",
+    "mini.css": "^3.0.1",
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-html-parser": "^2.0.2",
+    "react-mapbox-gl": "^5.1.1",
+    "react-playlist-player": "^1.0.11",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "@fullpage/react-fullpage": "^0.1.18",
+    "customize-cra": "^1.0.0",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "react-app-rewired": "^2.1.8"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path ./src --include-path   ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "start-js": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build && rm -r ./docs/ && cp -r ./build ./docs"
+  }
 }

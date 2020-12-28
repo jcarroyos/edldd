@@ -7,6 +7,7 @@
   overflow: hidden;
   z-index: 1;
   position: absolute;
+  top: 0;
   margin: 0;
   padding: 0;
   text-align: justify;
@@ -205,16 +206,102 @@ code {
   .section.carousel h3 {
     font-size: 2.074em; } }
 
-.section.carousel #fp-nav ul li a span {
+.section.mapa > .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 1fr;
+  align-content: center;
+  justify-items: center; }
+
+@media (min-width: 992px) {
+  .section.mapa > .container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr; } }
+
+@media (min-width: 1200px) {
+  .section.mapa > .container {
+    grid-template-columns: 40% 1fr; } }
+
+.section.mapa .textos {
+  width: 90%;
+  height: 100%; }
+
+@media (min-width: 992px) {
+  .section.mapa .fp-controlArrow.fp-prev,
+  .section.mapa .fp-controlArrow.fp-next {
+    top: initial; } }
+
+@media (min-width: 992px) {
+  .section.mapa .fp-controlArrow.fp-next {
+    right: 52%; } }
+
+@media (min-width: 1200px) {
+  .section.mapa .fp-controlArrow.fp-next {
+    right: 61.6%; } }
+
+.section.mapa .fp-slidesNav.fp-bottom {
+  top: 50%; }
+
+@media (min-width: 992px) {
+  .section.mapa .fp-slidesNav.fp-bottom {
+    top: initial;
+    width: 50%;
+    margin: 0 !important; } }
+
+@media (min-width: 1200px) {
+  .section.mapa .fp-slidesNav.fp-bottom {
+    width: 40%; } }
+
+.section.mapa .titulo {
+  position: absolute;
+  text-shadow: 1px 1px 2px #006d72;
+  color: white;
+  text-shadow: 1px 1px 2px #006d72;
+  font-size: 1.44em;
+  padding: 0 1em;
+  display: block;
+  top: 3vh;
+  color: white;
+  font-size: 1.44em;
+  font-weight: 200; }
+
+@media (min-width: 992px) {
+  .section.mapa .titulo {
+    font-size: 1.728em; } }
+
+.section.mapa .slide-container {
+  max-height: 95%;
+  overflow-y: auto; }
+
+#fp-nav ul li a span {
   background-color: #e6da35; }
 
-.section.carousel .slide-container {
+.fp-slidesNav {
+  width: fit-content; }
+
+.fp-controlArrow.fp-prev {
+  position: absolute;
+  left: 1em; }
+
+.fp-controlArrow.fp-next {
+  position: absolute;
+  right: 1em; }
+
+#fp-nav.fp-right {
+  right: 0px; }
+
+.fp-slidesNav ul li a span,
+#fp-nav ul li a span {
+  background: yellow !important; }
+
+.slide-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 60vw;
+  width: 60%;
   background: linear-gradient(45deg, rgba(154, 46, 219, 0.9) 0%, rgba(0, 204, 204, 0.1) 100%);
   border-radius: 0 20px 0 20px;
   padding: 1.44em;
@@ -222,13 +309,13 @@ code {
   text-shadow: 1px 1px 2px #00cccc; }
 
 @media (min-width: 768px) {
-  .section.carousel .slide-container {
-    width: 80vw; } }
+  .slide-container {
+    width: 80%; } }
 
-.section.carousel .slide-container h4 {
+.slide-container h4 {
   font-size: 1.2em; }
 
-.section.carousel .slide-container p {
+.slide-container p {
   font-size: 1em;
   font-weight: 300;
   margin-bottom: 1.2em;
@@ -236,25 +323,35 @@ code {
   text-align: justify; }
 
 @media (min-width: 992px) {
-  .section.carousel .slide-container p {
+  .slide-container p {
     line-height: 1.2em; } }
 
-.section.carousel .slide-container li {
+.slide-container li {
   font-size: 1em;
   line-height: 1em; }
 
-.section.carousel .fp-slidesNav {
-  width: fit-content; }
+.slide-container .textos {
+  width: 100%;
+  height: 100%; }
 
-.section.carousel .fp-controlArrow.fp-prev {
-  position: absolute;
-  left: 1em; }
+.slide > .fp-tableCell {
+  height: 100% !important; }
 
-.section.carousel .fp-controlArrow.fp-next {
-  position: absolute;
-  right: 1em; }
+.slide .fp-controlArrow.fp-prev {
+  height: 30%; }
 
-.section .icon-scroll {
+.mapaSlide {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.mapaSlide .container {
+  position: static;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+.icon-scroll {
   z-index: 999;
   cursor: pointer;
   position: fixed;
@@ -269,7 +366,7 @@ code {
   position: absolute;
   left: 50%; }
 
-.section .icon-scroll::before {
+.icon-scroll::before {
   content: '';
   width: 8px;
   height: 8px;
@@ -283,7 +380,7 @@ code {
   left: 50%;
   position: absolute; }
 
-.section .u-scroll {
+.u-scroll {
   left: 70%; }
 
 @keyframes scroll {
@@ -292,13 +389,6 @@ code {
   100% {
     opacity: 0;
     transform: translateY(46px); } }
-
-#fp-nav.fp-right {
-  right: 0px; }
-
-.fp-slidesNav ul li a span,
-#fp-nav ul li a span {
-  background: yellow !important; }
 
 .veladura {
   background-color: rgba(0, 0, 0, 0.3);
@@ -338,6 +428,10 @@ video::focus {
 .subtitulo {
   font-size: xx-large;
   font-weight: bold; }
+
+.mapContainer {
+  width: 100%;
+  height: 100%; }
 
 html,
 * {

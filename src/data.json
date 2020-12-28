@@ -477,18 +477,7 @@
       "inferiorIzquierda": "img/elementos/abeja.png"
     }
   },
-  {
-    "tipo": "animada",
-    "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
-    "textos": [
-      {
-        "parrafo": "Si tienes una historia que contar, únete con tu voz. *** Zona en construcción ***"
-      }
-    ],
-    "capas": {
-      "uno": "img/1/capas/1.png"
-    }
-  },
+
   {
     "tipo": "animada",
     "titulo": "Paisaje sonoro: ESCUELA DE LIDERAZGO, semillero de testimonios significativos",
@@ -507,6 +496,23 @@
       "cuatro": "img/7/capas/4.png",
       "cinco": "img/7/capas/5.png"
     }
+  },
+  {
+    "tipo": "mapa",
+    "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
+    "slide": [
+      {
+        "titulo": "Atlántico",
+        "lista": [{ "texto": "ETC Barranquilla: 23 rectores" }]
+      },
+      {
+        "titulo": "Bolívar",
+        "descripcion": "<b>Estrategia de Mentoría</br> Directivos ",
+        "lista": [
+          { "texto": "<b>Rectora:</b> María Auxiliadora Banda de Del Valle" }
+        ]
+      }
+    ]
   },
   {
     "tipo": "animada",
