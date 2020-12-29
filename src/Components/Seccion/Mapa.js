@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 import Slide from './Slide';
 
 const Map = ReactMapboxGl({

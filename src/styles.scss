@@ -517,6 +517,17 @@ video {
     outline: none;
   }
 }
+.audio {
+  width: 90%;
+}
+.audio__player {
+  border-radius: $ms1;
+  position: static !important;
+  background-color: rgba($negro, 0.5) !important;
+  .icons {
+    // display: flex;
+  }
+}
 .titulo,
 .subtitulo {
   text-align: center;
