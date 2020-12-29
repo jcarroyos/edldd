@@ -499,9 +499,18 @@
   },
   {
     "tipo": "mapa",
-    "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
+    "titulo": "Mapa interactivo",
     "fondo": "img/fondos/1.png",
     "slide": [
+      {
+        "titulo": "La EdLDD avanza en territorio",
+        "descripcion": "Cobertura nacional",
+        "lista": [{ "texto": "" }],
+        "mapa": {
+          "center": [-74, -3],
+          "zoom": 5
+        }
+      },
       {
         "titulo": "Atlántico",
         "descripcion": "Programa Todos a Aprender (PTA). Año 2020<br/>Directivos Docentes participantes en formación y acompañamiento:",
