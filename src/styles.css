@@ -384,6 +384,14 @@ video {
   video::focus {
     outline: none; }
 
+.audio {
+  width: 90%; }
+
+.audio__player {
+  border-radius: 1.2em;
+  position: static !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
 .titulo,
 .subtitulo {
   text-align: center; }

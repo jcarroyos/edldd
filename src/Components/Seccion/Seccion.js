@@ -4,6 +4,7 @@ import Normal from './Normal';
 import Slide from './Slide';
 import Video from './Video';
 import Mapa from './Mapa';
+import Audio from './Audio';
 
 export default function Seccion(e) {
   function moveSectionDown() {
@@ -22,6 +23,8 @@ export default function Seccion(e) {
       return <Slide e={e} moveSectionDown={moveSectionDown} />;
     case 'mapa':
       return <Mapa e={e} moveSectionDown={moveSectionDown} />;
+    case 'audio':
+      return <Audio e={e} moveSectionDown={moveSectionDown} />;
     default:
       return <Normal e={e} moveSectionDown={moveSectionDown} />;
   }
