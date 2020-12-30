@@ -21,7 +21,7 @@ export default function Mapa({ e, moveSectionDown }) {
   return (
     <div
       className="section mapa"
-      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(edldd/${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
         <div className="textos">
@@ -29,6 +29,13 @@ export default function Mapa({ e, moveSectionDown }) {
             e={{ ...e, last: true, e: { ...e.e, fondo: '' } }}
             mapa={true}
           />
+        </div>
+        <div className="buttons">
+          <button>DESPLIEGUE TERRITORIAL</button>
+          <button>Programa de formación y acompañamiento PTA</button>
+          <button>
+            Imagen de avances de la Escuela de Liderazgo por componentes
+          </button>
         </div>
         <Map
           style="mapbox://styles/jcarroyos/ckg1dqdsl16ba19o7sj5kxvvr"
