@@ -5,7 +5,7 @@ export default function Normal({ e, moveSectionDown }) {
   return (
     <div
       className="section normal"
-      style={{ backgroundImage: `url(./${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="veladura"></div>
       <div className="container">
@@ -27,7 +27,7 @@ export default function Normal({ e, moveSectionDown }) {
           <div
             className="capa capa_uno superiorDerecha"
             style={{
-              backgroundImage: `url(./${
+              backgroundImage: `url(${
                 e.e.capas.superiorDerecha ? e.e.capas.superiorDerecha : null
               })`,
             }}
@@ -37,7 +37,7 @@ export default function Normal({ e, moveSectionDown }) {
           <div
             className="capa capa_dos superiorIzquierda"
             style={{
-              backgroundImage: `url(./${
+              backgroundImage: `url(${
                 e.e.capas.superiorIzquierda ? e.e.capas.superiorIzquierda : null
               })`,
             }}
@@ -47,7 +47,7 @@ export default function Normal({ e, moveSectionDown }) {
           <div
             className="capa capa_tres inferiorDerecha"
             style={{
-              backgroundImage: `url(./${
+              backgroundImage: `url(${
                 e.e.capas.inferiorDerecha ? e.e.capas.inferiorDerecha : null
               })`,
             }}
@@ -57,7 +57,7 @@ export default function Normal({ e, moveSectionDown }) {
           <div
             className="capa capa_cuatro inferiorIzquierda"
             style={{
-              backgroundImage: `url(./${
+              backgroundImage: `url(${
                 e.e.capas.inferiorIzquierda ? e.e.capas.inferiorIzquierda : null
               })`,
             }}
