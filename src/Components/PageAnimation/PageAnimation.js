@@ -7,9 +7,7 @@ export default function PageAnimation({ e }) {
         <div
           className="capa capa_uno"
           style={{
-            backgroundImage: `url(edldd/${
-              e.e.capas.uno ? e.e.capas.uno : null
-            })`,
+            backgroundImage: `url(./${e.e.capas.uno ? e.e.capas.uno : null})`,
           }}
         ></div>
       )}
@@ -18,9 +16,7 @@ export default function PageAnimation({ e }) {
         <div
           className="capa capa_dos"
           style={{
-            backgroundImage: `url(edldd/${
-              e.e.capas.dos ? e.e.capas.dos : null
-            })`,
+            backgroundImage: `url(./${e.e.capas.dos ? e.e.capas.dos : null})`,
           }}
         ></div>
       )}
@@ -28,9 +24,7 @@ export default function PageAnimation({ e }) {
         <div
           className="capa capa_tres"
           style={{
-            backgroundImage: `url(edldd/${
-              e.e.capas.tres ? e.e.capas.tres : null
-            })`,
+            backgroundImage: `url(./${e.e.capas.tres ? e.e.capas.tres : null})`,
           }}
         ></div>
       )}
@@ -38,7 +32,7 @@ export default function PageAnimation({ e }) {
         <div
           className="capa capa_cuatro"
           style={{
-            backgroundImage: `url(edldd/${
+            backgroundImage: `url(./${
               e.e.capas.cuatro ? e.e.capas.cuatro : null
             })`,
           }}
@@ -48,7 +42,7 @@ export default function PageAnimation({ e }) {
         <div
           className="capa capa_cinco"
           style={{
-            backgroundImage: `url(edldd/${
+            backgroundImage: `url(./${
               e.e.capas.cinco ? e.e.capas.cinco : null
             })`,
           }}

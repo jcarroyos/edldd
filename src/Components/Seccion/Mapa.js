@@ -39,7 +39,7 @@ export default function Mapa({ e, moveSectionDown }) {
   return (
     <div
       className="section mapa"
-      style={{ backgroundImage: `url(edldd/${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(./${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
         <div className="textos">
@@ -84,15 +84,12 @@ function ContentModal({ e, indexModal }) {
   if (indexModal === 0) {
     return (
       <video controls autoPlay>
-        <source
-          src="edldd/video/DespliegueTerritorialEdLDD.mp4"
-          type="video/mp4"
-        />
+        <source src="./video/DespliegueTerritorialEdLDD.mp4" type="video/mp4" />
       </video>
     );
   } else if (indexModal === 1) {
-    return <PDFViewer document={{ url: '/edldd/MapaInteractivoPTA(3).pdf' }} />;
+    return <PDFViewer document={{ url: './MapaInteractivoPTA(3).pdf' }} />;
   } else {
-    return <PDFViewer document={{ url: '/edldd/infografia.pdf' }} />;
+    return <PDFViewer document={{ url: './infografia.pdf' }} />;
   }
 }
