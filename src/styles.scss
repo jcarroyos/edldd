@@ -104,6 +104,7 @@ code {
 
 // hacks fullpage.js
 .section {
+  padding: 0 !important;
   background-size: cover;
   //background-position: right;
   background-color: $azul_oscuro;
@@ -132,15 +133,11 @@ code {
     h2 {
       color: $blanco;
       text-shadow: 1px 1px 2px $azul_oscuro;
-      font-size: $ms2;
+      font-size: $ms1;
       padding: $ms-2;
-      width: 70vw;
-      margin-bottom: -100px;
+      width: 90%;
       @include breakpoint(md) {
         margin-bottom: initial;
-        font-size: $ms2;
-      }
-      @include breakpoint(lg) {
         font-size: $ms3;
       }
     }
@@ -151,9 +148,9 @@ code {
       justify-content: center;
       .parrafo {
         width: 80vw;
-        font-size: $ms1;
+        font-size: $ms0;
         font-weight: 300;
-        line-height: $ms2;
+        line-height: $ms1;
         text-shadow: 1px 1px 2px $negro;
         color: $blanco;
         margin: 0;
@@ -208,7 +205,9 @@ code {
     width: 100vw;
     height: 100vh;
     display: block;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -277,13 +276,31 @@ code {
       position: relative;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 60% 1fr;
+      grid-template-rows: 50% 10% 1fr;
       align-content: center;
       justify-items: center;
+      .buttons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button {
+          cursor: pointer;
+          background-color: $morado_brillante;
+          color: $blanco;
+          z-index: 2;
+          // &:before {
+          //   content: 'ico';
+          //   margin-right: $ms-2;
+          //   background-color: $blanco;
+          // }
+        }
+      }
       @include breakpoint(md) {
+        grid-template-areas: 'textos mapa' 'botones mapa';
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 70% 30%;
-        grid-area: 'textos mapa' 'botones mapa';
+        grid-template-rows: 90% 10%;
         .textos {
           grid-area: textos;
         }
@@ -298,17 +315,18 @@ code {
         grid-template-columns: 40% 1fr;
       }
     }
-    .textos {
-      width: 90%;
-      height: 100%;
-    }
     .fp-controlArrow.fp-prev,
     .fp-controlArrow.fp-next {
+      top: 25%;
       @include breakpoint(md) {
         top: initial;
       }
     }
+    .fp-controlArrow.fp-prev {
+      left: 0;
+    }
     .fp-controlArrow.fp-next {
+      right: 0;
       @include breakpoint(md) {
         right: 52%;
       }
@@ -317,9 +335,10 @@ code {
       }
     }
     .fp-slidesNav.fp-bottom {
-      top: 50%;
+      z-index: 3;
+      bottom: 48%;
       @include breakpoint(md) {
-        top: initial;
+        top: 85%;
         width: 50%;
         margin: 0 !important;
       }
@@ -328,7 +347,6 @@ code {
       }
     }
     .titulo {
-      position: absolute;
       text-shadow: 1px 1px 2px $azul_oscuro;
       color: $blanco;
       text-shadow: 1px 1px 2px $azul_oscuro;
@@ -349,8 +367,7 @@ code {
       &-container {
         background: $ac_mo;
         max-height: 95%;
-        width: 85%;
-        overflow-y: auto;
+        width: 75%;
       }
       h4 {
         font-size: $ms0;
@@ -434,6 +451,7 @@ code {
     }
   }
   > .fp-tableCell {
+    position: relative;
     height: 100% !important;
   }
   .fp-controlArrow.fp-prev {
@@ -534,9 +552,6 @@ video {
   border-radius: $ms1;
   position: static !important;
   background-color: rgba($negro, 0.5) !important;
-  .icons {
-    // display: flex;
-  }
 }
 .titulo,
 .subtitulo {
@@ -550,6 +565,32 @@ video {
   width: 100%;
   height: 100%;
 }
+.ReactModal {
+  &__Overlay {
+    background-color: rgba($negro, 0.6) !important;
+  }
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > .container {
+      display: block;
+      height: 100%;
+      width: 100%;
+      div {
+        margin: 0 auto;
+        height: auto !important;
+      }
+    }
+  }
+}
+.Overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
 // generales
 html,
 * {

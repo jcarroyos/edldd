@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import PageAnimation from '../PageAnimation/PageAnimation';
+import PageAnimation from '../PageAnimation';
 
 export default function Animada({ e, moveSectionDown }) {
   return (

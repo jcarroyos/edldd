@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AudioPlayer, { toggleAudio } from 'react-playlist-player';
-import PageAnimation from '../PageAnimation/PageAnimation';
+import PageAnimation from '../PageAnimation';
 
 export default function Audio({ e, moveSectionDown }) {
   const [currentPlayList, setCurrentPlayList] = useState({});
@@ -18,10 +18,7 @@ export default function Audio({ e, moveSectionDown }) {
       style={{ backgroundImage: `url(edldd/${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
-        <AudioPlayer
-          currentPlayList={currentPlayList}
-          onToggle={({ audioPlaying }) => console.log({ audioPlaying })}
-        />
+        <AudioPlayer currentPlayList={currentPlayList} />
       </div>
 
       {e.e.capas ? <PageAnimation e={e} /> : null}
