@@ -15,7 +15,7 @@ export default function Audio({ e, moveSectionDown }) {
   return (
     <div
       className="section audios"
-      style={{ backgroundImage: `url(./${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
         <AudioPlayer currentPlayList={currentPlayList} />

@@ -3,6 +3,7 @@ import ReactMapboxGl from 'react-mapbox-gl';
 import Modal from 'react-modal';
 import Slide from './Slide';
 import PDFViewer from 'pdf-viewer-reactjs';
+import { PropTypes } from 'mobx-react';
 
 const Map = ReactMapboxGl({
   accessToken:
@@ -39,7 +40,7 @@ export default function Mapa({ e, moveSectionDown }) {
   return (
     <div
       className="section mapa"
-      style={{ backgroundImage: `url(./${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
         <div className="textos">
@@ -50,13 +51,13 @@ export default function Mapa({ e, moveSectionDown }) {
         </div>
         <div className="buttons">
           <button className="button despliegue" onClick={() => openModal(0)}>
-            DESPLIEGUE
+            <i class="material-icons">play_circle_outline</i> DESPLIEGUE
           </button>
           <button className="button pta" onClick={() => openModal(1)}>
-            PTA
+            <i class="material-icons">visibility</i> PTA
           </button>
           <button className="button avances" onClick={() => openModal(2)}>
-            AVANCES
+            <i class="material-icons">visibility</i> AVANCES
           </button>
         </div>
         <Map
@@ -80,16 +81,43 @@ export default function Mapa({ e, moveSectionDown }) {
   );
 }
 
+const navigation = {
+  navbarWrapper: 'pdfWrapper',
+  zoomOutBtn: 'pdfPrevBtn',
+  resetZoomBtn: 'pdfResetBtn',
+  zoomInBtn: 'pdfNextBtn',
+  previousPageBtn: 'pdfPrevBtn',
+  pageIndicator: 'pdfPages',
+  nextPageBtn: 'pdfNextBtn',
+  rotateLeftBtn: 'pdfPrevBtn',
+  resetRotationBtn: 'pdfResetBtn',
+  rotateRightBtn: 'pdfNextBtn',
+};
+
 function ContentModal({ e, indexModal }) {
   if (indexModal === 0) {
     return (
       <video controls autoPlay>
-        <source src="./video/DespliegueTerritorialEdLDD.mp4" type="video/mp4" />
+        <source src="video/DespliegueTerritorialEdLDD.mp4" type="video/mp4" />
       </video>
     );
   } else if (indexModal === 1) {
-    return <PDFViewer document={{ url: './MapaInteractivoPTA(3).pdf' }} />;
+    return (
+      <PDFViewer
+        css={'pdf'}
+        canvasCss={'pdfCanvas'}
+        navigation={navigation}
+        document={{ url: 'MapaInteractivoPTA(3).pdf' }}
+      />
+    );
   } else {
-    return <PDFViewer document={{ url: './infografia.pdf' }} />;
+    return (
+      <PDFViewer
+        css={'pdf'}
+        canvasCss={'pdfCanvas'}
+        navigation={navigation}
+        document={{ url: 'infografia.pdf' }}
+      />
+    );
   }
 }

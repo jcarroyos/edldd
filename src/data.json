@@ -565,17 +565,17 @@
   {
     "tipo": "audio",
     "audios": {
-      "playlistCoverUrl": "img/elementos/cover_audios.png",
+      "playlistCoverUrl": "/img/elementos/cover_audios.png",
       "songs": [
         {
           "position": "1",
           "songName": "Paisaje Sonoro P1",
-          "songUrl": "audio/PaisajeSonoro_P1_v2.mp3"
+          "songUrl": "/audio/PaisajeSonoro_P1_v2.mp3"
         },
         {
           "position": "2",
           "songName": "Paisaje Sonoro P2",
-          "songUrl": "audio/PaisajeSonoro_P2_v2.mp3"
+          "songUrl": "/audio/PaisajeSonoro_P2_v2.mp3"
         }
       ]
     },
