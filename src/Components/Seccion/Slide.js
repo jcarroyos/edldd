@@ -5,7 +5,7 @@ export default function Slide({ e, moveSectionDown, mapa }) {
   return (
     <div
       className={mapa ? 'mapaSlide' : 'section carousel'}
-      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(edldd/${e.e.fondo ? e.e.fondo : null})` }}
     >
       <div className="container">
         {e.e.titulo !== '' && (
