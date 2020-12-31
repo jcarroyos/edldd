@@ -565,17 +565,17 @@
   {
     "tipo": "audio",
     "audios": {
-      "playlistCoverUrl": "/img/elementos/cover_audios.png",
+      "playlistCoverUrl": "img/elementos/cover_audios.png",
       "songs": [
         {
           "position": "1",
           "songName": "Paisaje Sonoro P1",
-          "songUrl": "/audio/PaisajeSonoro_P1_v2.mp3"
+          "songUrl": "audio/PaisajeSonoro_P1_v2.mp3"
         },
         {
           "position": "2",
           "songName": "Paisaje Sonoro P2",
-          "songUrl": "/audio/PaisajeSonoro_P2_v2.mp3"
+          "songUrl": "audio/PaisajeSonoro_P2_v2.mp3"
         }
       ]
     },
@@ -604,7 +604,7 @@
     "tipo": "animada",
     "textos": [
       {
-        "parrafo": "Antes de que te vayas, haz clic aquí y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
+        "parrafo": "Antes de que te vayas, haz <a href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'>clic aquí</a> y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
       }
     ],
     "capas": {
