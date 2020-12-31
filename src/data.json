@@ -595,7 +595,7 @@
     "tipo": "animada",
     "textos": [
       {
-        "parrafo": "Antes de que te vayas, haz clic aquí y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
+        "parrafo": "Antes de que te vayas, haz <a href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'>clic aquí</a> y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
       }
     ],
     "capas": {

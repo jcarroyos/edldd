@@ -73,6 +73,11 @@ export default function Mapa({ e, moveSectionDown }) {
 
       <Modal isOpen={modal} onRequestClose={closeModal}>
         <ContentModal e={e} indexModal={indexModal} />
+        {modal && (
+          <button className="ReactModal__Close" onClick={closeModal}>
+            <span class="material-icons">close</span>
+          </button>
+        )}
       </Modal>
       {!e.last && (
         <aside className="icon-scroll u-scroll" onClick={moveSectionDown} />

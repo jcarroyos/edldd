@@ -178,7 +178,8 @@ code {
     grid-template-columns: 1fr;
     grid-template-rows: 50% 10% 1fr;
     align-content: center;
-    justify-items: center; }
+    justify-items: center;
+    width: 100%; }
     .section.mapa > .container .buttons {
       width: 100%;
       height: 100%;
@@ -429,14 +430,23 @@ video {
   width: 100%;
   height: 100%; }
 
-.ReactModal__Overlay {
-  background-color: rgba(0, 0, 0, 0.6) !important; }
-
-.ReactModal__Content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+.ReactModal {
+  position: relative; }
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.6) !important; }
+  .ReactModal__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .ReactModal__Close {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    line-height: 0;
+    background-color: #9a2edb;
+    color: white;
+    border-radius: 5px; }
 
 .pdf {
   display: block;

@@ -5,7 +5,7 @@ export default function Normal({ e, moveSectionDown }) {
   return (
     <div
       className="section normal"
-      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : null})` }}
+      style={{ backgroundImage: `url(${e.e.fondo ? e.e.fondo : ''})` }}
     >
       <div className="veladura"></div>
       <div className="container">
