@@ -4,3 +4,5 @@ package-lock.json
 .eslintcache
 yarn.lock
 yarn-error.log
+public/
+public/*
