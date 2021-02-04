@@ -103,7 +103,7 @@ function ContentModal({ e, indexModal }) {
   if (indexModal === 0) {
     return (
       <video controls autoPlay>
-        <source src="video/DespliegueTerritorialEdLDD.mp4" type="video/mp4" />
+        <source src="https://edldd.s3.us-east-2.amazonaws.com/video/DespliegueTerritorialEdLDD.mp4" type="video/mp4" />
       </video>
     );
   } else if (indexModal === 1) {
@@ -112,7 +112,7 @@ function ContentModal({ e, indexModal }) {
         css={'pdf'}
         canvasCss={'pdfCanvas'}
         navigation={navigation}
-        document={{ url: 'MapaInteractivoPTA(3).pdf' }}
+        document={{ url: 'https://edldd.s3.us-east-2.amazonaws.com/pdf/MapaInteractivoPTA(3).pdf' }}
       />
     );
   } else {
@@ -121,7 +121,7 @@ function ContentModal({ e, indexModal }) {
         css={'pdf'}
         canvasCss={'pdfCanvas'}
         navigation={navigation}
-        document={{ url: 'infografia.pdf' }}
+        document={{ url: 'https://edldd.s3.us-east-2.amazonaws.com/pdf/infografia.pdf' }}
       />
     );
   }
