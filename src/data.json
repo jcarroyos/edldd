@@ -524,7 +524,7 @@
         "descripcion": "Cobertura nacional",
         "lista": [{ "texto": "" }],
         "mapa": {
-          "center": [-74, -3],
+          "center": [-73.87, 3.78],
           "zoom": 5
         }
       },
