@@ -493,6 +493,28 @@
     }
   },
   {
+    "tipo": "audio",
+    "audios": {
+      "playlistCoverUrl": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/cover_audios.png",
+      "songs": [
+        {
+          "position": "1",
+          "songName": "Paisaje Sonoro P1",
+          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P1_v2.mp3"
+        },
+        {
+          "position": "2",
+          "songName": "Paisaje Sonoro P2",
+          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P2_v2.mp3"
+        }
+      ]
+    },
+    "capas": {
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
+    }
+  },
+  {
     "tipo": "mapa",
     "titulo": "Mapa interactivo",
     "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
@@ -556,28 +578,6 @@
         }
       }
     ]
-  },
-  {
-    "tipo": "audio",
-    "audios": {
-      "playlistCoverUrl": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/cover_audios.png",
-      "songs": [
-        {
-          "position": "1",
-          "songName": "Paisaje Sonoro P1",
-          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P1_v2.mp3"
-        },
-        {
-          "position": "2",
-          "songName": "Paisaje Sonoro P2",
-          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P2_v2.mp3"
-        }
-      ]
-    },
-    "capas": {
-      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
-      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
-    }
   },
   {
     "tipo": "animada",
