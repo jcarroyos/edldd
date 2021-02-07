@@ -493,6 +493,28 @@
     }
   },
   {
+    "tipo": "audio",
+    "audios": {
+      "playlistCoverUrl": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/cover_audios.png",
+      "songs": [
+        {
+          "position": "1",
+          "songName": "Paisaje Sonoro P1",
+          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P1_v2.mp3"
+        },
+        {
+          "position": "2",
+          "songName": "Paisaje Sonoro P2",
+          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P2_v2.mp3"
+        }
+      ]
+    },
+    "capas": {
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
+    }
+  },
+  {
     "tipo": "mapa",
     "titulo": "Mapa interactivo",
     "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
@@ -502,7 +524,7 @@
         "descripcion": "Cobertura nacional",
         "lista": [{ "texto": "" }],
         "mapa": {
-          "center": [-74, -3],
+          "center": [-73.87, 3.78],
           "zoom": 5
         }
       },
@@ -558,28 +580,6 @@
     ]
   },
   {
-    "tipo": "audio",
-    "audios": {
-      "playlistCoverUrl": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/cover_audios.png",
-      "songs": [
-        {
-          "position": "1",
-          "songName": "Paisaje Sonoro P1",
-          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P1_v2.mp3"
-        },
-        {
-          "position": "2",
-          "songName": "Paisaje Sonoro P2",
-          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P2_v2.mp3"
-        }
-      ]
-    },
-    "capas": {
-      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
-      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
-    }
-  },
-  {
     "tipo": "animada",
     "titulo": "Todos Somos Escuela",
     "textos": [
@@ -600,6 +600,9 @@
     "textos": [
       {
         "parrafo": "Antes de que te vayas, haz <a href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'>clic aquí</a> y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
+      },
+      {
+        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Bases+para+el+despliegue+curricular(1).pdf' target='_blank'>Descarga las bases para el despliegue curricular de la EdLDD</a> "
       }
     ],
     "capas": {
