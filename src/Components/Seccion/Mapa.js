@@ -51,13 +51,13 @@ export default function Mapa({ e, moveSectionDown }) {
         </div>
         <div className="buttons">
           <button className="button despliegue" onClick={() => openModal(0)}>
-            <i class="material-icons">play_circle_outline</i> DESPLIEGUE
+            <i className="material-icons">play_circle_outline</i> DESPLIEGUE
           </button>
           <button className="button pta" onClick={() => openModal(1)}>
-            <i class="material-icons">visibility</i> PTA
+            <i className="material-icons">visibility</i> PTA
           </button>
           <button className="button avances" onClick={() => openModal(2)}>
-            <i class="material-icons">visibility</i> AVANCES
+            <i className="material-icons">visibility</i> AVANCES
           </button>
         </div>
         <Map
@@ -75,7 +75,7 @@ export default function Mapa({ e, moveSectionDown }) {
         <ContentModal e={e} indexModal={indexModal} />
         {modal && (
           <button className="ReactModal__Close" onClick={closeModal}>
-            <span class="material-icons">close</span>
+            <span className="material-icons">close</span>
           </button>
         )}
       </Modal>
