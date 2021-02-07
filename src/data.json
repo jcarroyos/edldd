@@ -600,6 +600,9 @@
     "textos": [
       {
         "parrafo": "Antes de que te vayas, haz <a href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'>clic aquí</a> y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
+      },
+      {
+        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Bases+para+el+despliegue+curricular(1).pdf' target='_blank'>Descarga las bases para el despliegue curricular de la EdLDD</a> "
       }
     ],
     "capas": {
