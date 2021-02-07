@@ -1,7 +1,6 @@
 {
-  "homepage": "https://brevetdev.github.io/edldd",
   "name": "edldd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Multimedia Escuela de Liderazgo para directivos y docentes",
   "engines": {
     "node": "14.x"
