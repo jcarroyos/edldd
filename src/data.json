@@ -11,22 +11,22 @@
       }
     ],
     "capas": {
-      "uno": "img/1/capas/1.png",
-      "dos": "img/1/capas/2.png",
-      "tres": "img/1/capas/3.png",
-      "cuatro": "img/1/capas/4.png",
-      "cinco": "img/1/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/4.png",
+      "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/5.png"
     }
   },
   {
     "tipo": "solovideo",
     "fondo": "",
-    "video_webm": "video/edldd.webm",
-    "video_mp4": "video/edldd.mp4"
+    "video_webm": "https://edldd.s3.us-east-2.amazonaws.com/video/edldd.webm",
+    "video_mp4": "https://edldd.s3.us-east-2.amazonaws.com/video/edldd.mp4"
   },
   {
     "tipo": "slide",
-    "fondo": "img/fondos/1.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
     "titulo": "",
     "slide": [
       {
@@ -47,9 +47,9 @@
         "parrafo": "No olvides que un fuerte liderazgo te ayudará a generar coherencia y visión compartida en el establecimiento educativo, lo que a su vez influirá y movilizará el actuar de sus miembros, con el objetivo de cumplir de la mejor manera posible la función social que le ha sido encomendada."
       }
     ],
-    "fondo": "img/1/capas/1.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
     "capas": {
-      "inferiorIzquierda": "img/elementos/abeja.png"
+      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
     }
   },
   {
@@ -62,11 +62,11 @@
       }
     ],
     "capas": {
-      "uno": "img/2/capas/1.png",
-      "dos": "img/2/capas/2.png",
-      "tres": "img/2/capas/3.png",
-      "cuatro": "img/2/capas/4.png",
-      "cinco": "img/2/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/4.png",
+      "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/5.png"
     }
   },
   {
@@ -76,9 +76,9 @@
         "parrafo": "Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."
       }
     ],
-    "fondo": "img/2/capas/1.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/1.png",
     "capas": {
-      "inferiorDerecha": "img/elementos/colibri.png"
+      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
     }
   },
   {
@@ -88,14 +88,14 @@
         "parrafo": "La Escuela de Liderazgo prioriza ocho PRÁCTICAS DE LIDERAZGO directivo que son de especial interés porque existe evidencia de su efectividad en el contexto colombiano. Estas prácticas de liderazgo priorizadas deben entenderse como una propuesta susceptible de complementarse y fortalecerse y no son una condición mínima ni tampoco un fin último. Son más bien un referente encaminado a sentar las bases para tu desarrollo profesional. Las prácticas a las que hacemos referencia se agrupan en tres: personales, pedagógicas y, administrativas y comunitarias."
       }
     ],
-    "fondo": "img/2/capas/2.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/2.png",
     "capas": {
-      "inferiorIzquierda": "img/elementos/abeja.png"
+      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
     }
   },
   {
     "tipo": "slide",
-    "fondo": "img/fondos/2.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/2.png",
     "titulo": "Prácticas de liderazgo",
     "slide": [
       {
@@ -140,14 +140,14 @@
         "parrafo": "Un derrotero debe ser entendido como un criterio de actuación fundamental que orienta e inspira el actuar del líder educativo en la toma de decisiones que inciden en la vida de la comunidad educativa. Lee atentamente 4 derroteros que son transversales a  las prácticas de liderazgo: "
       }
     ],
-    "fondo": "img/fondos/10.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/10.png",
     "capas": {
-      "inferiorDerecha": "img/elementos/colibri.png"
+      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
     }
   },
   {
     "tipo": "slide",
-    "fondo": "img/fondos/5.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/5.png",
     "titulo": "Derroteros de actuación",
     "slide": [
       {
@@ -178,14 +178,14 @@
         "parrafo": "Los conocimientos y saberes profesionales que tienes, o debes tener como Directivo Docente son adquiridos gracias a los diferentes subsistemas de formación a los que como educador has estado expuesto (inicial, avanzada o en servicio) y, sin duda, a tu experiencia profesional. "
       }
     ],
-    "fondo": "img/fondos/6.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/6.png",
     "capas": {
-      "inferiorDerecha": "img/elementos/colibri.png"
+      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
     }
   },
   {
     "tipo": "slide",
-    "fondo": "img/fondos/5.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/5.png",
     "slide": [
       {
         "descripcion": "Los conocimientos y saberes que debes retroalimentar constantemente se agrupan en tres:",
@@ -204,9 +204,9 @@
         "parrafo": "Recuerda que en tu paso por la ESCUELA DE LIDERAZGO los puedes potenciar y/o fortalecer ya que  están en permanente construcción y validación. "
       }
     ],
-    "fondo": "img/fondos/6.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/6.png",
     "capas": {
-      "inferiorIzquierda": "img/elementos/abeja.png"
+      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
     }
   },
   {
@@ -217,9 +217,9 @@
         "parrafo": " Son determinantes las habilidades y actitudes constitutivas de las prácticas de liderazgo que se asocian a las capacidades conductuales y técnicas que te permitirán diseñar, implementar y valorar procesos/acciones con el objetivo de superar o abordar cualquier situación del establecimiento educativo que diriges. Ten presente que dichas habilidades y actitudes se organizan en al menos tres grupos: aquellas orientadas abordar la contingencia y el cambio, aquellas asociadas con el diálogo y aquellas encaminadas a la construcción de confianza."
       }
     ],
-    "fondo": "img/elementos/pupitres.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/pupitres.png",
     "capas": {
-      "inferiorIzquierda": "img/elementos/abeja.png"
+      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
     }
   },
   {
@@ -231,17 +231,16 @@
       }
     ],
     "capas": {
-      "uno": "img/3/capas/1.png",
-      "dos": "img/3/capas/2.png",
-      "tres": "img/3/capas/3.png",
-      "cuatro": "img/3/capas/4.png",
-      "cinco": "img/3/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/4.png"
     }
   },
   {
     "tipo": "slide",
     "titulo": "1. Bienestar y gestión personal",
-    "fondo": "img/fondos/6.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/6.png",
     "slide": [
       {
         "descripcion": "Este componente tiene presente que el liderazgo depende sustancialmente de una serie de habilidades personales que llevan a considerar el bienestar (emocional y físico) como una pieza clave para su fortalecimiento. Esto más allá de simples alusiones a mantener siempre una actitud positiva, se relaciona con la autoconsciencia frente a la complejidad de situaciones que se presentan en la cotidianidad de la escuela."
@@ -257,7 +256,7 @@
   {
     "tipo": "slide",
     "titulo": "2. Formación",
-    "fondo": "img/fondos/7.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/7.png",
     "slide": [
       {
         "descripcion": "Este proceso para la Escuela de Liderazgo implica, por un lado, estar cerca a los directivos, escucharlos, cuestionarlos para motivar un actuar distinto. Y por otro lado, poner en marcha acciones específicas, sistemáticas, diversas y articuladas que estén previamente diseñadas y concertadas entre el acompañado y el acompañante. "
@@ -278,7 +277,7 @@
   {
     "tipo": "slide",
     "titulo": "3. Redes y comunidades de aprendizaje",
-    "fondo": "img/fondos/10.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/10.png",
     "slide": [
       {
         "descripcion": "Las redes surgen, como una respuesta autónoma y deliberada ante las necesidades de intercambio de experiencias, comunicación y formación entre los directivos docentes. En efecto, el aislamiento propio de la función directiva que ocupas, sumado a otras demandas y exigencias de tu rol (administración de recursos, manejo de planta docente, garantía de derechos, etc.) configuran diversos tipos de redes para dar orientación y asesoría a diferentes desafíos que enfrentas a diario, en lógica de solidaridad y apoyo mutuo entre pares. "
@@ -291,7 +290,7 @@
   {
     "tipo": "slide",
     "titulo": "4. Investigación",
-    "fondo": "img/fondos/1.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
     "slide": [
       {
         "descripcion": "Desde este componente se llevan a cabo procesos de investigación que construyen conocimiento con el fin de fortalecer diferentes componentes de la EdLDD y sus estrategias. La investigación se convierte entonces en uno de los procesos clave para validar experiencias y consolidar conocimiento. En este sentido, las acciones de la EdLDD estarán orientadas a:  ",
@@ -316,11 +315,10 @@
       }
     ],
     "capas": {
-      "uno": "img/4/capas/1.png",
-      "dos": "img/4/capas/2.png",
-      "tres": "img/4/capas/3.png",
-      "cuatro": "img/4/capas/4.png",
-      "cinco": "img/4/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/4.png"
     }
   },
   {
@@ -330,15 +328,15 @@
         "parrafo": "A continuación, te compartiremos CUATRO ESTRATEGIAS que consideramos serán muy pertinentes en tu proceso de formación y desarrollo personal como DIRECTIVO DOCENTE."
       }
     ],
-    "fondo": "img/4/capas/1.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/1.png",
     "capas": {
-      "inferiorDerecha": "img/elementos/colibri.png"
+      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
     }
   },
   {
     "tipo": "slide",
     "titulo": "",
-    "fondo": "img/fondos/2.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/2.png",
     "slide": [
       {
         "titulo": "1. Autoformación",
@@ -416,17 +414,16 @@
       }
     ],
     "capas": {
-      "uno": "img/5/capas/1.png",
-      "dos": "img/5/capas/2.png",
-      "tres": "img/5/capas/3.png",
-      "cuatro": "img/5/capas/4.png",
-      "cinco": "img/5/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/4.png"
     }
   },
   {
     "tipo": "slide",
     "titulo": "¿Quiénes pueden ser parte?",
-    "fondo": "img/fondos/2.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/2.png",
     "slide": [
       {
         "titulo": "Ministerio de Educación Nacional",
@@ -472,9 +469,9 @@
         "parrafo": "Con el propósito de lograr verdaderas sinergias y “hacer Escuela”, sumando desde diferentes potencialidades y experiencias, resulta necesario que los diferentes aliados, tamicen y reorienten su experiencia y saber acumulado en clave de los tipos de liderazgo y de las prácticas de liderazgo que se promueven y fortalecen en la Escuela."
       }
     ],
-    "fondo": "img/5/capas/1.png",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/1.png",
     "capas": {
-      "inferiorIzquierda": "img/elementos/abeja.png"
+      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
     }
   },
 
@@ -490,18 +487,47 @@
       }
     ],
     "capas": {
-      "uno": "img/7/capas/1.png",
-      "dos": "img/7/capas/2.png",
-      "tres": "img/7/capas/3.png",
-      "cuatro": "img/7/capas/4.png",
-      "cinco": "img/7/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/7/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/7/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/7/capas/3.png"
+    }
+  },
+  {
+    "tipo": "audio",
+    "audios": {
+      "playlistCoverUrl": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/cover_audios.png",
+      "songs": [
+        {
+          "position": "1",
+          "songName": "Paisaje Sonoro P1",
+          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P1_v2.mp3"
+        },
+        {
+          "position": "2",
+          "songName": "Paisaje Sonoro P2",
+          "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P2_v2.mp3"
+        }
+      ]
+    },
+    "capas": {
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
     }
   },
   {
     "tipo": "mapa",
-    "titulo": "Mapa interactivo: La EdLDD avanza en territorio",
-    "fondo": "img/fondos/1.png",
+    "titulo": "Mapa interactivo",
+    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
     "slide": [
+      {
+        "titulo": "La EdLDD avanza en territorio",
+        "descripcion": "Cobertura nacional",
+        "lista": [{ "texto": "" }],
+        "mapa": {
+          "center": [-73.87, 3.78],
+          "zoom": 5
+        }
+      },
       {
         "titulo": "Atlántico",
         "descripcion": "Programa Todos a Aprender (PTA). Año 2020<br/>Directivos Docentes participantes en formación y acompañamiento:",
@@ -554,28 +580,6 @@
     ]
   },
   {
-    "tipo": "audio",
-    "audios": {
-      "playlistCoverUrl": "img/elementos/cover_audios.png",
-      "songs": [
-        {
-          "position": "1",
-          "songName": "Paisaje Sonoro P1",
-          "songUrl": "audio/PaisajeSonoro_P1_v2.mp3"
-        },
-        {
-          "position": "2",
-          "songName": "Paisaje Sonoro P2",
-          "songUrl": "audio/PaisajeSonoro_P2_v2.mp3"
-        }
-      ]
-    },
-    "capas": {
-      "uno": "img/1/capas/1.png",
-      "dos": "img/1/capas/2.png"
-    }
-  },
-  {
     "tipo": "animada",
     "titulo": "Todos Somos Escuela",
     "textos": [
@@ -584,11 +588,11 @@
       }
     ],
     "capas": {
-      "uno": "img/8/capas/1.png",
-      "dos": "img/8/capas/2.png",
-      "tres": "img/8/capas/3.png",
-      "cuatro": "img/8/capas/4.png",
-      "cinco": "img/8/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/8/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/8/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/8/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/8/capas/4.png",
+      "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/8/capas/5.png"
     }
   },
   {
@@ -596,14 +600,17 @@
     "textos": [
       {
         "parrafo": "Antes de que te vayas, haz <a href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'>clic aquí</a> y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
+      },
+      {
+        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Bases+para+el+despliegue+curricular(1).pdf' target='_blank'>Descarga las bases para el despliegue curricular de la EdLDD</a> "
       }
     ],
     "capas": {
-      "uno": "img/9/capas/1.png",
-      "dos": "img/9/capas/2.png",
-      "tres": "img/9/capas/3.png",
-      "cuatro": "img/9/capas/4.png",
-      "cinco": "img/9/capas/5.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/9/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/9/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/9/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/9/capas/4.png",
+      "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/9/capas/5.png"
     }
   }
 ]
