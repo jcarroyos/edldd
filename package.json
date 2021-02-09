@@ -25,7 +25,8 @@
     "react-mapbox-gl": "^5.1.1",
     "react-modal": "^3.12.1",
     "react-playlist-player": "^1.0.11",
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^4.0.1",
+    "worker-loader": "^3.0.7"
   },
   "devDependencies": {
     "@fullpage/react-fullpage": "^0.1.18",

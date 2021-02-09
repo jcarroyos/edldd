@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 import Modal from 'react-modal';
 import Slide from './Slide';
 import PDFViewer from 'pdf-viewer-reactjs';
-import { PropTypes } from 'mobx-react';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Map = ReactMapboxGl({
   accessToken:
@@ -103,7 +106,10 @@ function ContentModal({ e, indexModal }) {
   if (indexModal === 0) {
     return (
       <video controls autoPlay>
-        <source src="https://edldd.s3.us-east-2.amazonaws.com/video/DespliegueTerritorialEdLDD.mp4" type="video/mp4" />
+        <source
+          src="https://edldd.s3.us-east-2.amazonaws.com/video/DespliegueTerritorialEdLDD.mp4"
+          type="video/mp4"
+        />
       </video>
     );
   } else if (indexModal === 1) {
@@ -112,7 +118,10 @@ function ContentModal({ e, indexModal }) {
         css={'pdf'}
         canvasCss={'pdfCanvas'}
         navigation={navigation}
-        document={{ url: 'https://edldd.s3.us-east-2.amazonaws.com/pdf/MapaInteractivoPTA(3).pdf' }}
+        document={{
+          url:
+            'https://edldd.s3.us-east-2.amazonaws.com/pdf/MapaInteractivoPTA(3).pdf',
+        }}
       />
     );
   } else {
@@ -121,7 +130,9 @@ function ContentModal({ e, indexModal }) {
         css={'pdf'}
         canvasCss={'pdfCanvas'}
         navigation={navigation}
-        document={{ url: 'https://edldd.s3.us-east-2.amazonaws.com/pdf/infografia.pdf' }}
+        document={{
+          url: 'https://edldd.s3.us-east-2.amazonaws.com/pdf/infografia.pdf',
+        }}
       />
     );
   }
