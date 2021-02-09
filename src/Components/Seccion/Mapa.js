@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import Slide from './Slide';
 import PDFViewer from 'pdf-viewer-reactjs';
 
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 const Map = ReactMapboxGl({
   accessToken:
     'pk.eyJ1IjoiamNhcnJveW9zIiwiYSI6ImNqdzBnYnNnNzBhdjUzeXFqZXpscWFmaTMifQ.wIDKxTEiwP4QNwu2M9CtpQ',
