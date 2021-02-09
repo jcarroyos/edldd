@@ -4,13 +4,14 @@ import Modal from 'react-modal';
 import Slide from './Slide';
 import PDFViewer from 'pdf-viewer-reactjs';
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
+ReactMapboxGl.workerClass = MapboxWorker.default;
 const Map = ReactMapboxGl({
   accessToken:
     'pk.eyJ1IjoiamNhcnJveW9zIiwiYSI6ImNqdzBnYnNnNzBhdjUzeXFqZXpscWFmaTMifQ.wIDKxTEiwP4QNwu2M9CtpQ',
   interactive: false,
 });
-Map.workerClass = MapboxWorker.default;
 Modal.setAppElement('#modal');
 
 export default function Mapa({ e, moveSectionDown }) {
