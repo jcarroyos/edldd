@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactMapboxGl from '!react-mapbox-gl';
+import ReactMapboxGl from 'react-mapbox-gl';
 import Modal from 'react-modal';
 import Slide from './Slide';
 import PDFViewer from 'pdf-viewer-reactjs';
