@@ -1,7 +1,4 @@
 export default function afterLoad(origin, destination, direction) {
-  // console.log("After load: " + destination.index);
-
-  // capas seccion animada
   [...document.querySelectorAll('.capa_uno')].map(
     (x) =>
       x.classList.remove('hidden') +
@@ -62,7 +59,7 @@ export default function afterLoad(origin, destination, direction) {
       x.classList.remove('hidden') +
       x.classList.add(
         'animate__animated',
-        'animate__fadeInUp',
+        'animate__fadeInRight',
         'animate__delay-4s'
       )
   );
@@ -73,6 +70,16 @@ export default function afterLoad(origin, destination, direction) {
         'animate__animated',
         'animate__fadeIn',
         'animate__delay-1s'
+      )
+  );
+  // Scroll Effect
+  [...document.querySelectorAll('.icon-scroll')].map(
+    (x) =>
+      x.classList.remove('hidden') +
+      x.classList.add(
+        'animate__animated',
+        'animate__fadeIn',
+        'animate__delay-3s'
       )
   );
 }

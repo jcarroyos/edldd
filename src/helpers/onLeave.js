@@ -1,5 +1,5 @@
 export default function onLeave(origin, destination, direction) {
-  //console.log("Leaving section " + origin.index);
+  // console.log(origin, destination, direction);
 
   // capas seccion animada
   [...document.querySelectorAll('.capa_uno')].map(
@@ -73,6 +73,15 @@ export default function onLeave(origin, destination, direction) {
         'animate__animated',
         'animate__fadeIn',
         'animate__delay-1s'
+      )
+  );
+  [...document.querySelectorAll('.icon-scroll')].map(
+    (x) =>
+      x.classList.add('hidden') +
+      x.classList.remove(
+        'animate__animated',
+        'animate__fadeIn',
+        'animate__delay-3s'
       )
   );
 }

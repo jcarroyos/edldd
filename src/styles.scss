@@ -5,27 +5,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @mixin breakpoint($class) {
-    @if $class == xs {
-      @media (max-width: 767px) { @content; }
+  @if $class == xs {
+    @media (max-width: 767px) {
+      @content;
     }
-   
-    @else if $class == sm {
-      @media (min-width: 768px) { @content; }
+  } @else if $class == sm {
+    @media (min-width: 768px) {
+      @content;
     }
-   
-    @else if $class == md {
-      @media (min-width: 992px) { @content; }
+  } @else if $class == md {
+    @media (min-width: 992px) {
+      @content;
     }
-   
-    @else if $class == lg {
-      @media (min-width: 1200px) { @content; }
+  } @else if $class == lg {
+    @media (min-width: 1200px) {
+      @content;
     }
-   
-    @else {
-      @warn "Breakpoint mixin supports: xs, sm, md, lg";
-    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
-  
+}
+
 // colores base
 $blanco: rgb(255, 255, 255);
 $negro: rgb(0, 0, 0);
@@ -41,240 +41,586 @@ $morado_oscuro: rgb(131, 11, 196);
 $morado_brillante: rgb(194, 99, 249);
 $morado_claro: rgb(229, 179, 254);
 // degradados
-$ac_mo: linear-gradient(45deg, rgba(204,255,255,0.4) 0%, rgba(131,11,196,0.4) 100%);
-$m_ao: linear-gradient(45deg, rgba($morado,0.4) 0%, rgba($azul_oscuro,0.4) 100%);
+$ac_mo: linear-gradient(
+  135deg,
+  rgba($azul_brillante, 0.6) 0%,
+  rgba($morado_oscuro, 0.4) 100%
+);
+$m_ao: linear-gradient(45deg, rgba($morado, 0.9) 0%, rgba($azul, 0.1) 100%);
 
+// Fonts
+$baseSmallScreen: calc(2vmin + 1vmax);
+$baseMediumScreen: calc(1vmin + 1vmax);
+$baseBigScreen: calc(1vmin + 1vmax);
+// Size - ratio 1.2 (Minor Third)
+$ms0: 1em;
+// Bigger
+// ms = modular scale
+$ms1: 1.2em;
+$ms2: 1.44em;
+$ms3: 1.728em;
+$ms4: 2.074em;
+$ms5: 2.488em;
+$ms6: 2.986em;
+$ms7: 3.583em;
+$ms8: 4.3em;
+$ms9: 5.16em;
+// Smaller
+$ms-1: 0.833em;
+$ms-2: 0.694em;
 
 // hacks mini.css
-.container{
-    z-index: 1;
-    position: absolute;
+.container {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
 }
-code{
-    position: absolute;
-    display: block;
-    z-index: 1;
-    padding: 10px;
-    right: 0;
-    bottom: 0;
+code {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  padding: $ms0;
+  right: 0;
+  bottom: 0;
 }
-.card{
-    padding: 10px;
-    margin: 20px;
-    border-radius: 0 10px 0px 10px;
-    font-size: x-large;
-    font-weight: 200;
-    background-color: rgba($blanco, 0.7);
+.card {
+  padding: $ms0;
+  margin: $ms1;
+  border-radius: 0 10px 0px 10px;
+  font-size: $ms2;
+  font-weight: 200;
+  background-color: rgba($blanco, 0.7);
 }
 
 // hacks fullpage.js
 .section {
-    background-size: cover;
-    //background-position: right;
-    background-color: $azul_oscuro;
-    h2 {
+  padding: 0 !important;
+  background-size: cover;
+  //background-position: right;
+  background-color: $azul_oscuro;
+  text-align: center;
+  h2 {
     color: $blanco;
     //background-color: rgba($blanco, 0.5);
-    text-shadow: 1px 1px 2px $azul_oscuro; 
-    font-size: xxx-large;
-    padding: 10px;
-    @include breakpoint(xs) {
-        font-size: large;
-        }
+    text-shadow: 1px 1px 2px $azul_oscuro;
+    font-size: $ms2;
+    padding: $ms0;
+    @include breakpoint(md) {
+      font-size: $ms3;
     }
-    &.normal{
-        .fp-tableCell{
-            vertical-align: unset;
-        }
-        h2 {
-            color: $blanco;
-            //background-color: rgba($blanco, 0.5);
-            text-shadow: 1px 1px 2px $azul_oscuro; 
-            font-size: xx-large;
-            padding: 10px;
-            @include breakpoint(xs) {
-                font-size: large;
-                margin-bottom: -100px;
-                }
-            }
-        .textos {
-            position: relative;
-            top: 20vh;
-            left: 10vw;
-            width: 80vw;
-            .parrafo {
-                font-size: x-large;
-                padding: 20px;
-                margin: 20px 10px;
-                font-weight: 300;
-                line-height: 2em;
-                text-shadow: 1px 1px 2px $negro;
-                color: $blanco;
-                @include breakpoint(xs) {
-                    font-size: unset;
-                    line-height: 1.3em;
-                    padding: 5px;
-                    margin: 0px;
-                  }
-            }
-        }
+    @include breakpoint(lg) {
+      font-size: $ms4;
     }
-    &.animada{
-        .textos{
-            position: relative;
-            left: 30vw;
-            width: 70vw;
-            @include breakpoint(xs) {
-                left: 5vw;
-                width: 95vw;
-              }
-            .txt {
-                font-size: large;
-                background: rgba($blanco, 0.8);
-                padding: 20px;
-                margin: 20px 10px;
-                font-weight: 300;
-                line-height: 2em;
-                border-radius: 0 20px 0 20px;
-                @include breakpoint(xs) {
-                    font-size: unset;
-                    padding: 5px;
-                    line-height: 1.5em;
-                    font-weight: 400;
-                }
-            }
-        }
-        .page_Animation {
-            width: 100vw;
-            height: 100vh;
-            display: block;
-            position: relative; 
-            display: flex;  
-            justify-content: center;
-            flex-flow: column;
-            z-index: 0;
-            div.capa{
-                background-size: cover;
-                background-position: right;
-                position: absolute;
-                width: 100vw;
-                height: 100vh;
-                /*
-                &_tres{
-                    z-index: unset;
-                }*/
-            }
-        }
+  }
+
+  &.normal {
+    .container {
+      justify-content: center;
     }
-    &.carousel {
-        h2 {
-            color: $blanco;
-            //background-color: rgba($blanco, 0.5);
-            text-shadow: 1px 1px 2px $azul_oscuro; 
-            font-size: xxx-large;
-            padding: 10px;
-            @include breakpoint(xs) {
-                font-size: medium;
-            }
-        }
-        h3 {
-            position: relative;
-            width: fit-content;
-            margin: 20px auto;
-            display: block;
-            top: 10vh;
-            color: $blanco;
-            font-size: xx-large;
-            font-weight: 200;
-            @include breakpoint(xs) {
-                font-size: large;
-            }
-        }
-        #fp-nav ul li a span {
-            background-color: $amarillo;
-        }
-        .slide{
-            p {
-                font-size: large;
-                font-weight: 200;
-                margin-bottom: 40px;
-                line-height: 2em;
-                @include breakpoint(xs) {
-                    font-size: small;
-                    font-weight: 200;
-                    margin-bottom: 0px;
-                    line-height: 1.5em;
-                  }
-            }
-            li {
-                font-size: medium;
-                @include breakpoint(xs) {
-                    font-size: small;
-                  }
-            }
-            &>.fp-tableCell>div{
-                background: $m_ao;
-                border-radius: 0 20px 0 20px;
-                padding: 40px;
-                color: white;
-                font-size: large;
-                text-shadow: 1px 1px 2px $azul;
-                font-weight: 300;
-            }
-        }
-        
-        .fp-slidesNav {
-            width: fit-content;
-        }
-        .fp-controlArrow.fp-prev {left: 40px;
-            @include breakpoint(xs) {
-                display: none;
-            }
-        }
-        .fp-controlArrow.fp-next {right: 40px;
-            @include breakpoint(xs) {
-                display: none;
-            }
-        }
+    .fp-tableCell {
+      vertical-align: unset;
     }
-}
-#fp-nav.fp-right {
-    right: 0px;
-}
-.fp-slidesNav ul li a span, #fp-nav ul li a span {
-    background: yellow !important;
-}
-.veladura {
-    background-color: rgba($negro,0.4);
+    h2 {
+      color: $blanco;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      font-size: $ms1;
+      padding: $ms-2;
+      width: 90%;
+      @include breakpoint(md) {
+        margin-bottom: initial;
+        font-size: $ms3;
+      }
+    }
+    .textos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .parrafo {
+        width: 80vw;
+        font-size: $ms0;
+        font-weight: 300;
+        line-height: $ms1;
+        text-shadow: 1px 1px 2px $negro;
+        color: $blanco;
+        margin: 0;
+        @include breakpoint(md) {
+          font-size: $ms2;
+          line-height: $ms3;
+        }
+      }
+    }
+  }
+  &.animada {
+    .container {
+      justify-content: center;
+      @include breakpoint(lg) {
+        justify-content: start;
+      }
+    }
+    .textos {
+      width: 90vw;
+      @include breakpoint(md) {
+        width: 70vw;
+      }
+      @include breakpoint(lg) {
+        width: 60vw;
+        transform: translateX(15vw);
+      }
+      .titulo {
+        font-size: $ms2;
+        @include breakpoint(lg) {
+          font-size: $ms3;
+        }
+      }
+      .subtitulo {
+        font-size: $ms1;
+        @include breakpoint(lg) {
+          font-size: $ms2;
+        }
+      }
+      .txt {
+        font-size: $ms0;
+        background: rgba($blanco, 0.8);
+        padding: $ms2;
+        margin: 20px 10px;
+        font-weight: 400;
+        line-height: $ms2;
+        border-radius: 0 20px 0 20px;
+      }
+    }
+  }
+  .page_Animation {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
+    display: block;
     position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 0;
+    .capa {
+      background-size: cover;
+      background-position: right;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      &.superiorDerecha {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: top right;
+      }
+      &.superiorIzquierda {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: top left;
+      }
+      &.inferiorDerecha {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
+      &.inferiorIzquierda {
+        background-size: 70vmin;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+      }
+    }
+  }
+  &.carousel {
+    h2 {
+      color: $blanco;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      font-size: $ms2;
+      padding: $ms1;
+      @include breakpoint(lg) {
+        font-size: $ms3;
+      }
+    }
+    h3 {
+      position: absolute;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      width: fit-content;
+      margin: 0 auto;
+      display: block;
+      top: 3vh;
+      color: $blanco;
+      font-size: $ms2;
+      font-weight: 200;
+
+      @include breakpoint(md) {
+        top: 5vh;
+        font-size: $ms3;
+      }
+      @include breakpoint(lg) {
+        font-size: $ms4;
+      }
+    }
+  }
+
+  &.mapa {
+    > .container {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 10% 1fr;
+      align-content: center;
+      justify-items: center;
+      width: 100%;
+      .buttons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button {
+          cursor: pointer;
+          background-color: $morado_brillante;
+          color: $blanco;
+          z-index: 2;
+          font-size: $ms-1;
+          @include breakpoint(md) {
+            font-size: $ms0;
+          }
+        }
+      }
+      @include breakpoint(md) {
+        grid-template-areas: 'textos mapa' 'botones mapa';
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 90% 10%;
+        .textos {
+          grid-area: textos;
+        }
+        .buttons {
+          grid-area: botones;
+        }
+        .mapboxgl-map {
+          grid-area: mapa;
+        }
+      }
+      @include breakpoint(lg) {
+        grid-template-columns: 40% 1fr;
+      }
+    }
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+      top: 25%;
+      @include breakpoint(md) {
+        top: initial;
+      }
+    }
+    .fp-controlArrow.fp-prev {
+      left: 0;
+    }
+    .fp-controlArrow.fp-next {
+      right: 0;
+      @include breakpoint(md) {
+        right: 52%;
+      }
+      @include breakpoint(lg) {
+        right: 61.6%;
+      }
+    }
+    .fp-slidesNav.fp-bottom {
+      z-index: 3;
+      bottom: 48%;
+      @include breakpoint(md) {
+        top: 85%;
+        width: 50%;
+        margin: 0 !important;
+      }
+      @include breakpoint(lg) {
+        width: 40%;
+      }
+    }
+    .titulo {
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      color: $blanco;
+      text-shadow: 1px 1px 2px $azul_oscuro;
+      font-size: $ms2;
+      padding: 0 $ms0;
+      display: block;
+      top: 3vh;
+      color: $blanco;
+      font-size: $ms1;
+      font-weight: 200;
+
+      @include breakpoint(md) {
+        top: 5vh;
+        font-size: $ms3;
+      }
+    }
+    .slide {
+      &-container {
+        background: $ac_mo;
+        max-height: 95%;
+        width: 75%;
+      }
+      h4 {
+        font-size: $ms0;
+        margin: $ms-1;
+        @include breakpoint(md) {
+          font-size: $ms1;
+          margin: $ms0;
+        }
+      }
+      p {
+        width: 95%;
+        text-align: justify;
+        margin: $ms-2;
+        font-size: $ms-1;
+        @include breakpoint(md) {
+          font-size: $ms0;
+        }
+      }
+    }
+  }
+}
+#fp-nav ul li a span {
+  background-color: $amarillo;
 }
 
-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top:0;
+.fp-slidesNav {
+  width: fit-content;
+}
+.fp-controlArrow.fp-prev {
+  position: absolute;
+  left: $ms0;
+}
+.fp-controlArrow.fp-next {
+  position: absolute;
+  right: $ms0;
+}
+#fp-nav.fp-right {
+  right: 0px;
+}
+.fp-slidesNav ul li a span,
+#fp-nav ul li a span {
+  background: yellow !important;
+}
+.slide {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    background: $m_ao;
+    border-radius: 0 20px 0 20px;
+    padding: $ms2;
+    color: white;
+    text-shadow: 1px 1px 2px $azul;
+    @include breakpoint(sm) {
+      width: 80%;
+    }
+
+    h4 {
+      font-size: $ms1;
+    }
+    p {
+      font-size: $ms0;
+      font-weight: 300;
+      margin-bottom: $ms1;
+      line-height: $ms0;
+      text-align: justify;
+      @include breakpoint(md) {
+        line-height: $ms1;
+      }
+    }
+    li {
+      font-size: $ms0;
+      line-height: $ms0;
+    }
+    .textos {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  > .fp-tableCell {
+    position: relative;
+    height: 100% !important;
+  }
+  .fp-controlArrow.fp-prev {
+    height: 30%;
+  }
+}
+.mapaSlide {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  .container {
+    position: static;
+    display: flex;
     width: 100%;
     height: 100%;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover; /*cover video background */
-    z-index:3;
-    @include breakpoint(xs) {
-        width: 100%;
-        height: auto;
+  }
+}
+
+.icon-scroll {
+  z-index: 999;
+  cursor: pointer;
+  position: fixed;
+  display: block;
+  width: 30px;
+  height: 60px;
+  margin-left: -20px;
+  top: 95vh;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 3px $amarillo;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: $amarillo;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    left: 50%;
+    position: absolute;
+  }
+}
+.u-scroll {
+  left: 70%;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+.veladura {
+  background-color: rgba($negro, 0.3);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.link,
+.link:visited {
+  color: $amarillo;
+}
+
+video {
+  width: 80%;
+  height: auto;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index: 3;
+  outline: none;
+  @include breakpoint(xs) {
+    width: 100%;
+    height: auto;
+  }
+  &::focus {
+    outline: none;
+  }
+}
+.audio {
+  width: 90%;
+}
+.audio__player {
+  border-radius: $ms1;
+  position: static !important;
+  background-color: rgba($negro, 0.5) !important;
+}
+.titulo,
+.subtitulo {
+  text-align: center;
+}
+.subtitulo {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.mapContainer {
+  width: 100%;
+  height: 100%;
+}
+.ReactModal {
+  position: relative;
+  &__Overlay {
+    background-color: rgba($negro, 0.6) !important;
+  }
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__Close {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    line-height: 0;
+    background-color: $morado;
+    color: $blanco;
+    border-radius: 5px;
+  }
+}
+.pdf {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  &Canvas {
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    canvas {
+      display: block;
+      margin: 0 auto;
     }
+  }
+  .columns {
+    height: 90%;
+  }
+}
+.Overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 // generales
-
-html, * {
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
+html,
+* {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-size: $baseSmallScreen;
+  @include breakpoint(md) {
+    font-size: $baseMediumScreen;
+  }
+  @include breakpoint(lg) {
+    font-size: $baseBigScreen;
+  }
 }
-
