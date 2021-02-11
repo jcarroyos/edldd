@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AudioPlayer, { toggleAudio } from 'react-playlist-player';
 import PageAnimation from '../PageAnimation';
+import ReactHtmlParser from 'react-html-parser';
 
 export default function Audio({ e, moveSectionDown }) {
   const [currentPlayList, setCurrentPlayList] = useState({});
@@ -19,8 +20,14 @@ export default function Audio({ e, moveSectionDown }) {
     >
       <div className="container">
         <AudioPlayer currentPlayList={currentPlayList} />
-      </div>
 
+        {typeof e.e.ayuda !== 'undefined' && e.e.ayuda !== '' && (
+        <div className="ayuda">
+          {ReactHtmlParser(e.e.ayuda)}
+          </div>
+        )}
+      </div>
+      
       {e.e.capas ? <PageAnimation e={e} /> : null}
       {!e.last && <aside className="icon-scroll" onClick={moveSectionDown} />}
     </div>

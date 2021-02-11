@@ -509,6 +509,7 @@
         }
       ]
     },
+    "ayuda": "<ul><li>Título paisaje sonoro uno</li><li>Título paisaje sonoro dos</li></ul><p>Para escuchar el siguiente paisaje sonoro haga clic en el ícono ►| del reproductor</p>",
     "capas": {
       "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
       "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
@@ -584,7 +585,7 @@
     "titulo": "Todos Somos Escuela",
     "textos": [
       {
-        "parrafo": "Activando la conversación a través de la experiencia de Directivos Docentes "
+        "parrafo": "<p>Activa la conversación, haz parte de la Escuela de Liderazgo y únete a este propósito de país<p><p>Escríbenos a <a mailto:escuelaliderazgo@mineducacion.gov.co>escuelaliderazgo@mineducacion.gov.co</a>"
       }
     ],
     "capas": {
@@ -603,6 +604,9 @@
       },
       {
         "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Bases+para+el+despliegue+curricular(1).pdf' target='_blank'>Descarga las bases para el despliegue curricular de la EdLDD</a> "
+      },
+      {
+        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Orientaciones+para+aliados+a+nivel+territorial.pdf' target='_blank'>Descarga el documento de orientaciones para aliados a nivel territorial</a> "
       }
     ],
     "capas": {
