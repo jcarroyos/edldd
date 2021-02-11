@@ -50,6 +50,19 @@ code {
     @media (min-width: 1200px) {
       .section h2 {
         font-size: 2.074em; } }
+  .section.audios .ayuda {
+    color: yellow;
+    position: absolute;
+    top: 215px; }
+  .section.audios .ayuda li {
+    list-style: inside; }
+  .section.audios .ayuda p {
+    font-size: medium;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px; }
   .section.normal .container {
     justify-content: center; }
   .section.normal .fp-tableCell {

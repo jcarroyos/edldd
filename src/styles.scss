@@ -122,7 +122,26 @@ code {
       font-size: $ms4;
     }
   }
-
+  &.audios{
+    .ayuda {
+      color: yellow;
+      position: absolute;
+      top: 215px;
+    }
+    
+    .ayuda li {
+        list-style: inside;
+    }
+    
+    .ayuda p {
+        font-size: medium;
+        background: rgba(0,0,0,0.5);
+        color: rgb(1255,255,255);
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+  }
   &.normal {
     .container {
       justify-content: center;
