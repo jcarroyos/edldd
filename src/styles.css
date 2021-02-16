@@ -3,6 +3,9 @@
     Juan Carlos Arroyo © 2020
     jcarroyos@gmail.com */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  color: #000000 !important; }
+
 .container {
   overflow: hidden;
   z-index: 1;
@@ -51,7 +54,7 @@ code {
 
 .section h2 {
   color: white;
-  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px black;
   font-size: 1.44em;
   padding: 1em; }
 
@@ -87,7 +90,7 @@ code {
 
 .section.normal h2 {
   color: white;
-  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px black;
   font-size: 1.2em;
   padding: 0.694em;
   width: 90%; }
@@ -203,7 +206,7 @@ code {
 
 .section.carousel h2 {
   color: white;
-  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px black;
   font-size: 1.44em;
   padding: 1.2em; }
 
@@ -213,7 +216,7 @@ code {
 
 .section.carousel h3 {
   position: absolute;
-  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px black;
   width: fit-content;
   margin: 0 auto;
   display: block;
@@ -312,9 +315,8 @@ code {
     width: 40%; } }
 
 .section.mapa .titulo {
-  text-shadow: 1px 1px 2px #006d72;
+  text-shadow: 1px 1px 2px black;
   color: white;
-  text-shadow: 1px 1px 2px #006d72;
   font-size: 1.44em;
   padding: 0 1em;
   display: block;
@@ -385,7 +387,7 @@ code {
   border-radius: 0 20px 0 20px;
   padding: 1.44em;
   color: white;
-  text-shadow: 1px 1px 2px #00cccc;
+  text-shadow: 1px 1px 2px black;
   text-align: left; }
 
 @media (min-width: 768px) {

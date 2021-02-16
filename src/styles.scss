@@ -70,6 +70,9 @@ $ms-1: 0.833em;
 $ms-2: 0.694em;
 
 // hacks mini.css
+body{
+  color: #000000 !important;
+}
 .container {
   overflow: hidden;
   z-index: 1;
@@ -121,7 +124,7 @@ code {
   h2 {
     color: $blanco;
     //background-color: rgba($blanco, 0.5);
-    text-shadow: 1px 1px 2px $azul_oscuro;
+    text-shadow: 1px 1px 2px $negro;
     font-size: $ms2;
     padding: $ms0;
     @include breakpoint(md) {
@@ -160,7 +163,7 @@ code {
     }
     h2 {
       color: $blanco;
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       font-size: $ms1;
       padding: $ms-2;
       width: 90%;
@@ -273,7 +276,7 @@ code {
   &.carousel {
     h2 {
       color: $blanco;
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       font-size: $ms2;
       padding: $ms1;
       @include breakpoint(lg) {
@@ -282,7 +285,7 @@ code {
     }
     h3 {
       position: absolute;
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       width: fit-content;
       margin: 0 auto;
       display: block;
@@ -377,9 +380,8 @@ code {
       }
     }
     .titulo {
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       color: $blanco;
-      text-shadow: 1px 1px 2px $azul_oscuro;
       font-size: $ms2;
       padding: 0 $ms0;
       display: block;
@@ -454,7 +456,7 @@ code {
     border-radius: 0 20px 0 20px;
     padding: $ms2;
     color: white;
-    text-shadow: 1px 1px 2px $azul;
+    text-shadow: 1px 1px 2px $negro;
     text-align: left;
     @include breakpoint(sm) {
       width: 80%;
