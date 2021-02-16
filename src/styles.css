@@ -3,9 +3,6 @@
     Juan Carlos Arroyo © 2020
     jcarroyos@gmail.com */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body {
-  color: #000000 !important; }
-
 .container {
   overflow: hidden;
   z-index: 1;
@@ -570,6 +567,9 @@ video::focus {
   inset: 0px;
   background-color: rgba(255, 255, 255, 0.75); }
 
+body {
+  color: black; }
+
 html,
 * {
   font-family: 'Work Sans', sans-serif;
@@ -586,3 +586,116 @@ html,
   html,
   * {
     font-size: calc(1vmin + 1vmax); } }
+
+nav * {
+  padding: unset; }
+
+nav#navegacion {
+  background: unset !important;
+  color: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  margin: unset !important;
+  position: absolute; }
+
+#navegacion {
+  /*
+ * Just a quick hamburger
+ */
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  /*
+ * But let's hide the middle one.
+ */
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  /*
+ * And let's slide it in from the left
+ */ }
+
+#navegacion #menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#navegacion #menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease; }
+
+#navegacion #menuToggle a:hover {
+  color: tomato; }
+
+#navegacion #menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none; }
+
+#navegacion #menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#navegacion #menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#navegacion #menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+#navegacion #menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323; }
+
+#navegacion #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+#navegacion #menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); }
+
+#navegacion #menu {
+  position: absolute;
+  width: 400px;
+  margin: -100px 0 0 -50px;
+  padding: 30px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+#navegacion #menu li {
+  font-size: 0.694em; }
+
+#navegacion #menuToggle input:checked ~ ul {
+  transform: none; }

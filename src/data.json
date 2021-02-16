@@ -509,7 +509,7 @@
         }
       ]
     },
-    "ayuda": "<ul><li>Semillero de testimonios inspiradores <strong>parte uno</strong></li><li>Semillero de testimonios inspiradores <strong>parte dos</strong></li></ul><p>Para escuchar el siguiente paisaje sonoro haga clic en el ícono ►| del reproductor</p>",
+    "ayuda": "<ul><li>Semillero de testimonios inspiradores parte uno</li><li>Semillero de testimonios inspiradores parte dos</li></ul><p>Para escuchar el siguiente paisaje sonoro haga clic en el ícono ►| del reproductor</p>",
     "capas": {
       "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
       "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
