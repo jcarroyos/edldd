@@ -17,9 +17,9 @@ export default function Animada({ e, moveSectionDown }) {
           )}
           {Boolean(e.e.textos)
             ? e.e.textos.map((t) => (
-                <p className="txt" key={t.parrafo}>
+                <div className="txt" key={t.parrafo}>
                   {ReactHtmlParser(t.parrafo)}
-                </p>
+                </div>
               ))
             : null}
         </div>

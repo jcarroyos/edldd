@@ -77,13 +77,22 @@ $ms-2: 0.694em;
   top: 0;
   margin: 0;
   padding: 0;
-  text-align: justify;
+  /*text-align: justify;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 100vw;
   height: 100vh;
+}
+ul{
+  margin-top: $ms1 !important;
+}
+strong {
+  color: unset;
+}
+.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  display: none !important;
 }
 code {
   position: absolute;
@@ -112,7 +121,7 @@ code {
   h2 {
     color: $blanco;
     //background-color: rgba($blanco, 0.5);
-    text-shadow: 1px 1px 2px $azul_oscuro;
+    text-shadow: 1px 1px 2px $negro;
     font-size: $ms2;
     padding: $ms0;
     @include breakpoint(md) {
@@ -144,14 +153,14 @@ code {
   }
   &.normal {
     .container {
-      justify-content: center;
+      /*justify-content: center;*/
     }
     .fp-tableCell {
       vertical-align: unset;
     }
     h2 {
       color: $blanco;
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       font-size: $ms1;
       padding: $ms-2;
       width: 90%;
@@ -164,7 +173,7 @@ code {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      /*justify-content: center;*/
       .parrafo {
         width: 80vw;
         font-size: $ms0;
@@ -173,6 +182,7 @@ code {
         text-shadow: 1px 1px 2px $negro;
         color: $blanco;
         margin: 0;
+        text-align: left;
         @include breakpoint(md) {
           font-size: $ms2;
           line-height: $ms3;
@@ -182,9 +192,9 @@ code {
   }
   &.animada {
     .container {
-      justify-content: center;
+      /*justify-content: center;*/
       @include breakpoint(lg) {
-        justify-content: start;
+        /*justify-content: start;*/
       }
     }
     .textos {
@@ -216,6 +226,7 @@ code {
         font-weight: 400;
         line-height: $ms2;
         border-radius: 0 20px 0 20px;
+        text-align: left;
       }
     }
   }
@@ -228,7 +239,7 @@ code {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     flex-flow: column;
     z-index: 0;
     .capa {
@@ -262,7 +273,7 @@ code {
   &.carousel {
     h2 {
       color: $blanco;
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       font-size: $ms2;
       padding: $ms1;
       @include breakpoint(lg) {
@@ -271,7 +282,7 @@ code {
     }
     h3 {
       position: absolute;
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       width: fit-content;
       margin: 0 auto;
       display: block;
@@ -297,14 +308,14 @@ code {
       grid-template-columns: 1fr;
       grid-template-rows: 50% 10% 1fr;
       align-content: center;
-      justify-items: center;
+      /*justify-items: center;*/
       width: 100%;
       .buttons {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /*justify-content: center;*/
         .button {
           cursor: pointer;
           background-color: $morado_brillante;
@@ -366,9 +377,8 @@ code {
       }
     }
     .titulo {
-      text-shadow: 1px 1px 2px $azul_oscuro;
+      text-shadow: 1px 1px 2px $negro;
       color: $blanco;
-      text-shadow: 1px 1px 2px $azul_oscuro;
       font-size: $ms2;
       padding: 0 $ms0;
       display: block;
@@ -391,6 +401,7 @@ code {
       h4 {
         font-size: $ms0;
         margin: $ms-1;
+        line-height: $ms5;
         @include breakpoint(md) {
           font-size: $ms1;
           margin: $ms0;
@@ -398,7 +409,7 @@ code {
       }
       p {
         width: 95%;
-        text-align: justify;
+        /*text-align: justify;*/
         margin: $ms-2;
         font-size: $ms-1;
         @include breakpoint(md) {
@@ -435,34 +446,37 @@ code {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     margin: 0 auto;
     width: 60%;
     background: $m_ao;
     border-radius: 0 20px 0 20px;
     padding: $ms2;
     color: white;
-    text-shadow: 1px 1px 2px $azul;
+    text-shadow: 1px 1px 2px $negro;
+    text-align: left;
     @include breakpoint(sm) {
       width: 80%;
     }
 
     h4 {
       font-size: $ms1;
+      line-height: $ms5;
     }
     p {
       font-size: $ms0;
       font-weight: 300;
       margin-bottom: $ms1;
       line-height: $ms0;
-      text-align: justify;
+      /*text-align: justify;*/
       @include breakpoint(md) {
         line-height: $ms1;
       }
     }
     li {
       font-size: $ms0;
-      line-height: $ms0;
+      line-height: $ms2;
+      list-style: disc;
     }
     .textos {
       width: 100%;
@@ -593,7 +607,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
   }
   &__Close {
     position: absolute;
@@ -630,16 +644,173 @@ video {
 }
 
 // generales
+body{
+  color: $negro;
+}
 html,
 * {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   font-size: $baseSmallScreen;
+  
   @include breakpoint(md) {
     font-size: $baseMediumScreen;
   }
   @include breakpoint(lg) {
     font-size: $baseBigScreen;
   }
+}
+nav * {
+  padding: unset;
+}
+
+// menu
+nav#navegacion {
+  background: unset !important;
+  color: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  margin: unset !important;
+  position: absolute;
+}
+#navegacion{
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 400px;
+  margin: -100px 0 0 -50px;
+  padding: 30px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-size: $ms-2;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 }
