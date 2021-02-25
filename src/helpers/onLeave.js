@@ -12,8 +12,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.add('hidden') +
       x.classList.remove(
         'animate__animated',
-        'animate__slideInUp',
-        'animate__delay-1s'
+        'animate__slideInUp'
       )
   );
   [...document.querySelectorAll('.capa_tres')].map(
@@ -22,7 +21,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.remove(
         'animate__animated',
         'animate__slideInLeft',
-        'animate__delay-2s'
+        'animate__delay-1s'
       )
   );
   [...document.querySelectorAll('.capa_cuatro')].map(
@@ -31,7 +30,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.remove(
         'animate__animated',
         'animate__slideInRight',
-        'animate__delay-3s'
+        'animate__delay-2s'
       )
   );
   [...document.querySelectorAll('.capa_cinco')].map(
@@ -40,7 +39,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.remove(
         'animate__animated',
         'animate__slideInRight',
-        'animate__delay-4s'
+        'animate__delay-3s'
       )
   );
   // textos
@@ -63,7 +62,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.remove(
         'animate__animated',
         'animate__fadeInUp',
-        'animate__delay-4s'
+        'animate__delay-3s'
       )
   );
   [...document.querySelectorAll('.section.normal .parrafo')].map(
@@ -71,8 +70,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.add('hidden') +
       x.classList.remove(
         'animate__animated',
-        'animate__fadeIn',
-        'animate__delay-1s'
+        'animate__fadeIn'
       )
   );
   [...document.querySelectorAll('.icon-scroll')].map(
@@ -81,7 +79,7 @@ export default function onLeave(origin, destination, direction) {
       x.classList.remove(
         'animate__animated',
         'animate__fadeIn',
-        'animate__delay-3s'
+        'animate__delay-2s'
       )
   );
 }
