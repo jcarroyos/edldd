@@ -43,6 +43,30 @@ code {
   font-weight: 200;
   background-color: rgba(255, 255, 255, 0.7); }
 
+#logos {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 63px;
+  display: inline-block;
+  background: white; }
+  #logos .left {
+    background-image: url("https://edldd.s3.us-east-2.amazonaws.com/img/logo-contacto-maestro.png");
+    height: 60px;
+    width: 100px;
+    background-size: contain;
+    right: 200px;
+    position: absolute;
+    top: 2px; }
+  #logos .right {
+    background-image: url("https://edldd.s3.us-east-2.amazonaws.com/img/logo-mineducacion.png");
+    height: 50px;
+    background-size: contain;
+    right: 10px;
+    position: absolute;
+    width: 170px;
+    top: 7px; }
+
 .section {
   padding: 0 !important;
   background-size: cover;
@@ -296,6 +320,9 @@ code {
       .section.mapa .slide p {
         font-size: 1em; } }
 
+#fp-nav {
+  top: 53%; }
+
 #fp-nav ul li a span {
   background-color: #e6da35; }
 
@@ -548,8 +575,8 @@ nav#navegacion {
   #navegacion #menuToggle {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 20px;
+    left: 30px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none; }
@@ -599,12 +626,13 @@ nav#navegacion {
   #navegacion #menu {
     position: absolute;
     width: 400px;
-    margin: -100px 0 0 -50px;
+    margin: -100px 0 0 -30px;
     padding: 30px;
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
+    top: 21px;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
