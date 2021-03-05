@@ -346,7 +346,7 @@ code {
 
 .viz {
   width: 90vw;
-  min-height: 80vh;
+  height: 80vh;
   margin: 0 auto; }
   @media (max-width: 767px) {
     .viz {

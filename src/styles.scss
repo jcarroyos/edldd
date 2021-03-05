@@ -474,7 +474,7 @@ code {
 
 .viz {
   width: 90vw;
-  min-height: 80vh;
+  height: 80vh;
   margin: 0 auto;
   @include breakpoint(xs) {
     height: 1640px;
