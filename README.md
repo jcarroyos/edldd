@@ -1,5 +1,9 @@
 # Escuela de Liderazgo para Directivos Docentes
 
+Esta aplicación 
+
+Para ver la aplicación en ambiente de pruebas de GitHub Pages siga este enlace [https://brevetdev.github.io/edldd](https://brevetdev.github.io/edldd)
+
 ## Manual de instalción
 
 Ejecutar la app en entorno local
