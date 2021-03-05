@@ -351,9 +351,6 @@ code {
   @media (max-width: 767px) {
     .viz {
       height: 1640px; } }
-  @media (min-width: 768px) {
-    .viz {
-      height: 1640px; } }
 
 .slide-container {
   display: flex;
@@ -560,7 +557,8 @@ nav#navegacion {
   border: unset !important;
   border-radius: unset !important;
   margin: unset !important;
-  position: absolute; }
+  position: fixed;
+  z-index: 2; }
 
 #navegacion {
   /*
