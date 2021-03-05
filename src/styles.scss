@@ -479,9 +479,6 @@ code {
   @include breakpoint(xs) {
     height: 1640px;
   }
-  @include breakpoint(sm) {
-    height: 1640px;
-  }
 }
 .slide {
   &-container {
