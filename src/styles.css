@@ -557,7 +557,8 @@ nav#navegacion {
   border: unset !important;
   border-radius: unset !important;
   margin: unset !important;
-  position: absolute; }
+  position: fixed;
+  z-index: 2; }
 
 #navegacion {
   /*
