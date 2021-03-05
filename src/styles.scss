@@ -471,6 +471,11 @@ code {
 #fp-nav ul li a span {
   background: yellow !important;
 }
+.viz {
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+}
 .slide {
   &-container {
     display: flex;
