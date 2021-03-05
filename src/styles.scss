@@ -471,10 +471,17 @@ code {
 #fp-nav ul li a span {
   background: yellow !important;
 }
+
 .viz {
   width: 90vw;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0 auto;
+  @include breakpoint(xs) {
+    height: 1640px;
+  }
+  @include breakpoint(sm) {
+    height: 1640px;
+  }
 }
 .slide {
   &-container {

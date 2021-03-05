@@ -346,8 +346,14 @@ code {
 
 .viz {
   width: 90vw;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    .viz {
+      height: 1640px; } }
+  @media (min-width: 768px) {
+    .viz {
+      height: 1640px; } }
 
 .slide-container {
   display: flex;
