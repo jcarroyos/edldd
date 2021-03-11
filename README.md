@@ -186,6 +186,7 @@ npm run deploy
 `
 
 2. Haga un commit y publique en github
+
 `
 git add .
 `
