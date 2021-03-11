@@ -14,10 +14,13 @@ Así, la página web o aplicación se divide en secciones, cada sección present
 - sistema de gestión de paquetes [npm](https://www.npmjs.com/get-npm)
 
 1.  Clonar el repositorio [https://github.com/brevetdev/edldd](https://github.com/brevetdev/edldd)
+
 `
 git clone https://github.com/brevetdev/edldd
 `
+
 2. Instalar las dependencias
+
 `
 npm i
 `
@@ -181,10 +184,13 @@ Para desplegar la app en internet ambiente de pruebas se usa la característica 
 `
 npm run deploy
 `
+
 2. Haga un commit y publique en github
 `
 git add .
+
 git commit -m "compilación para ambiente de pruebas en github-pages"
+
 git push
 `
 
