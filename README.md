@@ -188,9 +188,13 @@ npm run deploy
 2. Haga un commit y publique en github
 `
 git add .
+`
 
+`
 git commit -m "compilación para ambiente de pruebas en github-pages"
+`
 
+`
 git push
 `
 
