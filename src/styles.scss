@@ -113,11 +113,12 @@ code {
 
 #logos{
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 63px;
   display: inline-block;
   background: white;
+  
   .left{
     background-image: url("https://edldd.s3.us-east-2.amazonaws.com/img/logo-contacto-maestro.png");
     height: 60px;
@@ -126,6 +127,9 @@ code {
     right: 200px;
     position: absolute;
     top: 2px;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .right{
     background-image: url("https://edldd.s3.us-east-2.amazonaws.com/img/logo-mineducacion.png");
@@ -237,7 +241,7 @@ code {
       }
       @include breakpoint(lg) {
         width: 60vw;
-        transform: translateX(15vw);
+        transform: translateX(5vw);
       }
       .titulo {
         font-size: $ms2;
@@ -277,7 +281,7 @@ code {
     z-index: 0;
     .capa {
       background-size: cover;
-      background-position: right;
+      background-position: center center;
       position: absolute;
       width: 100vw;
       height: 100vh;
