@@ -25,22 +25,6 @@
     "video_mp4": "https://edldd.s3.us-east-2.amazonaws.com/video/edldd.mp4"
   },
   {
-    "tipo": "slide",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
-    "titulo": "",
-    "slide": [
-      {
-        "descripcion": "Por dos razones, la primera, para atender las necesidades manifestadas por los propios directivos docentes, y la segunda, para incentivar el desarrollo del liderazgo directivo como un factor fundamental pues diversos estudios han revelado que es el segundo factor que más incide en los resultados de aprendizaje de los estudiantes."
-      },
-      {
-        "descripcion": "Las escuelas de nuestro país son organizaciones que se encuentran en constante cambio y, con ello, surgen nuevos desafíos para los directivos docentes y sus equipos, requiriendo nuevas formas para gestionarlas, no sólo en el ámbito administrativo sino, sobre todo, en la gestión pedagógica y comunitaria."
-      },
-      {
-        "descripcion": "Los directivos docentes del país son generadores de transformación educativa en sus diferentes contextos de actuación, por lo tanto, la Escuela de Liderazgo le apuesta a reconocerlos como líderes de cambio y a promover su desarrollo personal y profesional, propiciando su bienestar y fortaleciendo sus prácticas pedagógicas y didácticas, así como su proceso de formación."
-      }
-    ]
-  },
-  {
     "tipo": "normal",
     "textos": [
       {
@@ -67,18 +51,6 @@
       "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/3.png",
       "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/4.png",
       "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/5.png"
-    }
-  },
-  {
-    "tipo": "normal",
-    "textos": [
-      {
-        "parrafo": "Así las cosas, las prácticas de liderazgo son un conjunto de acciones movilizadas por los Directivos Docentes que buscan que el establecimiento educativo cumpla su función social. Las prácticas no son atributos o características personales de un líder sino un conjunto de acciones deliberadas, que se fundamentan en principios de actuación, conocimientos y habilidades que pueden ser enseñados y aprendidos."
-      }
-    ],
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/2/capas/1.png",
-    "capas": {
-      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
     }
   },
   {
@@ -131,336 +103,14 @@
     ]
   },
   {
-    "tipo": "normal",
-    "textos": [
-      {
-        "parrafo": "Las prácticas de liderazgo están orientadas por “derroteros de actuación”"
-      },
-      {
-        "parrafo": "Un derrotero debe ser entendido como un criterio de actuación fundamental que orienta e inspira el actuar del líder educativo en la toma de decisiones que inciden en la vida de la comunidad educativa. Lee atentamente 4 derroteros que son transversales a  las prácticas de liderazgo: "
-      }
-    ],
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/10.png",
-    "capas": {
-      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
-    }
-  },
-  {
-    "tipo": "slide",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/5.png",
-    "titulo": "Derroteros de actuación",
-    "slide": [
-      {
-        "titulo": "PLURALIDAD",
-        "descripcion": "Que nos remite a escuchar y reflexionar alrededor del pensamiento, las teorías, preguntas y respuestas sin ideas preconcebidas sobre lo correcto o lo apropiado. También, permite la construcción de confianza entre pares, que aumenta la probabilidad de que los individuos y las comunidades escolares trabajen de manera colaborativa y sostenida para transformar sus realidades. "
-      },
-      {
-        "titulo": "EDUCACIÓN PARA TODOS",
-        "descripcion": "Cuando se habla de una educación con sentido relacionado con la configuración de una determinada disposición vital a nuestra existencia para soñar y sentir un proyecto por el que vale la pena luchar, se pone énfasis en el qué y el para qué de un establecimiento educativo en una sociedad como la nuestra, de igual forma, se indaga el para quién y el cómo, planteamientos que, sin duda, constituyen aspectos centrales de la calidad educativa y de su potencial transformador de los individuos y su entorno."
-      },
-      {
-        "titulo": "ÉTICO",
-        "descripcion": "Ve la educación como una acción ética, y por tanto la acción educativa tiene como finalidad la consecución de objetivos en sí mismos valiosos y deseables para la vida armónica de una sociedad y su entorno. Como Directivo Docente debes orientar tus acciones en un marco de valores universales que reconozca la educación como un derecho capaz de generar profundas transformaciones en la vida de todos y cada uno de los niños, las niñas, los jóvenes y adultos a tu cargo. "
-      },
-      {
-        "titulo": "TRANSFORMACIÓN",
-        "descripcion": "Reconoce que la educación tiene un gran poder para conseguir mejores sociedades, más inclusivas, democráticas, solidarias y justas, por lo que promueve la transformación de problemas educativos (asociados con la desigualdad, inequidad y/o calidad), que ponen en riesgo, y en algunos casos impiden, el cumplimiento del derecho a la educación. Aquí están en juego dos variables: El aumento de conciencia sobre ciertos problemas educativos para generar acciones que permitan superarlos. Y el cambio sostenido, pues el desafío es mantener una modificación y/o mejora para superar una situación problema. "
-      }
-    ]
-  },
-  {
-    "tipo": "normal",
-    "textos": [
-      {
-        "parrafo": "Las prácticas de liderazgo implican “CONOCIMIENTOS PROFESIONALES” de un Directivo Docente:"
-      },
-      {
-        "parrafo": "Los conocimientos y saberes profesionales que tienes, o debes tener como Directivo Docente son adquiridos gracias a los diferentes subsistemas de formación a los que como educador has estado expuesto (inicial, avanzada o en servicio) y, sin duda, a tu experiencia profesional. "
-      }
-    ],
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/6.png",
-    "capas": {
-      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
-    }
-  },
-  {
-    "tipo": "slide",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/5.png",
-    "slide": [
-      {
-        "descripcion": "Los conocimientos y saberes que debes retroalimentar constantemente se agrupan en tres:",
-        "lista": [
-          { "texto": "Pedagogía y educación" },
-          { "texto": "Dirección educativa" },
-          { "texto": "Desarrollo profesional" }
-        ]
-      }
-    ]
-  },
-  {
-    "tipo": "normal",
-    "textos": [
-      {
-        "parrafo": "Recuerda que en tu paso por la ESCUELA DE LIDERAZGO los puedes potenciar y/o fortalecer ya que  están en permanente construcción y validación. "
-      }
-    ],
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/6.png",
-    "capas": {
-      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
-    }
-  },
-  {
-    "tipo": "normal",
-    "titulo": "Las prácticas de liderazgo necesitan “Habilidades y actitudes” de los Directivos Docentes",
-    "textos": [
-      {
-        "parrafo": " Son determinantes las habilidades y actitudes constitutivas de las prácticas de liderazgo que se asocian a las capacidades conductuales y técnicas que te permitirán diseñar, implementar y valorar procesos/acciones con el objetivo de superar o abordar cualquier situación del establecimiento educativo que diriges. Ten presente que dichas habilidades y actitudes se organizan en al menos tres grupos: aquellas orientadas abordar la contingencia y el cambio, aquellas asociadas con el diálogo y aquellas encaminadas a la construcción de confianza."
-      }
-    ],
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/pupitres.png",
-    "capas": {
-      "inferiorIzquierda": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/abeja.png"
-    }
-  },
-  {
     "tipo": "animada",
-    "titulo": "Componentes de la EdLDD ",
-    "textos": [
-      {
-        "parrafo": "La ESCUELA DE LIDERAZGO para Directivos Docentes está conformada por 5 COMPONENTES que se articulan y relacionan entre sí aportando todos al fortalecimiento de las prácticas de liderazgo de los Directivos Docentes. Te invitamos a explorar lo que cada componente contribuirá en tu formación y desarrollo personal."
-      }
-    ],
     "capas": {
-      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/1.png",
-      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/2.png",
-      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/3.png",
-      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/4.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/estrategias/estrategias_formacion_1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/estrategias/estrategias_formacion_2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/estrategias/estrategias_formacion_3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/estrategias/estrategias_formacion_4.png",
+      "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/estrategias/estrategias_formacion_5.png"
     }
-  },
-  {
-    "tipo": "slide",
-    "titulo": "1. Bienestar y gestión personal",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/6.png",
-    "slide": [
-      {
-        "descripcion": "Este componente tiene presente que el liderazgo depende sustancialmente de una serie de habilidades personales que llevan a considerar el bienestar (emocional y físico) como una pieza clave para su fortalecimiento. Esto más allá de simples alusiones a mantener siempre una actitud positiva, se relaciona con la autoconsciencia frente a la complejidad de situaciones que se presentan en la cotidianidad de la escuela."
-      },
-      {
-        "descripcion": "En ocasiones no puede lograrse todo lo proyectado, no pueden conocerse “todos los temas” ni “resolverse todos los problemas”. Existen situaciones que se escapan de nuestro control y hay momentos donde resulta más valioso hacer un alto en el camino y pausar el cuerpo y la mente para poner los asuntos en perspectiva. "
-      },
-      {
-        "descripcion": "Este componente centra su atención en la autoconciencia, el manejo de las emociones, la comunicación asertiva y el trabajo colaborativo como prácticas de liderazgo que tienen efectos en la promoción de estilos de vida saludable y en el fortalecimiento de tu proyecto de vida y tu desarrollo socioemocional."
-      }
-    ]
-  },
-  {
-    "tipo": "slide",
-    "titulo": "2. Formación",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/7.png",
-    "slide": [
-      {
-        "descripcion": "Este proceso para la Escuela de Liderazgo implica, por un lado, estar cerca a los directivos, escucharlos, cuestionarlos para motivar un actuar distinto. Y por otro lado, poner en marcha acciones específicas, sistemáticas, diversas y articuladas que estén previamente diseñadas y concertadas entre el acompañado y el acompañante. "
-      },
-      {
-        "descripcion": "Las acciones de formación están orientadas a identificar y articular procesos existentes en el país y a fomentar su consolidación, en el marco de derroteros y prácticas de liderazgo definidos por la EdLDD. Por tanto, la EdLDD desde su componente de formación es concebida como un sistema coherente y articulado de diferentes actores que comparten el propósito de mejorar el sistema educativo partiendo del desarrollo y fortalecimiento del liderazgo directivo y sus prácticas."
-      },
-      {
-        "descripcion": "Ten presente que este componente incluye la oferta de formación continua y avanzada en la que, como Directivo Docente, puedes continuar tu proceso formatico y de actualización profesional.",
-        "lista": [
-          {
-            "texto": "Si quieres conocer la oferta te invitamos a navegar <a class='link' href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'> Contacto Maestro</a> para Directivos Docentes."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "tipo": "slide",
-    "titulo": "3. Redes y comunidades de aprendizaje",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/10.png",
-    "slide": [
-      {
-        "descripcion": "Las redes surgen, como una respuesta autónoma y deliberada ante las necesidades de intercambio de experiencias, comunicación y formación entre los directivos docentes. En efecto, el aislamiento propio de la función directiva que ocupas, sumado a otras demandas y exigencias de tu rol (administración de recursos, manejo de planta docente, garantía de derechos, etc.) configuran diversos tipos de redes para dar orientación y asesoría a diferentes desafíos que enfrentas a diario, en lógica de solidaridad y apoyo mutuo entre pares. "
-      },
-      {
-        "descripcion": "En este componente, se incluyen las mentorías y el intercambio entre pares como una manera de aprovechar y potenciar el saber hacer acumulado a través de años de ejercicio de directivos docentes experimentados que acompañan a otros colegas con la intención de aprender y promover el desarrollo profesional. "
-      }
-    ]
-  },
-  {
-    "tipo": "slide",
-    "titulo": "4. Investigación",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
-    "slide": [
-      {
-        "descripcion": "Desde este componente se llevan a cabo procesos de investigación que construyen conocimiento con el fin de fortalecer diferentes componentes de la EdLDD y sus estrategias. La investigación se convierte entonces en uno de los procesos clave para validar experiencias y consolidar conocimiento. En este sentido, las acciones de la EdLDD estarán orientadas a:  ",
-        "lista": [
-          {
-            "texto": "Identificar asuntos de alta relevancia entorno al liderazgo directivo que son de interés para los diferentes actores del sistema educativo colombiano"
-          },
-          { "texto": "Definir el enfoque en razón de preguntas centrales" },
-          {
-            "texto": "Identificar aliados que puedan encargarse de su realización."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "tipo": "animada",
-    "titulo": "La EdLDD destaca sus estrategias formativas",
-    "textos": [
-      {
-        "parrafo": "En la EdLDD comprendemos una estrategia formativa como una serie de acciones articuladas, intencionadas y encaminadas hacia la transformación de las prácticas de liderazgo de los Directivos Docentes. Se configuran en “los cómo” llegar al fortalecimiento y potenciación de las prácticas de liderazgo que fomenta la Escuela de Liderazgo."
-      }
-    ],
-    "capas": {
-      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/1.png",
-      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/2.png",
-      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/3.png",
-      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/4.png"
-    }
-  },
-  {
-    "tipo": "normal",
-    "textos": [
-      {
-        "parrafo": "A continuación, te compartiremos CUATRO ESTRATEGIAS que consideramos serán muy pertinentes en tu proceso de formación y desarrollo personal como DIRECTIVO DOCENTE."
-      }
-    ],
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/4/capas/1.png",
-    "capas": {
-      "inferiorDerecha": "https://edldd.s3.us-east-2.amazonaws.com/img/elementos/colibri.png"
-    }
-  },
-  {
-    "tipo": "slide",
-    "titulo": "",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/2.png",
-    "slide": [
-      {
-        "titulo": "1. Autoformación",
-        "descripcion": "La autoformación se convierte en una potente herramienta que te permitirá dar respuesta a las exigencias de un mundo marcado por un constante y acelerado cambio en sus sistemas, paradigmas y procesos. Como Directivo Docente esta estrategia de formación te conducirá a un proceso autorreflexivo en lo cognitivo, socioemocional y valorativo."
-      },
-      {
-        "titulo": "1. Autoformación",
-        "descripcion": "En esta ruta eres responsable y protagonista de tu propia formación continua. Ten en cuenta que la estrategia de autoformación en la EdLDD se desarrolla a partir de cuatro elementos:",
-        "lista": [
-          { "texto": "Motivación" },
-          {
-            "texto": "Reconocimiento y valoración de la experiencia pedagógica individual"
-          },
-          { "texto": "Revisión sistemática sobre la misma práctica" },
-          { "texto": "Búsqueda autónoma de mecanismos de solución" }
-        ]
-      },
-      {
-        "titulo": "2. Mentorías",
-        "descripcion": "La mentoría te propone un desarrollo profesional a partir del relacionamiento con un colega, que ya tiene el conocimiento del quehacer del directivo producto de su experiencia y reflexión. La mentoría tiene un impacto relevante en tu formación como Directivo Docente pues su naturaleza dialógica y reflexiva aporta al mejoramiento de las prácticas tanto del mentor como del directivo en formación."
-      },
-      {
-        "titulo": "2. Mentorías",
-        "descripcion": "Una propuesta de mentoría efectiva te permitirá espacios de aprendizaje constructivos y significativos.  Debes saber que la mentoría cuenta con escenarios y procesos de formación y autoformación permanente que permiten:",
-        "lista": [
-          {
-            "texto": "Compartir el saber, el ser y el hacer de los Directivos Docentes que se vinculen a la Escuela de Liderazgo como mentores."
-          },
-          {
-            "texto": "Acompañar a otros en su experiencia y con ello consolidar, transformar y fortalecer sus prácticas de liderazgo."
-          },
-          { "texto": "Ampliar tus conocimientos y," },
-          {
-            "texto": "Continuar en un proceso transformador de tus prácticas de liderazgo desde el trabajo colaborativo."
-          }
-        ]
-      },
-      {
-        "titulo": "2. Mentorías",
-        "descripcion": "El candidato a mentor debe ser un Directivo Docente experimentado y contar con la preparación, inducción o formación en la EdLDD antes de comenzar a trabajar con los equipos que se le asignen."
-      },
-      {
-        "titulo": "3. Aprendizaje entre pares",
-        "descripcion": "Para la EdLDD el aprendizaje entre pares es una estrategia de formación continua entre Directivos Docentes que comparten necesidades y objetivos similares, bien sea en espacios físicos o virtuales de interacción periódica en los que:",
-        "lista": [
-          {
-            "texto": "Intercambien sus saberes pedagógicos y sus experiencias de liderazgo"
-          },
-          {
-            "texto": "Discutan sus concepciones y construyan de manera colaborativa nuevos conocimientos y formas de ejercer sus prácticas de liderazgo."
-          }
-        ]
-      },
-      {
-        "titulo": "3. Aprendizaje entre pares",
-        "descripcion": "En esta vía, cada sujeto intercambia, comunica, analiza y potencia sus habilidades, actitudes y conocimientos, gracias a la interacción generada con los otros y sus experiencias. En efecto, tener la oportunidad de interactuar con tus pares para mejorar tus prácticas de liderazgo es una orientación valiosa que apoya la credibilidad en los procesos de formación en servicio y que potencia el que puedas construir colectivamente tus prácticas de liderazgo."
-      },
-      {
-        "titulo": "4. Acompañamiento situado",
-        "descripcion": "El acompañamiento situado debe ser entendido como una estrategia formativa que se despliega en campo, es decir, que se realiza en el establecimiento educativo y cuyo propósito es el fortalecimiento de tus prácticas de liderazgo a partir de un proceso sistemático y permanente de trabajo colaborativo en el que participan pares, agentes externos y la comunidad educativa."
-      },
-      {
-        "titulo": "4. Acompañamiento situado",
-        "descripcion": "El acompañamiento situado se enfoca en el análisis de tus prácticas de liderazgo mediante procesos de: observación, reflexión pedagógica, diseño y puesta en marcha de estrategias de mejoramiento y evaluación de las mismas, todo ello orientado tanto al mejoramiento de la gestión de tu establecimiento educativo, como al desarrollo integral y al aprendizaje de los niños, niñas y adolescentes. "
-      }
-    ]
-  },
-  {
-    "tipo": "animada",
-    "titulo": "¿Quiénes pueden ser parte?",
-    "subtitulo": "Directivos Docentes rectores, coordinadores, directores rurales, supervisores y directores de núcleo",
-    "textos": [
-      {
-        "parrafo": "Son los protagonistas de la Escuela de Liderazgo. Constituyen la población beneficiaria, en tanto son los sujetos vinculados a las diferentes iniciativas que promueve la EdLDD a través de sus componentes y de la participación de los aliados, de cara al desarrollo de las prácticas de liderazgo que impacten finalmente en los aprendizajes de los estudiantes."
-      }
-    ],
-    "capas": {
-      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/1.png",
-      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/2.png",
-      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/3.png",
-      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/5/capas/4.png"
-    }
-  },
-  {
-    "tipo": "slide",
-    "titulo": "¿Quiénes pueden ser parte?",
-    "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/2.png",
-    "slide": [
-      {
-        "titulo": "Ministerio de Educación Nacional",
-        "descripcion": "Desde el nivel nacional y en el marco del Plan de Desarrollo, lidera la estructuración de la Escuela de Liderazgo, acompaña su puesta en marcha para la apropiación en el ámbito local y realiza seguimiento y evaluación, en el marco de la política de calidad educativa. Así mismo, pone a disposición de los territorios las ofertas de los diferentes componentes de la Escuela para que estos se sumen a la iniciativa, proporcionándoles los énfasis que apliquen acorde con los distintos contextos.   "
-      },
-      {
-        "titulo": "Secretarías de Educación",
-        "descripcion": "Las instituciones de Educación Superior y otras Organizaciones de la Sociedad Civil que tengan interés y propuestas sinérgicas con la EdLDD:  Constituyen el eje articulador y actor central para viabilizar la EdLDD en territorio, a través de sus planes de formación y bienestar para Directivos Docentes. En esta vía, desde las secretarías:",
-        "lista": [
-          {
-            "texto": "Se identifican las necesidades de formación y desarrollo personal y profesional de los Directivos Docentes."
-          },
-          {
-            "texto": "Se conocen y caracterizan las ofertas de las universidades y aliados territoriales y, "
-          },
-          {
-            "texto": "Se generan sinergias, alianzas y convenios para su puesta en marcha.  "
-          }
-        ]
-      },
-      {
-        "titulo": "Secretarías de Educación",
-        "descripcion": "Debes tener en cuenta que las Secretarias de Educación logran articular las áreas de bienestar y calidad educativa, a fin de lograr el equilibrio que se espera en la Escuela de Liderazgo entre formación profesional y desarrollo personal de los Directivos Docentes. "
-      },
-      {
-        "titulo": "Oferentes de formación",
-        "descripcion": "Forman parte de los oferentes las universidades, programas específicos del MEN como PTA, el BID, la empresa privada, las organizaciones no gubernamentales, entre otros, quienes conforman la oferta formativa a través de procesos formales y no formales de educación inicial, continua o avanzada. Es importante señalar que la EdLDD como instancia articuladora, logra que dichas ofertas de formación pasen por el tamiz de la impronta de la Escuela, orientada a transformar las prácticas de liderazgo de los Directivos Docentes. "
-      },
-      {
-        "titulo": "Cajas de compensación",
-        "descripcion": "Son un aliado muy importante para la Escuela, por cuanto ofrecen y desarrollan procesos orientados a la formación y especialmente al bienestar de los Directivos Docentes que pueden aportar a los planes de bienestar trazados por las secretarías. Es necesario que desde las Secretarías de Educación se identifiquen los aspectos fundamentales en los que se alinean estos planes de bienestar y desarrollo personal con las apuestas de la EdLDD para articularos en sintonía. "
-      },
-      {
-        "titulo": "Otros aliados regionales",
-        "descripcion": "Es tarea de las secretarías, con el acompañamiento del MEN, identificar otros posibles aliados regionales del sector público o privado que cuenten con procesos afines a la EdLDD, de manera que se constituyan las alianzas y sinergias necesarias para articular esfuerzos en pro de la formación, bienestar y trabajo en redes de los líderes de nuestros establecimientos educativos.  "
-      }
-    ]
   },
   {
     "tipo": "normal",
@@ -477,13 +127,10 @@
 
   {
     "tipo": "animada",
-    "titulo": "Paisaje sonoro: ESCUELA DE LIDERAZGO, semillero de testimonios significativos",
+    "titulo": "La Escuela de Liderazgo y su enfoque territorial:",
     "textos": [
       {
-        "parrafo": "La Escuela de Liderazgo tiene dentro de sus intencionales, escuchar tu voz y potenciar todo el trabajo que tanto tú como otros Directivos Docentes están haciendo en las regiones."
-      },
-      {
-        "parrafo": "Te invitamos a escuchar las experiencias de algunos de tus pares."
+        "parrafo": "Un recorrido por las voces del territorio que se hace paisaje sonoro "
       }
     ],
     "capas": {
@@ -499,27 +146,37 @@
       "songs": [
         {
           "position": "1",
-          "songName": "Paisaje Sonoro P1",
+          "songName": "Paisaje Sonoro parte 1/2",
           "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P1_v2.mp3"
         },
         {
           "position": "2",
-          "songName": "Paisaje Sonoro P2",
+          "songName": "Paisaje Sonoro parte 2/2",
           "songUrl": "https://edldd.s3.us-east-2.amazonaws.com/audio/PaisajeSonoro_P2_v2.mp3"
         }
       ]
     },
-    "ayuda": "<ul><li>Semillero de testimonios inspiradores parte uno</li><li>Semillero de testimonios inspiradores parte dos</li></ul><p>Para escuchar el siguiente paisaje sonoro haga clic en el ícono ►| del reproductor</p>",
+    "ayuda": "<p><b>Son dos (2) audios</b>. Para escuchar el siguiente haga clic en el ícono ►| del reproductor</p></br>",
     "capas": {
-      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png",
-      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/2.png"
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/1/capas/1.png"
+    }
+  },
+  {
+    "tipo": "animada",
+    "titulo": "Mapa interactivo. Enfoque territorial",
+    "capas": {
+      "uno": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/1.png",
+      "dos": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/2.png",
+      "tres": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/3.png",
+      "cuatro": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/4.png",
+      "cinco": "https://edldd.s3.us-east-2.amazonaws.com/img/3/capas/5.png"
     }
   },
   {
     "tipo": "tableau",
     "titulo": "Mapa interactivo",
     "fondo": "https://edldd.s3.us-east-2.amazonaws.com/img/fondos/1.png",
-    "url": "https://public.tableau.com/views/estrategias_edldd/dashboard_demo"
+    "url": "https://public.tableau.com/views/edldd_mapainteractivo/Dashboard1"
   },
   {
     "tipo": "animada",
@@ -544,10 +201,10 @@
         "parrafo": "Antes de que te vayas, haz <a href='https://contactomaestro.colombiaaprende.edu.co/' target='_blank'>clic aquí</a> y conoce un poco más sobre algunos contenidos y propuestas que buscan potenciar tu liderazgo educativo. "
       },
       {
-        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Bases+para+el+despliegue+curricular(1).pdf' target='_blank'>Descarga las bases para el despliegue curricular de la EdLDD</a> "
+        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Bases+para+el+despliegue+curricular(1).pdf' target='_blank'><img class='thumb' src='https://edldd.s3.us-east-2.amazonaws.com/img/caratula_01.jpg'/>Descarga las bases para el despliegue curricular de la EdLDD</a> "
       },
       {
-        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Orientaciones+para+aliados+a+nivel+territorial.pdf' target='_blank'>Descarga el documento de orientaciones para aliados a nivel territorial</a> "
+        "parrafo": "<a href='https://edldd.s3.us-east-2.amazonaws.com/pdf/Orientaciones+para+aliados+a+nivel+territorial.pdf' target='_blank'><img class='thumb' src='https://edldd.s3.us-east-2.amazonaws.com/img/caratula_02.jpg'/>Descarga el documento de orientaciones para aliados a nivel territorial</a> "
       }
     ],
     "capas": {

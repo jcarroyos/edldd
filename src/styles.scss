@@ -224,6 +224,12 @@ code {
         /*justify-content: start;*/
       }
     }
+    .thumb{
+      width: 100px;
+      height: auto;
+      vertical-align: middle;
+      padding: 10px;
+    }
     .textos {
       width: 90vw;
       @include breakpoint(md) {
@@ -275,6 +281,13 @@ code {
       position: absolute;
       width: 100vw;
       height: 100vh;
+      @include breakpoint(xs){
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        width: 100vw;
+        height: 59vh;
+        }
       &.superiorDerecha {
         background-size: 70vmin;
         background-repeat: no-repeat;
@@ -313,13 +326,13 @@ code {
       width: fit-content;
       margin: 0 auto;
       display: block;
-      top: 3vh;
+      top: 10vh;
       color: $blanco;
       font-size: $ms2;
       font-weight: 200;
 
       @include breakpoint(md) {
-        top: 5vh;
+        top: 10vh;
         font-size: $ms3;
       }
       @include breakpoint(lg) {
@@ -409,13 +422,13 @@ code {
       font-size: $ms2;
       padding: 0 $ms0;
       display: block;
-      top: 3vh;
+      top: 10vh;
       color: $blanco;
       font-size: $ms1;
       font-weight: 200;
 
       @include breakpoint(md) {
-        top: 5vh;
+        top: 10vh;
         font-size: $ms3;
       }
     }
@@ -474,7 +487,7 @@ code {
 
 .viz {
   width: 90vw;
-  height: 80vh;
+  height: 1000px;
   margin: 0 auto;
   @include breakpoint(xs) {
     height: 1640px;

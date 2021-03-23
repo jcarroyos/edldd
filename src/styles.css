@@ -133,6 +133,11 @@ code {
     @media (min-width: 1200px) {
       .section.animada .container {
         /*justify-content: start;*/ } }
+  .section.animada .thumb {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    padding: 10px; }
   .section.animada .textos {
     width: 90vw; }
     @media (min-width: 992px) {
@@ -179,6 +184,13 @@ code {
       position: absolute;
       width: 100vw;
       height: 100vh; }
+      @media (max-width: 767px) {
+        .section .page_Animation .capa {
+          background-size: cover;
+          background-position: top;
+          position: absolute;
+          width: 100vw;
+          height: 59vh; } }
       .section .page_Animation .capa.superiorDerecha {
         background-size: 70vmin;
         background-repeat: no-repeat;
@@ -209,13 +221,13 @@ code {
     width: fit-content;
     margin: 0 auto;
     display: block;
-    top: 3vh;
+    top: 10vh;
     color: white;
     font-size: 1.44em;
     font-weight: 200; }
     @media (min-width: 992px) {
       .section.carousel h3 {
-        top: 5vh;
+        top: 10vh;
         font-size: 1.728em; } }
     @media (min-width: 1200px) {
       .section.carousel h3 {
@@ -291,13 +303,13 @@ code {
     font-size: 1.44em;
     padding: 0 1em;
     display: block;
-    top: 3vh;
+    top: 10vh;
     color: white;
     font-size: 1.2em;
     font-weight: 200; }
     @media (min-width: 992px) {
       .section.mapa .titulo {
-        top: 5vh;
+        top: 10vh;
         font-size: 1.728em; } }
   .section.mapa .slide-container {
     background: linear-gradient(135deg, rgba(153, 255, 255, 0.6) 0%, rgba(131, 11, 196, 0.4) 100%);
@@ -346,7 +358,7 @@ code {
 
 .viz {
   width: 90vw;
-  height: 80vh;
+  height: 1000px;
   margin: 0 auto; }
   @media (max-width: 767px) {
     .viz {

@@ -2,7 +2,7 @@ const fullpageOptions = {
   licenseKey: '26AD47C0-F26141E8-921BC9B5-2C769097',
   scrollingSpeed: '1000',
   scrollBar: true,
-  normalScrollElements: '.tableau',
+  normalScrollElements: '#tableau',
   scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,

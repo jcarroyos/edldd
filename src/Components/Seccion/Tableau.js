@@ -18,7 +18,7 @@ export default function Tableau({ e, moveSectionDown }) {
     },[])
 
     return (
-      <div className="section tableau">
+      <div className="section tableau" id="tableau">
         <div className="viz" ref={ref}>
         </div>
       </div>
