@@ -45,7 +45,7 @@ code {
 
 #logos {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 63px;
   display: inline-block;
@@ -58,6 +58,8 @@ code {
     right: 200px;
     position: absolute;
     top: 2px; }
+    #logos .left:hover {
+      cursor: pointer; }
   #logos .right {
     background-image: url("https://edldd.s3.us-east-2.amazonaws.com/img/logo-mineducacion.png");
     height: 50px;
@@ -146,7 +148,7 @@ code {
     @media (min-width: 1200px) {
       .section.animada .textos {
         width: 60vw;
-        transform: translateX(15vw); } }
+        transform: translateX(5vw); } }
     .section.animada .textos .titulo {
       font-size: 1.44em; }
       @media (min-width: 1200px) {
@@ -180,7 +182,7 @@ code {
     z-index: 0; }
     .section .page_Animation .capa {
       background-size: cover;
-      background-position: right;
+      background-position: center center;
       position: absolute;
       width: 100vw;
       height: 100vh; }
