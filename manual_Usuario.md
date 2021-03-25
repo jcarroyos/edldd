@@ -1,43 +1,6 @@
-# Manual de instalción
-
-**Prerequisitos:**
-
-- entorno de ejecución [node.js](https://nodejs.org/es/download/)
-- sistema de gestión de paquetes [npm](https://www.npmjs.com/get-npm)
-
-1.  Clonar el repositorio [https://github.com/brevetdev/edldd](https://github.com/brevetdev/edldd)
-
-`
-git clone https://github.com/brevetdev/edldd
-`
-
-Una vez clonado el repositorio usted tendrá los siguientes archivos:
-
-![carpetas repositorio](https://edldd.s3.us-east-2.amazonaws.com/manual/03.png)
-
-2. Instalar las dependencias
-
-`
-npm i
-`
-
-3. Ejecutar la app en entorno local
-
-`
-npm start
-`
-
-Una vez ejecutado el comando para iniciar la app se rebe recibir una notificación de compilación correcta **Compiled successfully!** y ruta de acceso por el puerto público.
-
-![Compiled successfully!](https://edldd.s3.us-east-2.amazonaws.com/manual/04.png)
-
-4. Compilar la carpeta **./build** para cargar a un servidor
-
-`
-npm deploy
-`
-
 # Manual de usuario
+
+La presentación visual de los contenidos se hace en modo pantalla completa, usando el plugin [fullpage.js](https://github.com/alvarotrigo/fullPage.js/) se logra un desplazamiento de pantalla completa (también como sitio web de una sola página ) y agrega controles deslizantes horizontales dentro de las secciones del sitio.
 
 ## Carga de contenidos
 
@@ -47,7 +10,9 @@ Los archivos multimedia se llaman desde cualquier url pública, se recomienda el
 
 ![carpetas aws](https://edldd.s3.us-east-2.amazonaws.com/manual/02.png)
 
+
 ## Tipos de contenido
+
 
 ### [Animada](./src/Componentes/Seccion/Animada.js)
 
@@ -183,7 +148,7 @@ Se usa para crear insertar un video.
   },
 ```
 
-# Ambiente de pruebas
+## Ambiente de pruebas
 
 Para desplegar la app en internet ambiente de pruebas se usa la característica de [GitHub Pages](https://guides.github.com/features/pages/)
 
@@ -208,9 +173,3 @@ git push
 `
 
 El actual sitio de pruebas esta en [https://brevetdev.github.io/edldd](https://brevetdev.github.io/edldd)
-
-### Contacto desarrollador
-
-jcarroyos@gmail.com
-
-+57 313 348 3563

@@ -47,8 +47,8 @@
     "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build && rm -r ./docs/ && cp -r ./build ./docs"
+    "deploy": "npm run build",
+    "gh-pages": "gh-pages -d build && rm -r ./docs/ && cp -r ./build ./docs"
   },
   "browserslist": {
     "production": [

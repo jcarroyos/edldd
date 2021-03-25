@@ -4,8 +4,13 @@ Esta aplicación web es una presentación de información sobre la **Escuela de 
 
 Utiliza el entorno de desarrollo react.js para organizar la presentación de contenidos y archivos multimedia.
 
-La presentación visual de los contenidos se hace en modo pantalla completa, usando el plugin [fullpage.js](https://github.com/alvarotrigo/fullPage.js/) se logra un desplazamiento de pantalla completa (también como sitio web de una sola página ) y agrega controles deslizantes horizontales dentro de las secciones del sitio.
+Manuales
+--
 
-## [Ver manual de instalación](manual.md)
+1. [Manual técnico](manual_Tecnico.md)
+2. [Manual de instalación](manual_Instalación.md)
+3. [Manual de usuario](manual_Usuario.md)
 
 ![previsualización app](https://edldd.s3.us-east-2.amazonaws.com/manual/01.png)
+==
+Contacto: [brevet.dev](https://brevet.dev/) +57 313 348 3563
