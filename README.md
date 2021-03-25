@@ -8,7 +8,7 @@ Manuales
 --
 
 1. [Manual técnico](manual_Tecnico.md)
-2. [Manual de instalación](manual_Instalación.md)
+2. [Manual de instalación](manual_Instalacion.md)
 3. [Manual de usuario](manual_Usuario.md)
 
 ![previsualización app](https://edldd.s3.us-east-2.amazonaws.com/manual/01.png)
