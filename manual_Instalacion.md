@@ -1,4 +1,4 @@
-# Manual de instalción
+# Manual de instalación
 
 **Prerequisitos:**
 
