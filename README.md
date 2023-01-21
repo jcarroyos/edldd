@@ -13,4 +13,9 @@ Manuales
 
 ![previsualización app](https://edldd.s3.us-east-2.amazonaws.com/manual/01.png)
 ==
-Contacto: [brevet.dev](https://brevet.dev/) +57 313 348 3563
+
+
+
+## Copyright 
+
+All in this repository are copyrighted © by fundacionexe.org.co who commissioned this project.
